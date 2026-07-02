@@ -1,0 +1,262 @@
+# ProHosts RM Decision Engine v2.1 — machine-readable companion
+# Canonical with ProHosts_RM_Decision_Engine_v2.1.md. On conflict, the .md governs.
+version: "2.1"
+maintainer: "DJ Fornelli"
+review_day_parameter: "Tuesday"  # parameter only; cadence rules bind, weekday does not
+
+precedence:
+  1: data_integrity_gates      # RM-010, RM-042, RM-039, RM-034
+  2: absolute_guardrails       # RM-044, RM-047
+  3: hold_rules                # RM-016, RM-018, RM-019, RM-020
+  4: diagnostic_first          # RM-009, RM-043, RM-021, RM-030
+  5: action_rules
+  6: cadence_cap               # RM-051 caps decisions at 2-3 per property per cycle
+
+severity_grades:
+  slightly_behind: {variance_pts_off_pace: "<=10"}
+  moderately_behind: {variance_pts_off_pace: "10-25"}
+  critically_behind: {variance_pts_off_pace: ">25", or: "bookingless_days>=10 AND behind_pace"}
+
+metric_suffixes:
+  P: "past — trailing 30 days"
+  N: "next — forward booked nights"
+
+default_parameters:
+  occ_targets: {d30: "65-75%", d60: "45-55%", d90: "30-40%", d120: "20%"}
+  one_night_premium_multiplier: 1.5
+  min_to_base_spread: "min ~60-70% of base"
+  margin_floor_formula: "cleaning_per_turn + platform_fees(~15%) + utilities_supplies + wear"
+property_overrides:
+  lulu_at_the_palms: {occ_targets: {d30: "35-50%", d60: "20-35%", d90: "10-20%", d120: "10%"}}
+  fat_city_ranch:    {occ_targets: {d30: "55-70%", d60: "40-55%", d90: "25-40%", d120: "15%"}}
+
+deprecated_sources:
+  - "Reference Guide v2 Rule 8 (Booking Freeze) -> merged into RM-002 critically_behind"
+  - "START HERE Rule 8 -> merged into RM-002"
+  - "Old Desert Dog tab inverted LMD (7d -30% / 3d -20% / 1d -10%) -> data-entry error, do not learn from"
+  - "1.4x one-night multiplier entries -> superseded by 1.5x"
+
+rules:
+  - {id: RM-001, name: Early Traction, category: core, tier: proven,
+     trigger: "5+ nights book within 14 days of dates opening OR bookings 60+ days before arrival",
+     action: "raise base 5-8%; min unchanged",
+     exceptions: [major_holidays, new_listings, unique_events]}
+  - id: RM-002
+    name: Booking Velocity / No Traction
+    category: core
+    tier: proven
+    trigger: "no bookings 7-10 days OR pace below target"
+    action:
+      slightly_behind: "base -3-5%"
+      moderately_behind: "base -5-8%; weekdays -5-10%; add 21-30d discounts; trim static weekend premium ~5% if present"
+      critically_behind: "base -8-15%; min -5-10% temporary (never below floor); full discount curve 30/21/14/7d; overrides on unbooked nights 14-21d; enable booking recency (RM-046)"
+    notes: "fix 30-day window first; escalate conservatively; merged Booking Freeze"
+    exceptions: [RM-020, RM-042, RM-035, owner_blocks, seasonal_curve_shift]
+  - {id: RM-003, name: Occupancy Pace Protection, category: core, tier: proven,
+     trigger: "any forward window below property-parameter target",
+     action: "30d behind -> weekday pricing only (-5 to -15%); 60-90d behind -> base -3-5% + far-out structure; never blanket discount",
+     exceptions: [data_integrity_gates]}
+  - {id: RM-004, name: Weekend Compression, category: core, tier: proven,
+     trigger: "weekends filling 30+ days before arrival",
+     action: "raise Fri/Sat 10-15% on remaining OPEN weekend nights; enforce weekend LOS",
+     canonical_ruling: "do NOT configure/stack static weekend premiums on weekends already selling out or sold; static premiums only where weekend demand needs shaping"}
+  - {id: RM-005, name: Last-Minute Fill, category: core, tier: proven,
+     trigger: "unbooked nights approaching arrival",
+     action: "curve: 30d -5% / 21d -10% / 14d -12-15% / 7d -18-20% / 3d -22-25% / 1d -25-30%; shorter stays inside 5-10d per RM-024; remove weekend premiums inside 7-14d if unbooked",
+     invariant: "discount depth must increase toward arrival; inverted curve = invalid config; floor RM-044 binds"}
+  - {id: RM-006, name: Far-Out Pricing, category: core, tier: proven,
+     trigger: "strong demand 45+ days out",
+     action: "45-59d +5-10%; 60-89d +8-15%; 90+d +10-20%; scale by booking-window class (RM-030)",
+     exceptions: [apply_only_with_demand_support]}
+  - {id: RM-007, name: LOS Optimization, category: core, tier: proven,
+     trigger: "LOS restrictions limiting bookings or gap patterns",
+     action: "raise min stays in high demand; relax in low demand; premium 1-night gap fills per RM-024"}
+  - {id: RM-008, name: Market Compression, category: core, tier: proven,
+     trigger: "market occupancy/competitors/events indicate compression (thresholds RM-036)",
+     action: "raise pricing; protect ADR; delay discounts",
+     notes: "compression = ahead of expected pace relative to history and market"}
+  - {id: RM-009, name: Listing Conversion, category: core, tier: proven,
+     trigger: "high views + low bookings (30/90d views, conversion, wishlists)",
+     action: "audit hero photo, order, title, amenities, reviews, fees, rules BEFORE price changes; post-fix protocol RM-043"}
+  - {id: RM-010, name: Exception Handling, category: core, tier: policy,
+     trigger: "holidays, events, owner blocks, maintenance, new listings, disasters, severe weather",
+     action: "pause automated rules; manual review; log exception; runs FIRST every review"}
+  - {id: RM-011, name: ADR Protection, category: core, tier: provisional,
+     trigger: "occupancy on pace, ADR below target", action: "raise pricing"}
+  - {id: RM-012, name: Market Outperformance, category: core, tier: provisional,
+     trigger: "property materially outperforms market", action: "raise more aggressively than standard increments"}
+  - {id: RM-013, name: Market Underperformance, category: core, tier: provisional,
+     trigger: "property underperforms market", action: "diagnose cause before discounting"}
+  - {id: RM-014, name: Booking Curve Shift, category: core, tier: provisional,
+     trigger: "guests booking materially earlier/later than historical norms",
+     action: "reclassify booking-window class (RM-030); restructure FOP/LMD"}
+  - {id: RM-015, name: Revenue Opportunity, category: core, tier: provisional,
+     trigger: "orphan nights / adjacent-reservation opportunities", action: "optimize per RM-024"}
+
+  - {id: RM-016, name: Hold After Positive Response, category: response_discipline, tier: proven,
+     trigger: "change made last cycle AND velocity or 30-day pace improved",
+     action: "no further reductions; hold one full cycle; confirm 60d follows 30d",
+     evidence: "Thriveway 315->295: occ 30%->57%, held; Fat City held 3 cycles"}
+  - {id: RM-017, name: Decision Cap Discipline, category: response_discipline, tier: proven,
+     trigger: "every review",
+     action: "max 2-3 decisions per property per cycle; never base+min+weekday+LMD together outside RM-002 critical reset",
+     evidence: "Trixie's two-move adjustment with other variables frozen"}
+  - {id: RM-018, name: Do-Nothing Rule, category: response_discipline, tier: proven,
+     trigger: "all windows within +/-5 pts AND >=1 booking last 7d",
+     action: "no changes; log 'no action - on pace'"}
+  - {id: RM-019, name: Change Settling Period, category: response_discipline, tier: proven,
+     trigger: "structural change within last cycle",
+     action: "do not reverse/deepen that variable until one full cycle of velocity data; expect 7-10 day lag",
+     exceptions: [dates_inside_14_days],
+     evidence: "Thriveway rebuild lag; Trixie's whipsaw counter-example"}
+  - {id: RM-020, name: Velocity Silence on Long-Lead Properties, category: response_discipline, tier: proven,
+     trigger: "avg lead >=60d AND 0 bookings 7-15d AND all windows on-track-or-ahead",
+     action: "hold; do not fire RM-002; log velocity silence",
+     exceptions: ["30d window behind -> RM-005 on those dates only"],
+     evidence: "Azure quiet at 22-45 pts ahead; bookings resumed unprompted"}
+
+  - {id: RM-021, name: Weekday/Weekend Split Diagnosis, category: calendar_structure, tier: proven,
+     trigger: "occ below target AND weekend occ >=85%",
+     action: "Sun-Thu discounts only; never lower base/weekend/min for a weekday problem; at 100% weekend occ consider RM-004",
+     evidence: "Thriveway 88% weekend; Desert Dog 100% weekend"}
+  - {id: RM-022, name: Month-Targeted Discount Laddering, category: calendar_structure, tier: proven,
+     trigger: "deficit concentrated in identifiable future months",
+     action: "date-range weekday discounts, deepest nearest (e.g., -15%/-8%/-5%)",
+     exceptions: [never_into_peak_months],
+     evidence: "Thriveway Jul/Aug/Sep ladder; Trixie's Jul-Aug 5%"}
+  - {id: RM-023, name: Paired-Night Weekend Compression, category: calendar_structure, tier: provisional,
+     trigger: "Fri or Sat books; paired night open",
+     action: "raise open paired night +15-25% immediately",
+     exceptions: ["inside 7 days -> RM-005"]}
+  - {id: RM-024, name: Orphan & Gap Night Monetization, category: calendar_structure, tier: proven,
+     trigger: "1-night gaps or repeated Sun-Thu holes",
+     action: "1-night stays only inside 5-7d at >=1.5x base, or +20-25% gap premium, or require adjacent booking",
+     lmd_abuse_guard: "if booking inside 3d below quality floor OR >2 one-night stays in 30d -> cap LMD -10%",
+     exceptions: [mtr_gap_smoothing_RM-050]}
+  - {id: RM-025, name: Floor-Flattening Detection, category: calendar_structure, tier: proven,
+     trigger: "significant share of weekdays priced at/near min",
+     action: "collapsed curve diagnosis; EITHER lift weekdays above floor OR lower base to reopen spread - never both"}
+  - {id: RM-026, name: Min-to-Base Spread Protection, category: calendar_structure, tier: proven,
+     trigger: "any base or min change",
+     action: "keep min ~60-70% of base; lowering min must not collapse base toward it",
+     exceptions: [mtr_RM-050]}
+  - {id: RM-027, name: Wide-Band Strategy, category: calendar_structure, tier: provisional,
+     trigger: "behind near-term with compression on specific dates",
+     action: "lower min modestly AND raise max same review (counts as one structural move)",
+     evidence: "Desert Dog 131->125 min, 400->450 max"}
+
+  - {id: RM-028, name: Two-Speed Calendar Split, category: window_pricing, tier: proven,
+     trigger: "near window behind while far windows ahead (or inverse)",
+     action: "discount inside broken near window AND raise FOP/base/max on ahead windows, within decision cap",
+     evidence: "Azure -10% next 2 weeks + FOP 35%/60d same review"}
+  - {id: RM-029, name: FOP Window Tuning, category: window_pricing, tier: proven,
+     trigger: "one mid window lags, adjacent fine, FOP begins inside lagging window",
+     action: "move FOP start beyond lagging window instead of cutting base; raise FOP %/range when far windows ahead",
+     evidence: "Thriveway FOP 45->60d; Desert Dog FOP 10%/60d"}
+  - id: RM-030
+    name: Booking-Window Alignment
+    category: window_pricing
+    tier: proven
+    trigger: "onboarding, quarterly, or distribution update"
+    action:
+      late_booking: ">=30% inside 7d or lead <~25d -> FOP 0-8%, strong LMD, tolerate thin far calendar"
+      early_booking: "majority 60+d or lead >=60d -> FOP 10-35%, minimal early discounts, judge far windows"
+    evidence: "Desert Dog late-booking vs Moonlight 71% at 60+d"
+  - {id: RM-031, name: Calendar Opening Protocol, category: window_pricing, tier: provisional,
+     trigger: "window <6 months or dead 60-90d pipeline",
+     action: "open 6-9 months in one move; layer FOP same day; 3-night weekend mins 30+d out; no base cut if early bookings absent - check comps, trim FOP"}
+
+  - {id: RM-032, name: Low-Season Protocol, category: seasonality_market, tier: proven,
+     trigger: "documented soft season AND market-level demand down",
+     action: "occupancy priority: remove/zero FOP; LMD 30-40%/14d; enable Recency; lower min toward (never below) floor; keep weekend structure; log key issue as season-driven",
+     evidence: "Trixie's 0 -> 12/7d & 20/15d"}
+  - {id: RM-033, name: Season-Relative Targets, category: seasonality_market, tier: proven,
+     action: "monthly bands: peak 80-90%, shoulder 70-80%, soft 55-70%; Table 4 status vs season-adjusted band"}
+  - {id: RM-034, name: Post-Event Inflation Adjustment, category: seasonality_market, tier: provisional,
+     trigger: "trailing metrics include major event period",
+     action: "flag trailing metrics inflated; decide on forward pacing and new-booking ADR only",
+     evidence: "Lulu post-Coachella ADR(P) $614 vs $230-260 target"}
+  - {id: RM-035, name: Distribution Before Desperation, category: seasonality_market, tier: hypothesis,
+     trigger: "market occ near zero; multiple cuts failed; forward occ near zero",
+     action: "stop cutting; expand channels (VRBO, BDC, direct); rework listing; log market condition",
+     evidence: "Lulu - cuts produced nothing; channel expansion outcome pending"}
+  - id: RM-036
+    name: Compression Thresholds
+    category: seasonality_market
+    tier: provisional
+    thresholds:
+      - {when: "30d(N) > 80-85%", do: "raise base 5-10% + raise min"}
+      - {when: "60d(N) > 70-75%", do: "raise FOP"}
+      - {when: "month 90+d out at 30-40% occ", do: "raise that range 8-12%"}
+      - {when: "rolling 60d > 85% or 3 months projecting >85%", do: "base +5-10%, min +5%, halve LMD"}
+    notes: "validate vs historical pace and market norms - compression is market-relative"
+  - {id: RM-037, name: Overperformance / Too-Easy Signal, category: seasonality_market, tier: proven,
+     trigger: "pace +10pts(30d) or +5pts(60d); or trailing occ >=85-90%; or effortless bookings",
+     action: "raise base 5-10%; weekend pricing +10-15% on open nights; consider raising min",
+     exceptions: [legacy_inflated_occupancy_RM-039]}
+  - {id: RM-038, name: Anchor Recovery on Peak Dates, category: seasonality_market, tier: provisional,
+     trigger: "holiday/peak weekend discounted before ~10d out, now below market",
+     action: "raise back toward market",
+     exceptions: ["inside 7 days -> RM-005"]}
+
+  - {id: RM-039, name: Legacy Reservation Distortion, category: takeover_data, tier: proven,
+     trigger: "takeover with inherited reservations in forward windows",
+     action: "evaluate ADR on new bookings only; legacy-inflated forward occ = false ahead signal; keep raising until new bookings hit target band; log distortion"}
+  - {id: RM-040, name: Takeover Reset Protocol, category: takeover_data, tier: proven,
+     trigger: "takeover with no usable history or unsalvageable structure",
+     action_sequence: [pricelabs_staged_not_live, base_min_max_from_comp_tier_and_floor, comp_set, seasonal_rules, weekday_weekend_structure, lead_time_FOP_LMD_per_market, LOS_discounts, minimum_stays, gap_rules, pacing_strategy],
+     notes: "expect 7-10 day traction lag (RM-019)",
+     evidence: "Fat City 0 -> 9 bookings/7d"}
+  - {id: RM-041, name: Perception Re-Anchoring, category: takeover_data, tier: provisional,
+     trigger: "extended 0 bookings AND base at/below market mid-tier AND no far-out structure",
+     action: "raise base to re-anchor; raise min; later steeper discount curve; add FOP ladder",
+     exceptions: [dead_market_RM-035_governs]}
+  - {id: RM-042, name: Blocked-Calendar Exception Handling, category: takeover_data, tier: proven,
+     trigger: "significant blocked nights in any window",
+     action: "exclude blocked nights from denominators; mark windows unreadable; no pricing action on distorted pace; log block as key issue",
+     evidence: "Moonlight remediation; Desert Dog owner blocks"}
+  - {id: RM-043, name: Listing Fix Verification, category: takeover_data, tier: proven,
+     trigger: "high views + low conversion or suspected merchandising problem",
+     action: "fix listing first; hold pricing 1-2 cycles; attribute velocity change to the fix",
+     evidence: "Fat City pricing held, 0 -> 9 bookings"}
+
+  - {id: RM-044, name: Margin Floor, category: guardrail, tier: policy,
+     formula: "cleaning_per_turn + platform_fees(~15%) + utilities_supplies + wear",
+     action: "min >= floor; no discount stack breaches it; vacancy > below-floor bookings",
+     documented_floors: {trixies: 115, leaning_joshua: 190, moonlight: 300, azure: 275, ellis_short_stay: 120},
+     precedence: overrides_all_occupancy_rules}
+  - {id: RM-045, name: Discount Timing Guard, category: guardrail, tier: proven,
+     trigger: "proposed discounts starting earlier than property's average lead time",
+     action: "reject/restructure; light 21-30d (-5-10%); aggressive only inside 7d; tactical inside 3d; depth grows toward arrival",
+     exceptions: [low_season_RM-032_permits_deeper_14d]}
+  - {id: RM-046, name: Booking Recency Deployment, category: guardrail, tier: proven,
+     trigger: "moderately/critically behind needing continuous pressure between reviews",
+     action: "enable with graduated cap (~5% after 15 bookingless days, max 10-15%); disable on recovery; never stacks below floor",
+     exceptions: [not_on_compressed_or_ahead_properties]}
+  - {id: RM-047, name: Escalation Triggers, category: guardrail, tier: policy,
+     triggers: ["revenue -15%+ WoW", "14+ bookingless days while behind pace", "major event dates unbooked inside 45d", "recommendation breaches guardrails or floor", "conflicting rules with low confidence"],
+     action: "flag, do not act; output diagnosis + evidence; mark low confidence; route to DJ"}
+
+  - {id: RM-048, name: Weekly Decision Log Discipline, category: governance, tier: proven,
+     required_fields: [date, occ_30d, key_issue_root_cause_season_accurate, action_taken_old_to_new, bookings_7d, bookings_15d, result_next_review],
+     notes: "'no changes' is a logged action"}
+  - {id: RM-049, name: Window Priority with Severity Grading, category: governance, tier: proven,
+     order: [d30, d60, d90, d120],
+     one_lever_per_window: {d30: "weekday pricing / LMD", d60: "base + month-targeted discounts", d90: "FOP only", d120: "usually nothing"}}
+  - {id: RM-050, name: MTR Rulebook Separation, category: governance, tier: provisional,
+     action: "MTR units: occupancy in months occupied (target 90-95%; <85% = investigate pricing/marketing/vacancy response); hold rent in peak; soft periods use incentives never rent cuts; response speed > price; vacant + <30% booked at 30d -> marketing first; STR backfill only if beats monthly rate, 5-7 night min",
+     open_item: "reconcile MTR season calendars (2420 11th Ave vs CR 2.0 tabs) - pending DJ ruling; use each unit's own tab until resolved"}
+  - {id: RM-051, name: Weekly Review Cadence, category: governance, tier: policy,
+     action: "one review per property per week; max 2-3 decisions per property per cycle; one full cycle of velocity data before evaluating/modifying any change; review weekday is a parameter",
+     exceptions: ["dates inside 14 days may receive tactical LMD/override action mid-cycle"]}
+
+output_contract:
+  per_property_sequence:
+    - exception_check          # RM-010, RM-042, RM-039, RM-034
+    - window_status_vs_property_parameters
+    - velocity_read            # 7d and 15d bookings
+    - diagnosis_with_root_cause
+    - recommendations          # max 2-3; each cites rule id + tier + evidence + expected outcome + confidence
+    - table5_log_entry_text
+    - escalation_flag_if_RM-047
+  note: "hold recommendations are first-class outputs"
