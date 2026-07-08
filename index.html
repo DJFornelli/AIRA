@@ -577,62 +577,86 @@ function parseSheetTable5(propKey) {
   
   const rows = sheetsData[tabName];
   if(!rows || !Array.isArray(rows)) return null;
-  
-  // Find Table 5 section — look for a row containing "Table 5" or "Weekly Decisions"
+
+  // Debug: log what we received
+  console.log(`Parsing ${propKey} (${tabName}): ${rows.length} rows`);
+
+  // Find Table 5 section — scan every cell in every row
   let t5Start = -1;
   for(let i = 0; i < rows.length; i++) {
-    const rowStr = rows[i].join(' ').toLowerCase();
-    if(rowStr.includes('table 5') || rowStr.includes('weekly decisions')) {
-      t5Start = i + 2; // skip header row
-      break;
+    for(let j = 0; j < rows[i].length; j++) {
+      const cell = String(rows[i][j] || '').toLowerCase();
+      if(cell.includes('table 5') || cell.includes('weekly decisions')) {
+        t5Start = i + 2; // skip title + header row
+        console.log(`Found Table 5 at row ${i} for ${propKey}, data starts at ${t5Start}`);
+        break;
+      }
     }
+    if(t5Start !== -1) break;
   }
-  if(t5Start === -1) return null;
-  
-  // Parse up to 5 log entries from Table 5
+
+  if(t5Start === -1) {
+    console.warn(`Table 5 not found for ${propKey} in tab ${tabName}`);
+    return null;
+  }
+
+  // Parse entries — column structure from your sheet:
+  // Col 0: Date, Col 1: 30d occ, Col 2: Key Issue, Col 3: Action Taken, Col 4: 7d bookings, Col 5: 15d bookings
   const entries = [];
-  for(let i = t5Start; i < Math.min(t5Start + 15, rows.length); i++) {
+  for(let i = t5Start; i < Math.min(t5Start + 30, rows.length); i++) {
     const row = rows[i];
-    if(!row || !row[0]) continue;
-    
-    // Column structure: Date, 30d occ, Key Issue, Action Taken, 7d bookings, 15d bookings
+    if(!row) continue;
+
     const dateVal = row[0];
     const occ = row[1];
     const issue = row[2];
     const action = row[3];
     const d7 = row[4];
     const d15 = row[5];
-    
-    // Skip empty rows or header rows
-    if(!action || typeof action !== 'string' || action.toLowerCase().includes('action')) continue;
-    
-    // Convert Excel serial date if needed
-    let dateStr = '—';
-    if(typeof dateVal === 'number' && dateVal > 40000) {
-      const d = new Date((dateVal - 25569) * 86400 * 1000);
-      dateStr = d.toLocaleDateString('en-US', {month:'short', day:'numeric'});
+
+    // Skip if no action
+    if(!action && !issue) continue;
+    const actionStr = String(action || '').trim();
+    const issueStr = String(issue || '').trim();
+    if(!actionStr || actionStr.toLowerCase() === 'action taken') continue;
+
+    // Parse date — handle string "Jul 6", "Jun 29" etc
+    let dateStr = null;
+    if(typeof dateVal === 'string' && dateVal.trim().length > 0) {
+      dateStr = dateVal.trim();
+    } else if(typeof dateVal === 'number' && dateVal > 40000) {
+      // Excel serial date
+      const d = new Date(Math.round((dateVal - 25569) * 86400 * 1000));
+      dateStr = d.toLocaleDateString('en-US', {month:'short', day:'numeric', timeZone:'UTC'});
     } else if(dateVal instanceof Date) {
       dateStr = dateVal.toLocaleDateString('en-US', {month:'short', day:'numeric'});
-    } else if(typeof dateVal === 'string' && dateVal.trim()) {
-      dateStr = dateVal.trim();
-    } else continue;
-    
-    const occNum = typeof occ === 'number' ? occ : null;
-    
+    }
+
+    if(!dateStr) continue;
+
+    // Parse occ — handle "87%", 0.87, or blank
+    let occNum = null;
+    if(typeof occ === 'number') {
+      occNum = occ > 1 ? occ / 100 : occ;
+    } else if(typeof occ === 'string' && occ.includes('%')) {
+      occNum = parseFloat(occ) / 100;
+    }
+
     entries.push({
       date: dateStr,
       occ: occNum,
-      issue: issue || '—',
-      action: action || '—',
-      d7: typeof d7 === 'number' ? d7 : null,
-      d15: typeof d15 === 'number' ? d15 : null,
+      issue: issueStr || '—',
+      action: actionStr,
+      d7: typeof d7 === 'number' ? Math.round(d7) : null,
+      d15: typeof d15 === 'number' ? Math.round(d15) : null,
       source: 'sheets'
     });
-    
-    if(entries.length >= 5) break;
   }
-  
-  return entries.length > 0 ? entries : null;
+
+  // Return most recent 5 entries (sheet is oldest-first, we want newest-first)
+  const sorted = entries.reverse().slice(0, 5);
+  console.log(`${propKey}: found ${entries.length} entries, returning ${sorted.length}`);
+  return sorted.length > 0 ? sorted : null;
 }
 
 function getRecentDecisionsLive(propKey) {
