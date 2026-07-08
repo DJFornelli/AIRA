@@ -203,7 +203,12 @@ tr:hover td{background:rgba(255,255,255,.02);}
     <input class="key-input" id="github-token" type="password" placeholder="ghp_..." oninput="validateKeys()">
     <span class="key-status" id="github-status" style="color:var(--text-dim)">—</span>
   </div>
-  <span id="keys-ready" style="font-size:11px;color:var(--text-dim);margin-left:auto">Enter both keys to enable AIRA</span>
+  <div class="key-group" style="margin-left:16px">
+    <span class="key-label">📊 Sheets Secret</span>
+    <input class="key-input" id="sheets-secret" type="password" placeholder="AIRA2026" oninput="validateKeys()" style="max-width:140px">
+    <span class="key-status" id="sheets-status" style="color:var(--text-dim)">—</span>
+  </div>
+  <span id="keys-ready" style="font-size:11px;color:var(--text-dim);margin-left:auto">Enter all keys to enable AIRA</span>
 </div>
 
 <div id="upload-section">
@@ -256,6 +261,18 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <script>
 // ─── CONSTANTS ────────────────────────────────────────────────
 const GITHUB_OWNER = 'DJFornelli';
+const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwLT1wjXjCKY1oeR6yOh2y4OVLfDkJy4OmKNYVe6dV2GzOar1l-RBSDMFaJA8IuymIgIQ/exec';
+
+// Sheet tab name mapping to property keys
+const SHEET_TAB_MAP = {
+  "Azure Fern Haus": "Azure Fern 2.0",
+  "Thriveway Stays": "Thriveway Stays 2.0",
+  "Moonlight Sunrise": "Moonlight Sunrise 2.0",
+  "Trixies Oasis": "Trixies Oasis 2.0",
+  "Desert Dog": "Desert Dog 2.0",
+  "Fat City Ranch": "Fat City 2.0",
+  "Lulu at the Palms": "LATP 2.0"
+};
 const GITHUB_REPO = 'AIARM';
 const HISTORY_FILE = 'aira_history.json';
 
@@ -514,8 +531,10 @@ function handleFileUpload(e){if(e.target.files[0])processFile(e.target.files[0])
 function validateKeys(){
   const ak=document.getElementById('anthropic-key').value.trim();
   const gh=document.getElementById('github-token').value.trim();
+  const ss=document.getElementById('sheets-secret').value.trim();
   const as=document.getElementById('anthropic-status');
   const gs=document.getElementById('github-status');
+  const sss=document.getElementById('sheets-status');
   const kr=document.getElementById('keys-ready');
   if(ak.startsWith('sk-ant-')){as.textContent='✓ Valid';as.style.color='var(--green)';}
   else if(ak.length>0){as.textContent='Should start with sk-ant-';as.style.color='var(--red)';}
@@ -523,14 +542,128 @@ function validateKeys(){
   if(gh.startsWith('ghp_')||gh.startsWith('github_pat_')){gs.textContent='✓ Valid';gs.style.color='var(--green)';}
   else if(gh.length>0){gs.textContent='Should start with ghp_';gs.style.color='var(--red)';}
   else{gs.textContent='—';gs.style.color='var(--text-dim)';}
+  if(ss.length>0){sss.textContent='✓ Set';sss.style.color='var(--green)';}
+  else{sss.textContent='Uses default';sss.style.color='var(--text-muted)';}
   const ready=ak.startsWith('sk-ant-')&&(gh.startsWith('ghp_')||gh.startsWith('github_pat_'));
-  kr.textContent=ready?'✓ AIRA ready to run':'Enter both keys to enable AIRA';
+  kr.textContent=ready?'✓ AIRA ready to run':'Enter Anthropic key + GitHub token to enable AIRA';
   kr.style.color=ready?'var(--green)':'var(--text-dim)';
 }
 function getAnthropicKey(){return document.getElementById('anthropic-key').value.trim();}
 function getGithubToken(){return document.getElementById('github-token').value.trim();}
 
 // ─── GITHUB HISTORY ───────────────────────────────────────────
+// ─── GOOGLE SHEETS LIVE FETCH ─────────────────────────────────
+let sheetsData = {}; // cached sheet data
+
+async function fetchGoogleSheets(){
+  const secret = document.getElementById('sheets-secret').value.trim() || 'AIRA2026';
+  try {
+    const resp = await fetch(`${SHEETS_URL}?secret=${encodeURIComponent(secret)}`);
+    if(!resp.ok) throw new Error('Fetch failed');
+    const data = await resp.json();
+    if(data.error) throw new Error(data.error);
+    sheetsData = data;
+    console.log('✓ Google Sheets data loaded:', Object.keys(data));
+    return data;
+  } catch(e) {
+    console.warn('Could not load Google Sheets:', e.message);
+    return null;
+  }
+}
+
+function parseSheetTable5(propKey) {
+  const tabName = SHEET_TAB_MAP[propKey];
+  if(!tabName || !sheetsData[tabName]) return null;
+  
+  const rows = sheetsData[tabName];
+  if(!rows || !Array.isArray(rows)) return null;
+  
+  // Find Table 5 section — look for a row containing "Table 5" or "Weekly Decisions"
+  let t5Start = -1;
+  for(let i = 0; i < rows.length; i++) {
+    const rowStr = rows[i].join(' ').toLowerCase();
+    if(rowStr.includes('table 5') || rowStr.includes('weekly decisions')) {
+      t5Start = i + 2; // skip header row
+      break;
+    }
+  }
+  if(t5Start === -1) return null;
+  
+  // Parse up to 5 log entries from Table 5
+  const entries = [];
+  for(let i = t5Start; i < Math.min(t5Start + 15, rows.length); i++) {
+    const row = rows[i];
+    if(!row || !row[0]) continue;
+    
+    // Column structure: Date, 30d occ, Key Issue, Action Taken, 7d bookings, 15d bookings
+    const dateVal = row[0];
+    const occ = row[1];
+    const issue = row[2];
+    const action = row[3];
+    const d7 = row[4];
+    const d15 = row[5];
+    
+    // Skip empty rows or header rows
+    if(!action || typeof action !== 'string' || action.toLowerCase().includes('action')) continue;
+    
+    // Convert Excel serial date if needed
+    let dateStr = '—';
+    if(typeof dateVal === 'number' && dateVal > 40000) {
+      const d = new Date((dateVal - 25569) * 86400 * 1000);
+      dateStr = d.toLocaleDateString('en-US', {month:'short', day:'numeric'});
+    } else if(dateVal instanceof Date) {
+      dateStr = dateVal.toLocaleDateString('en-US', {month:'short', day:'numeric'});
+    } else if(typeof dateVal === 'string' && dateVal.trim()) {
+      dateStr = dateVal.trim();
+    } else continue;
+    
+    const occNum = typeof occ === 'number' ? occ : null;
+    
+    entries.push({
+      date: dateStr,
+      occ: occNum,
+      issue: issue || '—',
+      action: action || '—',
+      d7: typeof d7 === 'number' ? d7 : null,
+      d15: typeof d15 === 'number' ? d15 : null,
+      source: 'sheets'
+    });
+    
+    if(entries.length >= 5) break;
+  }
+  
+  return entries.length > 0 ? entries : null;
+}
+
+function getRecentDecisionsLive(propKey) {
+  // Try live sheet data first
+  const sheetEntries = parseSheetTable5(propKey);
+  if(sheetEntries && sheetEntries.length > 0) {
+    return sheetEntries.slice(0, 3).map(e => 
+      `${e.date}: ${e.issue} → ${e.action}`
+    ).join('\n');
+  }
+  // Fall back to history JSON, then hardcoded
+  return getRecentDecisionsFromHistory(propKey) || null;
+}
+
+function buildLiveTable5(propKey) {
+  const sheetEntries = parseSheetTable5(propKey);
+  if(!sheetEntries || sheetEntries.length === 0) return null;
+  
+  return sheetEntries.map(e => `
+    <div class="log-entry" style="border-left:2px solid var(--green)">
+      <div class="log-meta">
+        <span class="log-date" style="color:var(--green)">${e.date} <span style="font-size:9px;opacity:.6">LIVE</span></span>
+        <span class="log-occ">${e.occ !== null ? Math.round(e.occ*100)+'%' : '—'} 30d occ</span>
+        ${e.d7 !== null ? `<span class="log-7d">7d: ${e.d7}</span>` : ''}
+        ${e.d15 !== null ? `<span class="log-15d">15d: ${e.d15}</span>` : ''}
+        <span class="log-issue">${e.issue}</span>
+      </div>
+      <div class="log-action">${e.action}</div>
+    </div>`).join('');
+}
+
 async function loadHistory(){
   try{
     const resp=await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${HISTORY_FILE}`,{
@@ -629,9 +762,11 @@ function processFile(file){
     document.getElementById('file-name-display').textContent=file.name;
     document.getElementById('file-meta-display').textContent=`${csvData.length-1} listings · ${m}/7 properties matched`;
 
-    // Load history from GitHub
+    // Load history from GitHub and live sheet data
     document.getElementById('run-status').textContent='Loading history from GitHub…';
     await loadHistory();
+    document.getElementById('run-status').textContent='Loading Google Sheets data…';
+    await fetchGoogleSheets();
     document.getElementById('run-status').textContent='';
 
     buildUI();
@@ -896,7 +1031,10 @@ function buildProp(k){
     </div>
 
     <div class="section-label" style="margin:16px 0 8px">Table 5 — Weekly Decisions Log</div>
-    <div id="log-${sk}">${thisWeekEntry}${historyEntries}${t5hist}</div>
+    <div id="log-${sk}">${thisWeekEntry}${(()=>{
+      const live = buildLiveTable5(k);
+      return live || historyEntries;
+    })()}${t5hist}</div>
   `;
 }
 
@@ -1101,9 +1239,9 @@ async function analyzeOne(k,lastWeekScore){
 
   const s30=status(d.occ30,p.pace.d30),s60=status(d.occ60,p.pace.d60),s90=status(d.occ90,p.pace.d90),s120=status(d.occ120,p.pace.d120);
   const failures=getConsecutiveFailures(k);
-  // Try to get recent decisions from saved history first, fall back to hardcoded log
-  const historyRecent = getRecentDecisionsFromHistory(k);
-  const recentLog = historyRecent || p.log.slice(0,3).map(e=>`${e.date}: ${e.issue} → ${e.action}`).join('\n');
+  // Priority: 1) Live Google Sheets data, 2) GitHub history JSON, 3) Hardcoded log
+  const liveRecent = getRecentDecisionsLive(k);
+  const recentLog = liveRecent || p.log.slice(0,3).map(e=>`${e.date}: ${e.issue} → ${e.action}`).join('\n');
 
   // Severity grade for 30d window
   const v30=s30.v!==null?Math.abs(Math.round(s30.v*100)):0;
