@@ -1,0 +1,432 @@
+{
+  "generated": "2026-07-14",
+  "markets": {
+    "joshua_tree": {
+      "type": "OCCUPANCY_SEASON",
+      "n_properties": 8,
+      "n_property_months": 146,
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "monthly": {
+        "Jan": {
+          "occ_index": 1.067,
+          "occ_mean": 0.654,
+          "adr_mean": 189,
+          "revpar_mean": 124,
+          "season": "SHOULDER_PLUS",
+          "n_obs": 11,
+          "n_props": 7
+        },
+        "Feb": {
+          "occ_index": 1.095,
+          "occ_mean": 0.682,
+          "adr_mean": 204,
+          "revpar_mean": 144,
+          "season": "SHOULDER_PLUS",
+          "n_obs": 12,
+          "n_props": 7
+        },
+        "Mar": {
+          "occ_index": 1.084,
+          "occ_mean": 0.703,
+          "adr_mean": 211,
+          "revpar_mean": 154,
+          "season": "SHOULDER_PLUS",
+          "n_obs": 14,
+          "n_props": 8
+        },
+        "Apr": {
+          "occ_index": 1.202,
+          "occ_mean": 0.731,
+          "adr_mean": 225,
+          "revpar_mean": 170,
+          "season": "PEAK",
+          "n_obs": 14,
+          "n_props": 8
+        },
+        "May": {
+          "occ_index": 0.964,
+          "occ_mean": 0.613,
+          "adr_mean": 193,
+          "revpar_mean": 122,
+          "season": "SHOULDER",
+          "n_obs": 14,
+          "n_props": 8
+        },
+        "Jun": {
+          "occ_index": 0.922,
+          "occ_mean": 0.567,
+          "adr_mean": 171,
+          "revpar_mean": 100,
+          "season": "SHOULDER",
+          "n_obs": 14,
+          "n_props": 8
+        },
+        "Jul": {
+          "occ_index": 0.864,
+          "occ_mean": 0.566,
+          "adr_mean": 159,
+          "revpar_mean": 95,
+          "season": "SOFT",
+          "n_obs": 15,
+          "n_props": 8
+        },
+        "Aug": {
+          "occ_index": 0.9,
+          "occ_mean": 0.565,
+          "adr_mean": 176,
+          "revpar_mean": 98,
+          "season": "SHOULDER",
+          "n_obs": 12,
+          "n_props": 7
+        },
+        "Sep": {
+          "occ_index": 0.893,
+          "occ_mean": 0.586,
+          "adr_mean": 171,
+          "revpar_mean": 101,
+          "season": "SHOULDER",
+          "n_obs": 12,
+          "n_props": 7
+        },
+        "Oct": {
+          "occ_index": 0.913,
+          "occ_mean": 0.578,
+          "adr_mean": 183,
+          "revpar_mean": 106,
+          "season": "SHOULDER",
+          "n_obs": 12,
+          "n_props": 7
+        },
+        "Nov": {
+          "occ_index": 1.085,
+          "occ_mean": 0.662,
+          "adr_mean": 221,
+          "revpar_mean": 146,
+          "season": "SHOULDER_PLUS",
+          "n_obs": 8,
+          "n_props": 7
+        },
+        "Dec": {
+          "occ_index": 0.983,
+          "occ_mean": 0.613,
+          "adr_mean": 211,
+          "revpar_mean": 135,
+          "season": "SHOULDER_PLUS",
+          "n_obs": 8,
+          "n_props": 7
+        }
+      },
+      "tier_gradient": {
+        "mid": {
+          "median_lead": 23.0,
+          "pct_60plus": 0.185
+        },
+        "premium": {
+          "median_lead": 38.0,
+          "pct_60plus": 0.351
+        },
+        "value": {
+          "median_lead": 15.0,
+          "pct_60plus": 0.108
+        }
+      }
+    },
+    "palm_springs": {
+      "type": "ADR_SEASON",
+      "source": "Yara Hotel 10-room, 24mo",
+      "monthly": {
+        "Jan": {
+          "adr_index": 0.981,
+          "occ_mean": 0.798,
+          "adr_mean": 281,
+          "revpar_mean": 224,
+          "season": "SHOULDER"
+        },
+        "Feb": {
+          "adr_index": 1.514,
+          "occ_mean": 0.825,
+          "adr_mean": 433,
+          "revpar_mean": 357,
+          "season": "PEAK"
+        },
+        "Mar": {
+          "adr_index": 1.33,
+          "occ_mean": 0.907,
+          "adr_mean": 381,
+          "revpar_mean": 345,
+          "season": "PEAK"
+        },
+        "Apr": {
+          "adr_index": 1.265,
+          "occ_mean": 0.89,
+          "adr_mean": 362,
+          "revpar_mean": 322,
+          "season": "PEAK"
+        },
+        "May": {
+          "adr_index": 0.963,
+          "occ_mean": 0.856,
+          "adr_mean": 276,
+          "revpar_mean": 236,
+          "season": "SHOULDER"
+        },
+        "Jun": {
+          "adr_index": 0.711,
+          "occ_mean": 0.768,
+          "adr_mean": 204,
+          "revpar_mean": 156,
+          "season": "SOFT"
+        },
+        "Jul": {
+          "adr_index": 0.7,
+          "occ_mean": 0.803,
+          "adr_mean": 200,
+          "revpar_mean": 161,
+          "season": "SOFT"
+        },
+        "Aug": {
+          "adr_index": 0.699,
+          "occ_mean": 0.862,
+          "adr_mean": 200,
+          "revpar_mean": 172,
+          "season": "SOFT"
+        },
+        "Sep": {
+          "adr_index": 0.716,
+          "occ_mean": 0.838,
+          "adr_mean": 205,
+          "revpar_mean": 172,
+          "season": "SOFT"
+        },
+        "Oct": {
+          "adr_index": 0.984,
+          "occ_mean": 0.849,
+          "adr_mean": 282,
+          "revpar_mean": 239,
+          "season": "SHOULDER"
+        },
+        "Nov": {
+          "adr_index": 1.219,
+          "occ_mean": 0.796,
+          "adr_mean": 349,
+          "revpar_mean": 278,
+          "season": "PEAK"
+        },
+        "Dec": {
+          "adr_index": 0.917,
+          "occ_mean": 0.724,
+          "adr_mean": 262,
+          "revpar_mean": 190,
+          "season": "SHOULDER"
+        }
+      },
+      "occ_range": [
+        0.724,
+        0.907
+      ],
+      "adr_range": [
+        200,
+        433
+      ]
+    }
+  },
+  "property_pace": {
+    "Azure Fern Haus": {
+      "n": 12,
+      "median_lead": 33.5,
+      "mean_lead": 57.1,
+      "pct_le3": 0.167,
+      "pct_le7": 0.167,
+      "pct_le14": 0.167,
+      "pct_le30": 0.5,
+      "pct_60plus": 0.417,
+      "tier": "premium",
+      "market": "RAL",
+      "share_booked_by_D30": 0.583,
+      "share_booked_by_D60": 0.417,
+      "share_booked_by_D90": 0.333,
+      "share_booked_by_D120": 0.167
+    },
+    "Cantina": {
+      "n": 169,
+      "median_lead": 23.0,
+      "mean_lead": 29.3,
+      "pct_le3": 0.136,
+      "pct_le7": 0.231,
+      "pct_le14": 0.391,
+      "pct_le30": 0.621,
+      "pct_60plus": 0.166,
+      "tier": "mid",
+      "market": "JT",
+      "share_booked_by_D30": 0.396,
+      "share_booked_by_D60": 0.166,
+      "share_booked_by_D90": 0.036,
+      "share_booked_by_D120": 0.0
+    },
+    "Desert Dog": {
+      "n": 114,
+      "median_lead": 17.0,
+      "mean_lead": 25.8,
+      "pct_le3": 0.123,
+      "pct_le7": 0.281,
+      "pct_le14": 0.43,
+      "pct_le30": 0.693,
+      "pct_60plus": 0.158,
+      "tier": "value",
+      "market": "JT",
+      "share_booked_by_D30": 0.333,
+      "share_booked_by_D60": 0.158,
+      "share_booked_by_D90": 0.0,
+      "share_booked_by_D120": 0.0
+    },
+    "Fat City Ranch": {
+      "n": 26,
+      "median_lead": 10.0,
+      "mean_lead": 13.3,
+      "pct_le3": 0.269,
+      "pct_le7": 0.423,
+      "pct_le14": 0.615,
+      "pct_le30": 0.885,
+      "pct_60plus": 0.0,
+      "tier": "value",
+      "market": "JT",
+      "share_booked_by_D30": 0.154,
+      "share_booked_by_D60": 0.0,
+      "share_booked_by_D90": 0.0,
+      "share_booked_by_D120": 0.0
+    },
+    "Finca Nopali": {
+      "n": 225,
+      "median_lead": 38.0,
+      "mean_lead": 51.0,
+      "pct_le3": 0.08,
+      "pct_le7": 0.16,
+      "pct_le14": 0.267,
+      "pct_le30": 0.444,
+      "pct_60plus": 0.351,
+      "tier": "premium",
+      "market": "JT",
+      "share_booked_by_D30": 0.569,
+      "share_booked_by_D60": 0.351,
+      "share_booked_by_D90": 0.196,
+      "share_booked_by_D120": 0.102
+    },
+    "Jackalope Cabin": {
+      "n": 194,
+      "median_lead": 23.0,
+      "mean_lead": 39.6,
+      "pct_le3": 0.129,
+      "pct_le7": 0.175,
+      "pct_le14": 0.361,
+      "pct_le30": 0.567,
+      "pct_60plus": 0.201,
+      "tier": "mid",
+      "market": "JT",
+      "share_booked_by_D30": 0.443,
+      "share_booked_by_D60": 0.201,
+      "share_booked_by_D90": 0.098,
+      "share_booked_by_D120": 0.067
+    },
+    "Koya": {
+      "n": 130,
+      "median_lead": 18.0,
+      "mean_lead": 26.9,
+      "pct_le3": 0.146,
+      "pct_le7": 0.269,
+      "pct_le14": 0.415,
+      "pct_le30": 0.654,
+      "pct_60plus": 0.108,
+      "tier": "value",
+      "market": "JT",
+      "share_booked_by_D30": 0.354,
+      "share_booked_by_D60": 0.108,
+      "share_booked_by_D90": 0.023,
+      "share_booked_by_D120": 0.008
+    },
+    "Leaning Joshua": {
+      "n": 54,
+      "median_lead": 8.5,
+      "mean_lead": 15.0,
+      "pct_le3": 0.389,
+      "pct_le7": 0.5,
+      "pct_le14": 0.685,
+      "pct_le30": 0.815,
+      "pct_60plus": 0.056,
+      "tier": "value",
+      "market": "JT",
+      "share_booked_by_D30": 0.185,
+      "share_booked_by_D60": 0.056,
+      "share_booked_by_D90": 0.0,
+      "share_booked_by_D120": 0.0
+    },
+    "Lulu at the Palms": {
+      "n": 13,
+      "median_lead": 14.0,
+      "mean_lead": 22.2,
+      "pct_le3": 0.0,
+      "pct_le7": 0.231,
+      "pct_le14": 0.538,
+      "pct_le30": 0.692,
+      "pct_60plus": 0.0,
+      "tier": "mid",
+      "market": "PS",
+      "share_booked_by_D30": 0.308,
+      "share_booked_by_D60": 0.0,
+      "share_booked_by_D90": 0.0,
+      "share_booked_by_D120": 0.0
+    },
+    "Moonlight Sunrise": {
+      "n": 53,
+      "median_lead": 100.0,
+      "mean_lead": 105.8,
+      "pct_le3": 0.057,
+      "pct_le7": 0.094,
+      "pct_le14": 0.113,
+      "pct_le30": 0.226,
+      "pct_60plus": 0.623,
+      "tier": "mid",
+      "market": "CTW",
+      "share_booked_by_D30": 0.792,
+      "share_booked_by_D60": 0.623,
+      "share_booked_by_D90": 0.566,
+      "share_booked_by_D120": 0.453
+    },
+    "Thriveway Stays": {
+      "n": 9,
+      "median_lead": 23.0,
+      "mean_lead": 17.0,
+      "pct_le3": 0.0,
+      "pct_le7": 0.333,
+      "pct_le14": 0.444,
+      "pct_le30": 1.0,
+      "pct_60plus": 0.0,
+      "tier": "mid",
+      "market": "OAK",
+      "share_booked_by_D30": 0.0,
+      "share_booked_by_D60": 0.0,
+      "share_booked_by_D90": 0.0,
+      "share_booked_by_D120": 0.0
+    },
+    "Trixie's Oasis": {
+      "n": 139,
+      "median_lead": 16.0,
+      "mean_lead": 26.7,
+      "pct_le3": 0.086,
+      "pct_le7": 0.209,
+      "pct_le14": 0.489,
+      "pct_le30": 0.691,
+      "pct_60plus": 0.108,
+      "tier": "value",
+      "market": "JT",
+      "share_booked_by_D30": 0.309,
+      "share_booked_by_D60": 0.108,
+      "share_booked_by_D90": 0.043,
+      "share_booked_by_D120": 0.029
+    }
+  }
+}
