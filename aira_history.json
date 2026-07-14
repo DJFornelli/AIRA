@@ -12,20 +12,20 @@
           "adr": 448,
           "revpar": 293,
           "priority_actions": [
-            "PRIORITY 1: Raise base price from $656 to $690–$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
-            "PRIORITY 2: Add Fri/Sat weekend adjustment of +12% on all open weekend nights in the next 30–60 days where availability remains, given 100% weekend occupancy compression in the 30-day window"
+            "PRIORITY 1: Raise base price from $656 to $690â$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
+            "PRIORITY 2: Add Fri/Sat weekend adjustment of +12% on all open weekend nights in the next 30â60 days where availability remains, given 100% weekend occupancy compression in the 30-day window"
           ],
-          "key_issue": "Occ far ahead — raise base and weekend pricing",
+          "key_issue": "Occ far ahead â raise base and weekend pricing",
           "confidence": "HIGH",
           "settings": {
             "base": "Raise to $695 (RM-037, RM-011 Provisional)",
-            "min": "Hold at $425 — do not lower; spread intact at ~61% of new base (RM-026 Proven)",
+            "min": "Hold at $425 â do not lower; spread intact at ~61% of new base (RM-026 Proven)",
             "max": "Hold at $1,100",
-            "weekday": "No discount — remove or suspend weekday discount applied last cycle; occ ahead on all windows (RM-019 Proven, RM-020 Proven)",
+            "weekday": "No discount â remove or suspend weekday discount applied last cycle; occ ahead on all windows (RM-019 Proven, RM-020 Proven)",
             "fri_sat": "Add +12% Fri/Sat adjustment on open nights inside 60 days (RM-004 Proven)",
-            "fop_90plus": "+35% — hold (RM-006 Proven)",
-            "fop_60_89": "+35% — hold, do not reverse (RM-019 Proven)",
-            "lmd": "Hold existing curve: 14d -5% / 7d -10% / 3d -20% / 1d -25% — curve is valid and not inverted (RM-005 Proven)"
+            "fop_90plus": "+35% â hold (RM-006 Proven)",
+            "fop_60_89": "+35% â hold, do not reverse (RM-019 Proven)",
+            "lmd": "Hold existing curve: 14d -5% / 7d -10% / 3d -20% / 1d -25% â curve is valid and not inverted (RM-005 Proven)"
           }
         },
         "Thriveway Stays": {
@@ -36,16 +36,16 @@
           "adr": 513,
           "revpar": 393,
           "priority_actions": [
-            "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle — the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7–10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
-            "PRIORITY 2: Immediately audit the Thriveway Stays listing for search ranking, photo quality, title, review recency, and channel distribution — market 30d occupancy is 50% while the property sits at 47% with active weekday discounts in place, indicating a non-pricing drag; no further price reductions should be executed until this audit is complete."
+            "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle â the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7â10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
+            "PRIORITY 2: Immediately audit the Thriveway Stays listing for search ranking, photo quality, title, review recency, and channel distribution â market 30d occupancy is 50% while the property sits at 47% with active weekday discounts in place, indicating a non-pricing drag; no further price reductions should be executed until this audit is complete."
           ],
           "key_issue": "Chronic weekday demand gap; listing competitiveness suspect",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $295 — do not reduce this cycle (RM-019: structural lag from 3 consecutive change cycles)",
-            "min": "Hold at $229 — at margin floor, do not reduce (RM-044: floor policy, absolute)",
-            "max": "Hold at $850 — within target range $700–$900, no adjustment needed",
-            "weekday": "Hold existing Sun–Thu discounts: 15% in July, 8% in August — applied Jun 15/22/29, lag window active (RM-019)"
+            "base": "Hold at $295 â do not reduce this cycle (RM-019: structural lag from 3 consecutive change cycles)",
+            "min": "Hold at $229 â at margin floor, do not reduce (RM-044: floor policy, absolute)",
+            "max": "Hold at $850 â within target range $700â$900, no adjustment needed",
+            "weekday": "Hold existing SunâThu discounts: 15% in July, 8% in August â applied Jun 15/22/29, lag window active (RM-019)"
           }
         },
         "Moonlight Sunrise": {
@@ -57,15 +57,15 @@
           "revpar": null,
           "priority_actions": [
             "PRIORITY 1: In PriceLabs, increase the Far-Out Premium for 90+ days out from +15% to +22% to capture confirmed early-bird demand running 30pts ahead of pace at a market occupancy of only 18%.",
-            "PRIORITY 2: Increase the Far-Out Premium for 60–89 days out from +15% to +18% as a staged step, to be reviewed once June/July blocks clear and 60d window becomes readable — do not touch base or min this cycle."
+            "PRIORITY 2: Increase the Far-Out Premium for 60â89 days out from +15% to +18% as a staged step, to be reviewed once June/July blocks clear and 60d window becomes readable â do not touch base or min this cycle."
           ],
-          "key_issue": "Far windows ahead; near windows blocked — remediation",
+          "key_issue": "Far windows ahead; near windows blocked â remediation",
           "confidence": "HIGH",
           "settings": {
-            "base": "Hold at $305 (RM-010, RM-019 — exception active, no base move this cycle)",
-            "min": "Hold at $235 (RM-044 — floor, RM-026 — spread integrity)",
+            "base": "Hold at $305 (RM-010, RM-019 â exception active, no base move this cycle)",
+            "min": "Hold at $235 (RM-044 â floor, RM-026 â spread integrity)",
             "max": "Hold at $650",
-            "weekday": "No change — near windows unreadable; weekday levers inapplicable while blocked (RM-010, RM-042)"
+            "weekday": "No change â near windows unreadable; weekday levers inapplicable while blocked (RM-010, RM-042)"
           }
         },
         "Trixies Oasis": {
@@ -76,16 +76,16 @@
           "adr": 175,
           "revpar": 115,
           "priority_actions": [
-            "PRIORITY 1: Apply a -10% Sun–Thu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only — do not apply to Fri/Sat/Sun checkout nights",
-            "PRIORITY 2: Hold base at $167 and min at $125 this cycle — the Jun 29 base reduction needs 7–10 days to register in booking behavior before any further structural change is made"
+            "PRIORITY 1: Apply a -10% SunâThu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only â do not apply to Fri/Sat/Sun checkout nights",
+            "PRIORITY 2: Hold base at $167 and min at $125 this cycle â the Jun 29 base reduction needs 7â10 days to register in booking behavior before any further structural change is made"
           ],
           "key_issue": "Weekday occupancy lagging; weekends fully booked",
           "confidence": "MEDIUM",
           "settings": {
-            "base": "Hold at $167 (RM-019 — structural change Jun 29, 7-10d lag in effect)",
-            "min": "Raise from $115 back to $125 (RM-044, RM-026 — min must not sit below floor; $115 breaches $125 margin floor policy)",
+            "base": "Hold at $167 (RM-019 â structural change Jun 29, 7-10d lag in effect)",
+            "min": "Raise from $115 back to $125 (RM-044, RM-026 â min must not sit below floor; $115 breaches $125 margin floor policy)",
             "max": "Hold at $550",
-            "weekday": "-10% Sun–Thu inside 30d on open nights only (RM-021, RM-003)"
+            "weekday": "-10% SunâThu inside 30d on open nights only (RM-021, RM-003)"
           }
         },
         "Desert Dog": {
@@ -96,8 +96,8 @@
           "adr": 160,
           "revpar": 96,
           "priority_actions": [
-            "PRIORITY 1: Deepen LMD weekday-only discount curve — set Sun–Thu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% — advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
-            "PRIORITY 2: Hold base at $155, min at $115, max at $450, and all far-out premiums (FOP 90+d +15%, 60–89d +15%) — no changes to weekend pricing (Fri/Sat +22%, Sun +12%) or structure outside the weekday LMD adjustment"
+            "PRIORITY 1: Deepen LMD weekday-only discount curve â set SunâThu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% â advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
+            "PRIORITY 2: Hold base at $155, min at $115, max at $450, and all far-out premiums (FOP 90+d +15%, 60â89d +15%) â no changes to weekend pricing (Fri/Sat +22%, Sun +12%) or structure outside the weekday LMD adjustment"
           ],
           "key_issue": "Weekday softness inside 30 days only",
           "confidence": "HIGH",
@@ -105,9 +105,9 @@
             "base": "Hold at $155 (RM-019)",
             "min": "Hold at $115 (RM-044, RM-026)",
             "max": "Hold at $450",
-            "weekday": "Sun–Thu: -5% at 21d / -12% at 14d / -20% at 7d / -25% at 3d / -30% at 1d (RM-005, RM-021, RM-003)",
-            "weekends": "Fri/Sat +22%, Sun +12% — no change (RM-021)",
-            "fop": "90+d +15% / 60–89d +15% — hold (RM-028)"
+            "weekday": "SunâThu: -5% at 21d / -12% at 14d / -20% at 7d / -25% at 3d / -30% at 1d (RM-005, RM-021, RM-003)",
+            "weekends": "Fri/Sat +22%, Sun +12% â no change (RM-021)",
+            "fop": "90+d +15% / 60â89d +15% â hold (RM-028)"
           }
         },
         "Fat City Ranch": {
@@ -118,16 +118,16 @@
           "adr": 116,
           "revpar": 66,
           "priority_actions": [
-            "PRIORITY 1: Deepen last-minute discount curve in PriceLabs — set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% — apply to Sun–Thu nights only, hold Fri/Sat at current +10%",
-            "PRIORITY 2: Enable Booking Recency override in PriceLabs for Sun–Thu open nights inside 30 days to surface the listing to guests actively browsing — do not apply to weekends"
+            "PRIORITY 1: Deepen last-minute discount curve in PriceLabs â set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% â apply to SunâThu nights only, hold Fri/Sat at current +10%",
+            "PRIORITY 2: Enable Booking Recency override in PriceLabs for SunâThu open nights inside 30 days to surface the listing to guests actively browsing â do not apply to weekends"
           ],
           "key_issue": "Critical weekday occupancy drag, weekends healthy",
           "confidence": "MEDIUM",
           "settings": {
-            "base": "Hold at $135 (RM-021, RM-019 — do not adjust base for weekday problem)",
-            "min": "Hold at $95 (RM-026, RM-044 — floor protection, spread intact)",
+            "base": "Hold at $135 (RM-021, RM-019 â do not adjust base for weekday problem)",
+            "min": "Hold at $95 (RM-026, RM-044 â floor protection, spread intact)",
             "max": "Hold at $400",
-            "weekday": "Sun–Thu: LMD -5% at 30d / -10% at 21d / -15% at 14d / -20% at 7d / -25% at 3d / -28% at 1d (RM-005, RM-002)"
+            "weekday": "SunâThu: LMD -5% at 30d / -10% at 21d / -15% at 14d / -20% at 7d / -25% at 3d / -28% at 1d (RM-005, RM-002)"
           }
         },
         "Lulu at the Palms": {
@@ -138,86 +138,295 @@
           "adr": 122,
           "revpar": 16,
           "priority_actions": [
-            "PRIORITY 1: Review VRBO and Booking.com listing status — confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
-            "PRIORITY 2: Hold all current PriceLabs settings exactly as-is (base $155, min $116, existing LMD curve) — do not make any changes this cycle pending channel traction data"
+            "PRIORITY 1: Review VRBO and Booking.com listing status â confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
+            "PRIORITY 2: Hold all current PriceLabs settings exactly as-is (base $155, min $116, existing LMD curve) â do not make any changes this cycle pending channel traction data"
           ],
-          "key_issue": "Distribution launch pending — not a pricing problem",
+          "key_issue": "Distribution launch pending â not a pricing problem",
           "confidence": "LOW",
           "settings": {
             "base": "Hold at $155 (RM-019, RM-035)",
-            "min": "Hold at $116 — already at floor, no further reduction possible (RM-044)",
+            "min": "Hold at $116 â already at floor, no further reduction possible (RM-044)",
             "max": "Hold at $500",
-            "weekday": "No change to existing LMD curve — hold Sun-Thu discounts as currently structured (RM-019)"
+            "weekday": "No change to existing LMD curve â hold Sun-Thu discounts as currently structured (RM-019)"
           }
         }
       },
       "confirmed": {
         "Azure Fern Haus": {
-          "aira_recommended": "PRIORITY 1: Raise base price from $656 to $690–$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
-          "aira_priority2": "PRIORITY 2: Add Fri/Sat weekend adjustment of +12% on all open weekend nights in the next 30–60 days where availability remains, given 100% weekend occupancy compression in the 30-day window",
-          "action_taken": "PRIORITY 1: Raise base price from $656 to $690–$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
+          "aira_recommended": "PRIORITY 1: Raise base price from $656 to $690â$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
+          "aira_priority2": "PRIORITY 2: Add Fri/Sat weekend adjustment of +12% on all open weekend nights in the next 30â60 days where availability remains, given 100% weekend occupancy compression in the 30-day window",
+          "action_taken": "PRIORITY 1: Raise base price from $656 to $690â$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 0.83,
-          "key_issue": "Occ far ahead — raise base and weekend pricing"
+          "key_issue": "Occ far ahead â raise base and weekend pricing"
         },
         "Thriveway Stays": {
-          "aira_recommended": "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle — the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7–10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
-          "aira_priority2": "PRIORITY 2: Immediately audit the Thriveway Stays listing for search ranking, photo quality, title, review recency, and channel distribution — market 30d occupancy is 50% while the property sits at 47% with active weekday discounts in place, indicating a non-pricing drag; no further price reductions should be executed until this audit is complete.",
-          "action_taken": "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle — the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7–10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
+          "aira_recommended": "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle â the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7â10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
+          "aira_priority2": "PRIORITY 2: Immediately audit the Thriveway Stays listing for search ranking, photo quality, title, review recency, and channel distribution â market 30d occupancy is 50% while the property sits at 47% with active weekday discounts in place, indicating a non-pricing drag; no further price reductions should be executed until this audit is complete.",
+          "action_taken": "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle â the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7â10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 0.47,
           "key_issue": "Chronic weekday demand gap; listing competitiveness suspect"
         },
         "Moonlight Sunrise": {
           "aira_recommended": "PRIORITY 1: In PriceLabs, increase the Far-Out Premium for 90+ days out from +15% to +22% to capture confirmed early-bird demand running 30pts ahead of pace at a market occupancy of only 18%.",
-          "aira_priority2": "PRIORITY 2: Increase the Far-Out Premium for 60–89 days out from +15% to +18% as a staged step, to be reviewed once June/July blocks clear and 60d window becomes readable — do not touch base or min this cycle.",
+          "aira_priority2": "PRIORITY 2: Increase the Far-Out Premium for 60â89 days out from +15% to +18% as a staged step, to be reviewed once June/July blocks clear and 60d window becomes readable â do not touch base or min this cycle.",
           "action_taken": "PRIORITY 1: In PriceLabs, increase the Far-Out Premium for 90+ days out from +15% to +22% to capture confirmed early-bird demand running 30pts ahead of pace at a market occupancy of only 18%.",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 1,
-          "key_issue": "Far windows ahead; near windows blocked — remediation"
+          "key_issue": "Far windows ahead; near windows blocked â remediation"
         },
         "Trixies Oasis": {
-          "aira_recommended": "PRIORITY 1: Apply a -10% Sun–Thu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only — do not apply to Fri/Sat/Sun checkout nights",
-          "aira_priority2": "PRIORITY 2: Hold base at $167 and min at $125 this cycle — the Jun 29 base reduction needs 7–10 days to register in booking behavior before any further structural change is made",
-          "action_taken": "PRIORITY 1: Apply a -10% Sun–Thu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only — do not apply to Fri/Sat/Sun checkout nights",
+          "aira_recommended": "PRIORITY 1: Apply a -10% SunâThu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only â do not apply to Fri/Sat/Sun checkout nights",
+          "aira_priority2": "PRIORITY 2: Hold base at $167 and min at $125 this cycle â the Jun 29 base reduction needs 7â10 days to register in booking behavior before any further structural change is made",
+          "action_taken": "PRIORITY 1: Apply a -10% SunâThu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only â do not apply to Fri/Sat/Sun checkout nights",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 0.57,
           "key_issue": "Weekday occupancy lagging; weekends fully booked"
         },
         "Desert Dog": {
-          "aira_recommended": "PRIORITY 1: Deepen LMD weekday-only discount curve — set Sun–Thu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% — advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
-          "aira_priority2": "PRIORITY 2: Hold base at $155, min at $115, max at $450, and all far-out premiums (FOP 90+d +15%, 60–89d +15%) — no changes to weekend pricing (Fri/Sat +22%, Sun +12%) or structure outside the weekday LMD adjustment",
-          "action_taken": "PRIORITY 1: Deepen LMD weekday-only discount curve — set Sun–Thu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% — advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
+          "aira_recommended": "PRIORITY 1: Deepen LMD weekday-only discount curve â set SunâThu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% â advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
+          "aira_priority2": "PRIORITY 2: Hold base at $155, min at $115, max at $450, and all far-out premiums (FOP 90+d +15%, 60â89d +15%) â no changes to weekend pricing (Fri/Sat +22%, Sun +12%) or structure outside the weekday LMD adjustment",
+          "action_taken": "PRIORITY 1: Deepen LMD weekday-only discount curve â set SunâThu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% â advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 0.6,
           "key_issue": "Weekday softness inside 30 days only"
         },
         "Fat City Ranch": {
-          "aira_recommended": "PRIORITY 1: Deepen last-minute discount curve in PriceLabs — set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% — apply to Sun–Thu nights only, hold Fri/Sat at current +10%",
-          "aira_priority2": "PRIORITY 2: Enable Booking Recency override in PriceLabs for Sun–Thu open nights inside 30 days to surface the listing to guests actively browsing — do not apply to weekends",
-          "action_taken": "PRIORITY 1: Deepen last-minute discount curve in PriceLabs — set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% — apply to Sun–Thu nights only, hold Fri/Sat at current +10%",
+          "aira_recommended": "PRIORITY 1: Deepen last-minute discount curve in PriceLabs â set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% â apply to SunâThu nights only, hold Fri/Sat at current +10%",
+          "aira_priority2": "PRIORITY 2: Enable Booking Recency override in PriceLabs for SunâThu open nights inside 30 days to surface the listing to guests actively browsing â do not apply to weekends",
+          "action_taken": "PRIORITY 1: Deepen last-minute discount curve in PriceLabs â set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% â apply to SunâThu nights only, hold Fri/Sat at current +10%",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 0.2,
           "key_issue": "Critical weekday occupancy drag, weekends healthy"
         },
         "Lulu at the Palms": {
-          "aira_recommended": "PRIORITY 1: Review VRBO and Booking.com listing status — confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
-          "aira_priority2": "PRIORITY 2: Hold all current PriceLabs settings exactly as-is (base $155, min $116, existing LMD curve) — do not make any changes this cycle pending channel traction data",
-          "action_taken": "PRIORITY 1: Review VRBO and Booking.com listing status — confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
+          "aira_recommended": "PRIORITY 1: Review VRBO and Booking.com listing status â confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
+          "aira_priority2": "PRIORITY 2: Hold all current PriceLabs settings exactly as-is (base $155, min $116, existing LMD curve) â do not make any changes this cycle pending channel traction data",
+          "action_taken": "PRIORITY 1: Review VRBO and Booking.com listing status â confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
           "confirmed_at": "2026-07-13T21:35:05.835Z",
           "occ30_at_time": 0.13,
-          "key_issue": "Distribution launch pending — not a pricing problem"
+          "key_issue": "Distribution launch pending â not a pricing problem"
+        }
+      }
+    },
+    {
+      "date": "Jul 14, 2026",
+      "scores": {
+        "Azure Fern Haus": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Raise base price from $656 to $690â$710 in PriceLabs to close gap between current base and the upper target range, capturing ADR upside while occupancy leads market by 40+ points across all windows",
+          "prevOcc30": 0.83,
+          "newOcc30": 0.8,
+          "prevGap": 0.17999999999999994,
+          "newGap": 0.15000000000000002
+        },
+        "Thriveway Stays": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Hold all current weekday discount settings unchanged in PriceLabs this cycle â the 15% July and 8% August weekday discounts applied over the last 3 weeks are within their 7â10 day booking lag window; making further changes now would layer unresolved actions and invalidate pace reads. Do not deepen or reverse.",
+          "prevOcc30": 0.47,
+          "newOcc30": 0.47,
+          "prevGap": -0.22999999999999998,
+          "newGap": -0.22999999999999998
+        },
+        "Moonlight Sunrise": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: In PriceLabs, increase the Far-Out Premium for 90+ days out from +15% to +22% to capture confirmed early-bird demand running 30pts ahead of pace at a market occupancy of only 18%.",
+          "prevOcc30": 1,
+          "newOcc30": 1,
+          "prevGap": 0.375,
+          "newGap": 0.375
+        },
+        "Trixies Oasis": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Apply a -10% SunâThu weekday discount for the next 30 days in PriceLabs custom date overrides, targeting open weeknight inventory only â do not apply to Fri/Sat/Sun checkout nights",
+          "prevOcc30": 0.57,
+          "newOcc30": 0.63,
+          "prevGap": -0.08000000000000007,
+          "newGap": -0.020000000000000018
+        },
+        "Desert Dog": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Deepen LMD weekday-only discount curve â set SunâThu to -5% at 21d, -12% at 14d, -20% at 7d, -25% at 3d, -30% at 1d (current 7d is -10%, 3d is -20%, 1d is -30% â advance the curve earlier to 21d and sharpen 7d/14d thresholds)",
+          "prevOcc30": 0.6,
+          "newOcc30": 0.57,
+          "prevGap": -0.050000000000000044,
+          "newGap": -0.08000000000000007
+        },
+        "Fat City Ranch": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Deepen last-minute discount curve in PriceLabs â set 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% â apply to SunâThu nights only, hold Fri/Sat at current +10%",
+          "prevOcc30": 0.2,
+          "newOcc30": 0.2,
+          "prevGap": -0.35000000000000003,
+          "newGap": -0.35000000000000003
+        },
+        "Lulu at the Palms": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Review VRBO and Booking.com listing status â confirm listings are fully live, calendar synced, and photos/pricing visible to shoppers before next RM cycle",
+          "prevOcc30": 0.13,
+          "newOcc30": 0.13,
+          "prevGap": -0.295,
+          "newGap": -0.295
+        }
+      },
+      "properties": {
+        "Azure Fern Haus": {
+          "occ30": 0.8,
+          "occ60": 0.67,
+          "occ90": 0.7,
+          "occ30_status": "Very Far Ahead",
+          "adr": 443,
+          "revpar": 290,
+          "priority_actions": [
+            "PRIORITY 1: Activate Fri/Sat weekend override in PriceLabs at +12% above base on all open weekend nights in the 30–60d window — weekend occ is 100% confirming full compression, this is untapped revenue on already-booked-out nights; set Fri/Sat to approximately $775–$795 (base ~$700 × 1.12) on open dates only",
+            "PRIORITY 2: Hold base at $700–$710 (no change) and confirm 60d FOP premium remains at +35% — 60d occ leads market by 35pts and last week's raise is still absorbing; do not reduce or reverse any pricing variable this cycle per the WORKED feedback signal"
+          ],
+          "key_issue": "Weekend compression at 100% — capture Fri/Sat upside",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $700–$710 (RM-016)",
+            "min": "Hold at $425 (RM-026 — ~61% of base, within spread)",
+            "max": "Hold at $1,100",
+            "weekday": "No discount — all windows on/ahead of pace (RM-016)",
+            "weekend_fri_sat": "+12% on open nights, ~$775–$795 (RM-004, RM-037)",
+            "fop_90d": "+35% hold (RM-006)",
+            "fop_60_89d": "+35% hold (RM-006)",
+            "lmd": "Hold current curve: 14d -5% / 7d -10% / 3d -20% / 1d -25% — do not deepen while ahead (RM-016)"
+          }
+        },
+        "Thriveway Stays": {
+          "occ30": 0.47,
+          "occ60": 0.23,
+          "occ90": 0.16,
+          "occ30_status": "Very Far Behind",
+          "adr": 511,
+          "revpar": 409,
+          "priority_actions": [
+            "PRIORITY 1: In PriceLabs, deepen the weekday (Sun–Thu) discount to -20% applied to all open Sun–Thu nights in the next 14–30 day window — up from the prior 15% July / 8% August levels that failed to move pace. Set this as a day-of-week override at the month level for July and August, keeping Fri/Sat untouched. Confirm the resulting effective weekday rate does not breach the $229 floor on any night before saving.",
+            "PRIORITY 2: Audit the Oakhurst listing immediately for search-rank and competitiveness signals — review photo quality, title, amenity tags, and review recency. With market 30d occ at 50% and property at 47%, the gap is narrowing but listing visibility may be suppressing conversion independent of price; a listing audit should run in parallel this cycle and findings reported before the next RM cycle."
+          ],
+          "key_issue": "Chronic weekday demand gap unresponsive to prior discounts",
+          "confidence": "MEDIUM",
+          "settings": {
+            "base": "Hold at $295 (RM-019 lag elapsed; base unchanged while weekday override does the work)",
+            "min": "Hold at $229 (RM-044 — floor is absolute; no reduction)",
+            "max": "Hold at $850",
+            "weekday": "Deepen to -20% Sun–Thu, 14–30d window, July and August open nights only (RM-002 Moderately Behind tier, RM-003, RM-021)"
+          }
+        },
+        "Moonlight Sunrise": {
+          "occ30": 1,
+          "occ60": 0.72,
+          "occ90": 0.61,
+          "occ30_status": "Very Far Ahead",
+          "adr": 0,
+          "revpar": 0,
+          "priority_actions": [
+            "PRIORITY 1: In PriceLabs, hold the Far-Out Premium for 90+ days out at +22% — do not adjust this cycle. Last week's increase scored WORKED and no reversal or deepening is permitted while lag effects resolve (7–10 day expected settle window).",
+            "PRIORITY 2: In PriceLabs, set the Far-Out Premium for 60–89 days out to +18% (up from +15%) — this window is showing +25pts ahead of pace and should follow the 90d upward signal now that the pattern is confirmed across two consecutive cycles."
+          ],
+          "key_issue": "Remediation blocks near windows; hold far-out premium",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $305 (RM-016, RM-019)",
+            "min": "Hold at $235 (RM-044 — floor, remediation exception active)",
+            "max": "Hold at $650",
+            "weekday": "No change — near windows unreadable, remediation exception active (RM-010)",
+            "fop_90d": "Hold at +22% (RM-016 — WORKED last cycle)",
+            "fop_60d": "Raise to +18% from +15% (RM-006, RM-016 — follow 90d upward confirmation)"
+          }
+        },
+        "Trixies Oasis": {
+          "occ30": 0.63,
+          "occ60": 0.37,
+          "occ90": 0.29,
+          "occ30_status": "Slightly Behind",
+          "adr": 175,
+          "revpar": 110,
+          "priority_actions": [
+            "PRIORITY 1: Hold the existing -10% Sun–Thu weekday discount in PriceLabs custom date overrides — do not deepen, do not remove, and do not apply to Fri/Sat/Sun checkout nights. Allow the current cycle to fully mature before reassessing (7–10 day lag expected).",
+            "PRIORITY 2: Monitor 60d occupancy pace daily this week. If 60d occ has not improved toward 40%+ by next cycle, prepare to apply a targeted base reduction of -3% to -5% for the 45–75d booking window only, keeping weekends and min floor intact."
+          ],
+          "key_issue": "Weekday lag improving — hold and monitor 60d",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $190 (RM-016)",
+            "min": "Hold at $125 (RM-044)",
+            "max": "Hold at $450",
+            "weekday": "-10% Sun–Thu active override — hold, do not deepen this cycle (RM-016)"
+          }
+        },
+        "Desert Dog": {
+          "occ30": 0.57,
+          "occ60": 0.47,
+          "occ90": 0.37,
+          "occ30_status": "Behind",
+          "adr": 156,
+          "revpar": 94,
+          "priority_actions": [
+            "PRIORITY 1: HOLD the LMD weekday discount curve exactly as set last cycle — do not deepen or reverse Sun–Thu discounts (21d -5%, 14d -12%, 7d -20%, 3d -25%, 1d -30%). The strategy needs 7–10 days to clear the lag before evaluation. Instead, audit listing quality this week: refresh headline, add dog-friendly Joshua Tree keywords, verify calendar sync and instant book is on, and confirm the listing is visible on all active channels.",
+            "PRIORITY 2: Raise FOP 60–89d from +15% to +20% and hold FOP 90+d at +15% to protect strong far-window pace (90d +7%, 120d +13% ahead). Do not touch base or min. This captures premium pricing on the already-strong far windows while near-window weekday strategy stabilizes."
+          ],
+          "key_issue": "Weekday demand missing — market soft, cuts failed",
+          "confidence": "MEDIUM",
+          "settings": {
+            "base": "Hold at $155 (RM-019 — no structural change same variable cycle)",
+            "min": "Hold at $109 (RM-044 — floor protected; no min reduction into demand vacuum)",
+            "max": "Hold at $450",
+            "weekday": "Hold Sun–Thu LMD curve: 21d -5%, 14d -12%, 7d -20%, 3d -25%, 1d -30% (RM-019 — hold, 7-10d lag expected); FOP 60–89d raise to +20% (RM-006); FOP 90+d hold +15%"
+          }
+        },
+        "Fat City Ranch": {
+          "occ30": 0.2,
+          "occ60": 0.17,
+          "occ90": 0.12,
+          "occ30_status": "Very Far Behind",
+          "adr": 117,
+          "revpar": 63,
+          "priority_actions": [
+            "PRIORITY 1: HOLD all LMD discount curve settings unchanged from last cycle — do not deepen or reverse. The curve is already at 30d: -5%, 21d: -10%, 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% on Sun–Thu. Allow the 7–10 day lag to resolve before re-evaluating.",
+            "PRIORITY 2: Audit the Airbnb listing immediately — review photos, title, description, and search ranking for Fat City Ranch. Check if the listing is being suppressed, has low click-through, or poor conversion from views to bookings. Consider enabling Airbnb promotions or syndicating to a second channel (VRBO, Hipcamp) to expand reach."
+          ],
+          "key_issue": "Weekday conversion failure — pricing not the problem",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $135 (RM-019 — structural change last cycle, no reverse/deepen)",
+            "min": "Hold at $95 (RM-044 — floor; RM-026 — do not collapse spread further)",
+            "max": "Hold at $400",
+            "weekday": "Hold Sun–Thu LMD curve as set: 30d -5%, 21d -10%, 14d -15%, 7d -20%, 3d -25%, 1d -28% (RM-019 — no change this cycle)"
+          }
+        },
+        "Lulu at the Palms": {
+          "occ30": 0.13,
+          "occ60": 0.07,
+          "occ90": 0.04,
+          "occ30_status": "Very Far Behind",
+          "adr": 121,
+          "revpar": 24,
+          "priority_actions": [
+            "PRIORITY 1: Escalate to ProHosts operations team — confirm VRBO and Booking.com listings are fully live, publicly searchable, and bookable today; verify calendar sync is active, all photos are uploaded and approved, pricing is visible to shoppers, and no listing suppression flags exist on either platform before next RM cycle",
+            "PRIORITY 2: If listings are confirmed live and still no bookings within 7 days, audit listing content quality — rewrite title and description for Palm Desert 2BR search relevance, ensure amenity tags are complete, and request a manual listing review from VRBO/Booking.com support to rule out algorithmic suppression"
+          ],
+          "key_issue": "Channel visibility failure — not a pricing problem",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $155 (RM-035, RM-044)",
+            "min": "Hold at $115 — do not lower further; already at floor (RM-044)",
+            "max": "Hold at $500",
+            "weekday": "Hold current LMD curve — do not deepen until distribution confirmed live (RM-019, RM-035)"
+          }
         }
       }
     }
   ],
   "monthly": {
     "July 2026": {
-      "weeks": 1,
-      "worked": 0,
+      "weeks": 2,
+      "worked": 3,
       "partial": 0,
-      "failed": 0,
-      "accuracy": 0
+      "failed": 4,
+      "accuracy": 43
     }
   }
 }
