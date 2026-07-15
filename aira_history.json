@@ -12,7 +12,7 @@
           "adr": 443,
           "revpar": 290,
           "priority_actions": [
-            "PRIORITY 1: Hold all current pricing settings unchanged in PriceLabs Ã¢ÂÂ do not adjust base ($656), min ($425), FOP, or LMD curve this cycle. Zero 7-day bookings trigger the Velocity Gate; any increase would be unsupported and any reduction would violate the structural change hold from Jun 29.",
+            "PRIORITY 1: Hold all current pricing settings unchanged in PriceLabs ÃÂ¢ÃÂÃÂ do not adjust base ($656), min ($425), FOP, or LMD curve this cycle. Zero 7-day bookings trigger the Velocity Gate; any increase would be unsupported and any reduction would violate the structural change hold from Jun 29.",
             "PRIORITY 2: Log velocity silence for the far-out windows (90d+) and schedule a re-evaluation in 7 days. If 7-day bookings reach 5+ by next cycle, consider raising FOP 90d+ toward the upper target range and activating a Fri/Sat weekend premium on remaining open nights."
           ],
           "key_issue": "Zero 7d velocity blocks all action this cycle",
@@ -21,10 +21,10 @@
             "base": "Hold at $656 (RM-019, RM-020)",
             "min": "Hold at $425 (RM-019, RM-044)",
             "max": "Hold at $1,100",
-            "weekday": "Hold existing -15% weekday discount from Jun 29 Ã¢ÂÂ do not deepen or reverse (RM-019)",
-            "lmd": "Hold existing curve: 14d -5% / 7d -10% / 3d -20% / 1d -25% Ã¢ÂÂ no changes (RM-019, RM-005)",
-            "fop": "Hold at +35% for 60Ã¢ÂÂ89d and 90+d Ã¢ÂÂ no increase until velocity Ã¢ÂÂ¥5 (RM-006, VELOCITY GATE)",
-            "weekend_premium": "No Fri/Sat premium activation this cycle Ã¢ÂÂ velocity gate not cleared and RM-004 requires 5+ bookings (RM-004)"
+            "weekday": "Hold existing -15% weekday discount from Jun 29 ÃÂ¢ÃÂÃÂ do not deepen or reverse (RM-019)",
+            "lmd": "Hold existing curve: 14d -5% / 7d -10% / 3d -20% / 1d -25% ÃÂ¢ÃÂÃÂ no changes (RM-019, RM-005)",
+            "fop": "Hold at +35% for 60ÃÂ¢ÃÂÃÂ89d and 90+d ÃÂ¢ÃÂÃÂ no increase until velocity ÃÂ¢ÃÂÃÂ¥5 (RM-006, VELOCITY GATE)",
+            "weekend_premium": "No Fri/Sat premium activation this cycle ÃÂ¢ÃÂÃÂ velocity gate not cleared and RM-004 requires 5+ bookings (RM-004)"
           }
         },
         "Thriveway Stays": {
@@ -35,16 +35,16 @@
           "adr": 511,
           "revpar": 409,
           "priority_actions": [
-            "PRIORITY 1: Apply weekday (SunÃ¢ÂÂThu) discounts of 20Ã¢ÂÂ25% on all open weekday nights in the next 30 days in PriceLabs Ã¢ÂÂ set a weekday override rule targeting SunÃ¢ÂÂThu at -22% from base, floored at $229, to aggressively clear stalled near-term inventory while leaving Fri/Sat premiums untouched.",
-            "PRIORITY 2: For the 31Ã¢ÂÂ60 day window, apply a weekday-targeted discount of 15% on SunÃ¢ÂÂThu nights (Aug dates) via a month-level customization in PriceLabs, and ensure the LMD curve reads: 30d -5% / 21d -10% / 14d -13% / 7d -19% / 3d -23% / 1d -27% Ã¢ÂÂ confirm no inversion exists in current curve settings."
+            "PRIORITY 1: Apply weekday (SunÃÂ¢ÃÂÃÂThu) discounts of 20ÃÂ¢ÃÂÃÂ25% on all open weekday nights in the next 30 days in PriceLabs ÃÂ¢ÃÂÃÂ set a weekday override rule targeting SunÃÂ¢ÃÂÃÂThu at -22% from base, floored at $229, to aggressively clear stalled near-term inventory while leaving Fri/Sat premiums untouched.",
+            "PRIORITY 2: For the 31ÃÂ¢ÃÂÃÂ60 day window, apply a weekday-targeted discount of 15% on SunÃÂ¢ÃÂÃÂThu nights (Aug dates) via a month-level customization in PriceLabs, and ensure the LMD curve reads: 30d -5% / 21d -10% / 14d -13% / 7d -19% / 3d -23% / 1d -27% ÃÂ¢ÃÂÃÂ confirm no inversion exists in current curve settings."
           ],
           "key_issue": "Chronic weekday demand void killing occupancy pace",
           "confidence": "MEDIUM",
           "settings": {
-            "base": "Hold at $295 Ã¢ÂÂ LOW velocity blocks any increase (VELOCITY GATE)",
-            "min": "Hold at $229 Ã¢ÂÂ at floor, do not reduce further (RM-044)",
-            "max": "Hold at $850 Ã¢ÂÂ within target range, no change needed",
-            "weekday": "-22% SunÃ¢ÂÂThu inside 30d; -15% SunÃ¢ÂÂThu 31Ã¢ÂÂ60d (Aug); LMD curve: 30d -5% / 21d -10% / 14d -13% / 7d -19% / 3d -23% / 1d -27% (RM-005); Fri/Sat premium +8Ã¢ÂÂ12% unchanged (RM-021)"
+            "base": "Hold at $295 ÃÂ¢ÃÂÃÂ LOW velocity blocks any increase (VELOCITY GATE)",
+            "min": "Hold at $229 ÃÂ¢ÃÂÃÂ at floor, do not reduce further (RM-044)",
+            "max": "Hold at $850 ÃÂ¢ÃÂÃÂ within target range, no change needed",
+            "weekday": "-22% SunÃÂ¢ÃÂÃÂThu inside 30d; -15% SunÃÂ¢ÃÂÃÂThu 31ÃÂ¢ÃÂÃÂ60d (Aug); LMD curve: 30d -5% / 21d -10% / 14d -13% / 7d -19% / 3d -23% / 1d -27% (RM-005); Fri/Sat premium +8ÃÂ¢ÃÂÃÂ12% unchanged (RM-021)"
           }
         },
         "Moonlight Sunrise": {
@@ -55,16 +55,16 @@
           "adr": 0,
           "revpar": 0,
           "priority_actions": [
-            "PRIORITY 1: Hold all pricing unchanged this cycle Ã¢ÂÂ fire remediation exception is active, 30d/60d windows are unreadable, and 7-day velocity of 2 bookings blocks any pricing increase in 90d+ windows",
-            "PRIORITY 2: Monitor 7-day booking count daily Ã¢ÂÂ when velocity reaches 5+ bookings in a 7-day window post-remediation reopening, immediately re-run engine to evaluate FOP increase on 90d+ window (currently showing +28% to +32% ahead of pace)"
+            "PRIORITY 1: Hold all pricing unchanged this cycle ÃÂ¢ÃÂÃÂ fire remediation exception is active, 30d/60d windows are unreadable, and 7-day velocity of 2 bookings blocks any pricing increase in 90d+ windows",
+            "PRIORITY 2: Monitor 7-day booking count daily ÃÂ¢ÃÂÃÂ when velocity reaches 5+ bookings in a 7-day window post-remediation reopening, immediately re-run engine to evaluate FOP increase on 90d+ window (currently showing +28% to +32% ahead of pace)"
           ],
           "key_issue": "Fire block active; low velocity freezes all price moves",
           "confidence": "HIGH",
           "settings": {
-            "base": "Hold at $305 (RM-010, RM-020 Ã¢ÂÂ exception active, velocity LOW)",
-            "min": "Hold at $235 (RM-044 Ã¢ÂÂ floor is absolute, do not move)",
+            "base": "Hold at $305 (RM-010, RM-020 ÃÂ¢ÃÂÃÂ exception active, velocity LOW)",
+            "min": "Hold at $235 (RM-044 ÃÂ¢ÃÂÃÂ floor is absolute, do not move)",
             "max": "Hold at $650 (no velocity or signal to adjust)",
-            "weekday": "No change Ã¢ÂÂ 30d/60d unreadable, 90d+ velocity gate not met"
+            "weekday": "No change ÃÂ¢ÃÂÃÂ 30d/60d unreadable, 90d+ velocity gate not met"
           }
         },
         "Trixies Oasis": {
@@ -75,17 +75,17 @@
           "adr": 175,
           "revpar": 110,
           "priority_actions": [
-            "PRIORITY 1: Restore minimum price from $115 to $125 Ã¢ÂÂ the current $115 minimum breaches the $125 margin floor and is below the target floor range of $125-$165",
+            "PRIORITY 1: Restore minimum price from $115 to $125 ÃÂ¢ÃÂÃÂ the current $115 minimum breaches the $125 margin floor and is below the target floor range of $125-$165",
             "PRIORITY 2: Apply Sun-Thu weekday discount of -8% inside 21 days to close the 30d weekday occupancy gap while holding weekend pricing intact"
           ],
           "key_issue": "Weekday gap only; weekends fully booked",
           "confidence": "HIGH",
           "settings": {
-            "base": "Hold at $167 Ã¢ÂÂ do not cut further; market outperformance confirms listing is competitive (RM-009, RM-019)",
-            "min": "Restore to $125 Ã¢ÂÂ current $115 breaches margin floor (RM-044, RM-026)",
+            "base": "Hold at $167 ÃÂ¢ÃÂÃÂ do not cut further; market outperformance confirms listing is competitive (RM-009, RM-019)",
+            "min": "Restore to $125 ÃÂ¢ÃÂÃÂ current $115 breaches margin floor (RM-044, RM-026)",
             "max": "Hold at $550",
             "weekday": "Apply -8% Sun-Thu inside 21d only; do not apply to Fri/Sat (RM-021, RM-003)",
-            "LMD": "Confirm curve is not inverted: 21d -5% / 14d -10% / 7d -15% / 3d -20% / 1d -25% Ã¢ÂÂ steepen if needed per RM-005",
+            "LMD": "Confirm curve is not inverted: 21d -5% / 14d -10% / 7d -15% / 3d -20% / 1d -25% ÃÂ¢ÃÂÃÂ steepen if needed per RM-005",
             "FOP": "Hold 60-89d at +18% and 90+d at +18%; no change this cycle"
           }
         },
@@ -97,17 +97,17 @@
           "adr": 156,
           "revpar": 94,
           "priority_actions": [
-            "PRIORITY 1: Restore minimum price to $125 immediately Ã¢ÂÂ current $115 breaches the hard floor and must be corrected before any other action this cycle",
-            "PRIORITY 2: Apply a Sun-Thu weekday discount of -10% inside 21 days to convert late-booking velocity into weekday fills, targeting open Sun-Thu nights only Ã¢ÂÂ do not apply to Fri/Sat"
+            "PRIORITY 1: Restore minimum price to $125 immediately ÃÂ¢ÃÂÃÂ current $115 breaches the hard floor and must be corrected before any other action this cycle",
+            "PRIORITY 2: Apply a Sun-Thu weekday discount of -10% inside 21 days to convert late-booking velocity into weekday fills, targeting open Sun-Thu nights only ÃÂ¢ÃÂÃÂ do not apply to Fri/Sat"
           ],
           "key_issue": "Weekday near-term gap with floor breach at $115",
           "confidence": "HIGH",
           "settings": {
-            "base": "Hold at $155 (RM-002 Slightly Behind tier Ã¢ÂÂ base reduction not required when weekday lever is available)",
-            "min": "Restore to $125 Ã¢ÂÂ current $115 breaches hard floor (RM-044 Policy)",
+            "base": "Hold at $155 (RM-002 Slightly Behind tier ÃÂ¢ÃÂÃÂ base reduction not required when weekday lever is available)",
+            "min": "Restore to $125 ÃÂ¢ÃÂÃÂ current $115 breaches hard floor (RM-044 Policy)",
             "max": "Hold at $450",
             "weekday": "Add -10% Sun-Thu inside 21 days on open nights only (RM-021, RM-003 Proven)",
-            "lmd": "Hold existing curve: 7d -10% / 3d -20% / 1d -30% Ã¢ÂÂ curve is valid and deepens correctly toward arrival (RM-005 Proven)",
+            "lmd": "Hold existing curve: 7d -10% / 3d -20% / 1d -30% ÃÂ¢ÃÂÃÂ curve is valid and deepens correctly toward arrival (RM-005 Proven)",
             "fop_90": "Hold at +15% (90d Ahead, no change needed)",
             "fop_60": "Hold at +15% (60d On Track, no change needed)"
           }
@@ -120,16 +120,16 @@
           "adr": 117,
           "revpar": 63,
           "priority_actions": [
-            "PRIORITY 1: Deepen LMD curve in PriceLabs Ã¢ÂÂ set 30d: Ã¢ÂÂ10%, 21d: Ã¢ÂÂ12%, 14d: Ã¢ÂÂ15%, 7d: Ã¢ÂÂ20%, 3d: Ã¢ÂÂ25%, 1d: Ã¢ÂÂ28% Ã¢ÂÂ apply to SunÃ¢ÂÂThu nights only, confirm floor holds at $95 on all dates",
-            "PRIORITY 2: Enable Booking Recency discount in PriceLabs at 30Ã¢ÂÂ35% for nights with 14+ days since last booking, SunÃ¢ÂÂThu only Ã¢ÂÂ do not apply to Fri/Sat"
+            "PRIORITY 1: Deepen LMD curve in PriceLabs ÃÂ¢ÃÂÃÂ set 30d: ÃÂ¢ÃÂÃÂ10%, 21d: ÃÂ¢ÃÂÃÂ12%, 14d: ÃÂ¢ÃÂÃÂ15%, 7d: ÃÂ¢ÃÂÃÂ20%, 3d: ÃÂ¢ÃÂÃÂ25%, 1d: ÃÂ¢ÃÂÃÂ28% ÃÂ¢ÃÂÃÂ apply to SunÃÂ¢ÃÂÃÂThu nights only, confirm floor holds at $95 on all dates",
+            "PRIORITY 2: Enable Booking Recency discount in PriceLabs at 30ÃÂ¢ÃÂÃÂ35% for nights with 14+ days since last booking, SunÃÂ¢ÃÂÃÂThu only ÃÂ¢ÃÂÃÂ do not apply to Fri/Sat"
           ],
-          "key_issue": "Critical weekday vacancy Ã¢ÂÂ zero 7-day booking velocity",
+          "key_issue": "Critical weekday vacancy ÃÂ¢ÃÂÃÂ zero 7-day booking velocity",
           "confidence": "HIGH",
           "settings": {
-            "base": "Hold at $135 (RM-021, RM-003 Ã¢ÂÂ weekday problem only, base untouched)",
-            "min": "Hold at $95 (RM-044 Ã¢ÂÂ floor, RM-026 Ã¢ÂÂ spread protection)",
+            "base": "Hold at $135 (RM-021, RM-003 ÃÂ¢ÃÂÃÂ weekday problem only, base untouched)",
+            "min": "Hold at $95 (RM-044 ÃÂ¢ÃÂÃÂ floor, RM-026 ÃÂ¢ÃÂÃÂ spread protection)",
             "max": "Hold at $400",
-            "weekday": "LMD SunÃ¢ÂÂThu: 30d Ã¢ÂÂ10% / 21d Ã¢ÂÂ12% / 14d Ã¢ÂÂ15% / 7d Ã¢ÂÂ20% / 3d Ã¢ÂÂ25% / 1d Ã¢ÂÂ28%; Booking Recency 30Ã¢ÂÂ35% SunÃ¢ÂÂThu only (RM-002 Critical, RM-046)"
+            "weekday": "LMD SunÃÂ¢ÃÂÃÂThu: 30d ÃÂ¢ÃÂÃÂ10% / 21d ÃÂ¢ÃÂÃÂ12% / 14d ÃÂ¢ÃÂÃÂ15% / 7d ÃÂ¢ÃÂÃÂ20% / 3d ÃÂ¢ÃÂÃÂ25% / 1d ÃÂ¢ÃÂÃÂ28%; Booking Recency 30ÃÂ¢ÃÂÃÂ35% SunÃÂ¢ÃÂÃÂThu only (RM-002 Critical, RM-046)"
           }
         },
         "Lulu at the Palms": {
@@ -140,16 +140,16 @@
           "adr": 121,
           "revpar": 24,
           "priority_actions": [
-            "PRIORITY 1: Confirm VRBO listing is fully live, verified, and indexed Ã¢ÂÂ check that calendar is synced, photos uploaded, and listing is published and searchable in Palm Desert market",
-            "PRIORITY 2: Audit Booking.com listing status and confirm rate parity is not blocking visibility Ã¢ÂÂ ensure both new channels have at least 5 reviews requested from existing Airbnb guests if cross-platform eligible"
+            "PRIORITY 1: Confirm VRBO listing is fully live, verified, and indexed ÃÂ¢ÃÂÃÂ check that calendar is synced, photos uploaded, and listing is published and searchable in Palm Desert market",
+            "PRIORITY 2: Audit Booking.com listing status and confirm rate parity is not blocking visibility ÃÂ¢ÃÂÃÂ ensure both new channels have at least 5 reviews requested from existing Airbnb guests if cross-platform eligible"
           ],
-          "key_issue": "Distribution gap, not pricing Ã¢ÂÂ VRBO pending data",
+          "key_issue": "Distribution gap, not pricing ÃÂ¢ÃÂÃÂ VRBO pending data",
           "confidence": "LOW",
           "settings": {
             "base": "Hold at $155 (RM-019, RM-035)",
-            "min": "Hold at $116 Ã¢ÂÂ floor, do not reduce further (RM-044)",
+            "min": "Hold at $116 ÃÂ¢ÃÂÃÂ floor, do not reduce further (RM-044)",
             "max": "Hold at $500",
-            "weekday": "Hold current LMD structure Ã¢ÂÂ no deepening this cycle (RM-019)"
+            "weekday": "Hold current LMD structure ÃÂ¢ÃÂÃÂ no deepening this cycle (RM-019)"
           }
         }
       }
@@ -159,7 +159,7 @@
       "scores": {
         "Azure Fern Haus": {
           "result": "worked",
-          "prevAction": "PRIORITY 1: Hold all current pricing settings unchanged in PriceLabs Ã¢ÂÂ do not adjust base ($656), min ($425), FOP, or LMD curve this cycle. Zero 7-day bookings trigger the Velocity Gate; any increase would be unsupported and any reduction would violate the structural change hold from Jun 29.",
+          "prevAction": "PRIORITY 1: Hold all current pricing settings unchanged in PriceLabs ÃÂ¢ÃÂÃÂ do not adjust base ($656), min ($425), FOP, or LMD curve this cycle. Zero 7-day bookings trigger the Velocity Gate; any increase would be unsupported and any reduction would violate the structural change hold from Jun 29.",
           "prevOcc30": 0.8,
           "newOcc30": 0.8,
           "prevGap": 0.15000000000000002,
@@ -167,7 +167,7 @@
         },
         "Thriveway Stays": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: Apply weekday (SunÃ¢ÂÂThu) discounts of 20Ã¢ÂÂ25% on all open weekday nights in the next 30 days in PriceLabs Ã¢ÂÂ set a weekday override rule targeting SunÃ¢ÂÂThu at -22% from base, floored at $229, to aggressively clear stalled near-term inventory while leaving Fri/Sat premiums untouched.",
+          "prevAction": "PRIORITY 1: Apply weekday (SunÃÂ¢ÃÂÃÂThu) discounts of 20ÃÂ¢ÃÂÃÂ25% on all open weekday nights in the next 30 days in PriceLabs ÃÂ¢ÃÂÃÂ set a weekday override rule targeting SunÃÂ¢ÃÂÃÂThu at -22% from base, floored at $229, to aggressively clear stalled near-term inventory while leaving Fri/Sat premiums untouched.",
           "prevOcc30": 0.47,
           "newOcc30": 0.43,
           "prevGap": -0.22999999999999998,
@@ -175,7 +175,7 @@
         },
         "Moonlight Sunrise": {
           "result": "worked",
-          "prevAction": "PRIORITY 1: Hold all pricing unchanged this cycle Ã¢ÂÂ fire remediation exception is active, 30d/60d windows are unreadable, and 7-day velocity of 2 bookings blocks any pricing increase in 90d+ windows",
+          "prevAction": "PRIORITY 1: Hold all pricing unchanged this cycle ÃÂ¢ÃÂÃÂ fire remediation exception is active, 30d/60d windows are unreadable, and 7-day velocity of 2 bookings blocks any pricing increase in 90d+ windows",
           "prevOcc30": 1,
           "newOcc30": 1,
           "prevGap": 0.375,
@@ -183,7 +183,7 @@
         },
         "Trixies Oasis": {
           "result": "worked",
-          "prevAction": "PRIORITY 1: Restore minimum price from $115 to $125 Ã¢ÂÂ the current $115 minimum breaches the $125 margin floor and is below the target floor range of $125-$165",
+          "prevAction": "PRIORITY 1: Restore minimum price from $115 to $125 ÃÂ¢ÃÂÃÂ the current $115 minimum breaches the $125 margin floor and is below the target floor range of $125-$165",
           "prevOcc30": 0.63,
           "newOcc30": 0.63,
           "prevGap": -0.020000000000000018,
@@ -191,7 +191,7 @@
         },
         "Desert Dog": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: Restore minimum price to $125 immediately Ã¢ÂÂ current $115 breaches the hard floor and must be corrected before any other action this cycle",
+          "prevAction": "PRIORITY 1: Restore minimum price to $125 immediately ÃÂ¢ÃÂÃÂ current $115 breaches the hard floor and must be corrected before any other action this cycle",
           "prevOcc30": 0.57,
           "newOcc30": 0.57,
           "prevGap": -0.08000000000000007,
@@ -199,7 +199,7 @@
         },
         "Fat City Ranch": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: Deepen LMD curve in PriceLabs Ã¢ÂÂ set 30d: Ã¢ÂÂ10%, 21d: Ã¢ÂÂ12%, 14d: Ã¢ÂÂ15%, 7d: Ã¢ÂÂ20%, 3d: Ã¢ÂÂ25%, 1d: Ã¢ÂÂ28% Ã¢ÂÂ apply to SunÃ¢ÂÂThu nights only, confirm floor holds at $95 on all dates",
+          "prevAction": "PRIORITY 1: Deepen LMD curve in PriceLabs ÃÂ¢ÃÂÃÂ set 30d: ÃÂ¢ÃÂÃÂ10%, 21d: ÃÂ¢ÃÂÃÂ12%, 14d: ÃÂ¢ÃÂÃÂ15%, 7d: ÃÂ¢ÃÂÃÂ20%, 3d: ÃÂ¢ÃÂÃÂ25%, 1d: ÃÂ¢ÃÂÃÂ28% ÃÂ¢ÃÂÃÂ apply to SunÃÂ¢ÃÂÃÂThu nights only, confirm floor holds at $95 on all dates",
           "prevOcc30": 0.2,
           "newOcc30": 0.2,
           "prevGap": -0.35000000000000003,
@@ -207,7 +207,7 @@
         },
         "Lulu at the Palms": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: Confirm VRBO listing is fully live, verified, and indexed Ã¢ÂÂ check that calendar is synced, photos uploaded, and listing is published and searchable in Palm Desert market",
+          "prevAction": "PRIORITY 1: Confirm VRBO listing is fully live, verified, and indexed ÃÂ¢ÃÂÃÂ check that calendar is synced, photos uploaded, and listing is published and searchable in Palm Desert market",
           "prevOcc30": 0.13,
           "newOcc30": 0.13,
           "prevGap": -0.295,
@@ -223,8 +223,8 @@
           "adr": 443,
           "revpar": 290,
           "priority_actions": [
-            "PRIORITY 1: ESCALATE to DJ immediately â 0 bookings for 2 consecutive weeks with all occ windows Very Far Ahead is a structural contradiction requiring human review before any PriceLabs changes are made this cycle.",
-            "PRIORITY 2: Hold all current PriceLabs settings unchanged â base at $656, min at $425, FOP at 90+d +35% / 60â89d +35% / 45â59d 0%, and LMD curve at 14d -5% / 7d -10% / 3d -20% / 1d -25% â pending DJ review outcome."
+            "PRIORITY 1: ESCALATE to DJ immediately Ã¢ÂÂ 0 bookings for 2 consecutive weeks with all occ windows Very Far Ahead is a structural contradiction requiring human review before any PriceLabs changes are made this cycle.",
+            "PRIORITY 2: Hold all current PriceLabs settings unchanged Ã¢ÂÂ base at $656, min at $425, FOP at 90+d +35% / 60Ã¢ÂÂ89d +35% / 45Ã¢ÂÂ59d 0%, and LMD curve at 14d -5% / 7d -10% / 3d -20% / 1d -25% Ã¢ÂÂ pending DJ review outcome."
           ],
           "key_issue": "Zero velocity 2+ weeks despite very strong occupancy pace",
           "confidence": "LOW",
@@ -232,7 +232,7 @@
             "base": "Hold at $656 (RM-016, RM-020)",
             "min": "Hold at $425 (RM-044, RM-016)",
             "max": "Hold at $1,100",
-            "weekday": "No change â hold current weekday settings pending DJ escalation review (RM-047)"
+            "weekday": "No change Ã¢ÂÂ hold current weekday settings pending DJ escalation review (RM-047)"
           }
         },
         "Thriveway Stays": {
@@ -243,16 +243,16 @@
           "adr": 516,
           "revpar": 413,
           "priority_actions": [
-            "PRIORITY 1: ESCALATE TO DJ IMMEDIATELY â do not apply any new discounts or pricing changes this cycle. The -22% weekday override from last week should remain in place (do not deepen or reverse it), but pricing is not the lever to pull. DJ must audit the listing: check search ranking, photo quality, title, description, review score, minimum stay restrictions, and channel distribution within 48 hours.",
-            "PRIORITY 2: In PriceLabs, temporarily reduce the minimum stay on all open weekday nights in the next 30 days to 1 night (SunâThu) if not already done â stiff LOS requirements may be blocking bookings at any price. Do not change the base price or discount percentage until the listing audit is complete and DJ has reviewed."
+            "PRIORITY 1: ESCALATE TO DJ IMMEDIATELY Ã¢ÂÂ do not apply any new discounts or pricing changes this cycle. The -22% weekday override from last week should remain in place (do not deepen or reverse it), but pricing is not the lever to pull. DJ must audit the listing: check search ranking, photo quality, title, description, review score, minimum stay restrictions, and channel distribution within 48 hours.",
+            "PRIORITY 2: In PriceLabs, temporarily reduce the minimum stay on all open weekday nights in the next 30 days to 1 night (SunÃ¢ÂÂThu) if not already done Ã¢ÂÂ stiff LOS requirements may be blocking bookings at any price. Do not change the base price or discount percentage until the listing audit is complete and DJ has reviewed."
           ],
-          "key_issue": "Zero velocity two weeks running â structural listing or channel problem",
+          "key_issue": "Zero velocity two weeks running Ã¢ÂÂ structural listing or channel problem",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $280 â do not change until DJ audit complete (RM-035, RM-019)",
-            "min": "Hold at $229 â floor is active, do not move (RM-044)",
+            "base": "Hold at $280 Ã¢ÂÂ do not change until DJ audit complete (RM-035, RM-019)",
+            "min": "Hold at $229 Ã¢ÂÂ floor is active, do not move (RM-044)",
             "max": "Hold at $850",
-            "weekday": "Hold existing -22% SunâThu override from last cycle â do not deepen or remove; review minimum stay and set to 1-night on open weekday dates inside 30d"
+            "weekday": "Hold existing -22% SunÃ¢ÂÂThu override from last cycle Ã¢ÂÂ do not deepen or remove; review minimum stay and set to 1-night on open weekday dates inside 30d"
           }
         },
         "Moonlight Sunrise": {
@@ -263,8 +263,8 @@
           "adr": 0,
           "revpar": 0,
           "priority_actions": [
-            "PRIORITY 1: Hold all pricing unchanged this cycle â fire remediation exception is active, 30d/60d windows remain unreadable, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
-            "PRIORITY 2: Monitor 90d+ occupancy pace and 7-day booking velocity weekly â if velocity reaches 5+ bookings in a future 7-day window AND fire block is lifted, evaluate FOP increase on 90d+ window only (open nights)."
+            "PRIORITY 1: Hold all pricing unchanged this cycle Ã¢ÂÂ fire remediation exception is active, 30d/60d windows remain unreadable, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
+            "PRIORITY 2: Monitor 90d+ occupancy pace and 7-day booking velocity weekly Ã¢ÂÂ if velocity reaches 5+ bookings in a future 7-day window AND fire block is lifted, evaluate FOP increase on 90d+ window only (open nights)."
           ],
           "key_issue": "Fire block active; low velocity; hold all pricing",
           "confidence": "HIGH",
@@ -272,7 +272,7 @@
             "base": "Hold at $305 (RM-016, RM-010)",
             "min": "Hold at $235 (RM-044, RM-016)",
             "max": "Hold at $650 (RM-016)",
-            "weekday": "No change â hold all weekday adjustments unchanged this cycle (RM-016)"
+            "weekday": "No change Ã¢ÂÂ hold all weekday adjustments unchanged this cycle (RM-016)"
           }
         },
         "Trixies Oasis": {
@@ -283,8 +283,8 @@
           "adr": 175,
           "revpar": 110,
           "priority_actions": [
-            "PRIORITY 1: Hold minimum price at $125 â confirmed working from last cycle; do not adjust this cycle",
-            "PRIORITY 2: Apply weekday discount of -8% SunâThu inside 21 days to close the 30d weekday gap, while holding all weekend pricing firm"
+            "PRIORITY 1: Hold minimum price at $125 Ã¢ÂÂ confirmed working from last cycle; do not adjust this cycle",
+            "PRIORITY 2: Apply weekday discount of -8% SunÃ¢ÂÂThu inside 21 days to close the 30d weekday gap, while holding all weekend pricing firm"
           ],
           "key_issue": "Weekday gaps persist; weekends fully booked",
           "confidence": "HIGH",
@@ -292,7 +292,7 @@
             "base": "Hold at $190 (RM-016)",
             "min": "Hold at $125 (RM-044)",
             "max": "Hold at $450",
-            "weekday": "-8% SunâThu inside 21 days (RM-003)"
+            "weekday": "-8% SunÃ¢ÂÂThu inside 21 days (RM-003)"
           }
         },
         "Desert Dog": {
@@ -303,16 +303,16 @@
           "adr": 156,
           "revpar": 94,
           "priority_actions": [
-            "PRIORITY 1: Apply weekday (SunâThu) discount of â15% inside 21 days in PriceLabs â set as a day-of-week customization targeting Sunday through Thursday for arrivals within 21 days, ensuring no night prices below $125",
-            "PRIORITY 2: Deepen LMD curve to 7d: â18%, 3d: â22%, 1d: â28% for weekday nights only â verify no floor breach at $125 on any open SunâThu night inside 7 days"
+            "PRIORITY 1: Apply weekday (SunÃ¢ÂÂThu) discount of Ã¢ÂÂ15% inside 21 days in PriceLabs Ã¢ÂÂ set as a day-of-week customization targeting Sunday through Thursday for arrivals within 21 days, ensuring no night prices below $125",
+            "PRIORITY 2: Deepen LMD curve to 7d: Ã¢ÂÂ18%, 3d: Ã¢ÂÂ22%, 1d: Ã¢ÂÂ28% for weekday nights only Ã¢ÂÂ verify no floor breach at $125 on any open SunÃ¢ÂÂThu night inside 7 days"
           ],
           "key_issue": "Weekday nights not converting despite healthy velocity",
           "confidence": "HIGH",
           "settings": {
-            "base": "Hold at $155 â velocity is healthy and 30d is only Slightly Behind; base cut not warranted this cycle",
-            "min": "Hold at $125 â floor is restored and must not be breached under any discount stack",
+            "base": "Hold at $155 Ã¢ÂÂ velocity is healthy and 30d is only Slightly Behind; base cut not warranted this cycle",
+            "min": "Hold at $125 Ã¢ÂÂ floor is restored and must not be breached under any discount stack",
             "max": "Hold at $450",
-            "weekday": "â15% SunâThu inside 21d (deepened from prior cycle); LMD 7d â18% / 3d â22% / 1d â28% weekday only"
+            "weekday": "Ã¢ÂÂ15% SunÃ¢ÂÂThu inside 21d (deepened from prior cycle); LMD 7d Ã¢ÂÂ18% / 3d Ã¢ÂÂ22% / 1d Ã¢ÂÂ28% weekday only"
           }
         },
         "Fat City Ranch": {
@@ -323,16 +323,16 @@
           "adr": 117,
           "revpar": 63,
           "priority_actions": [
-            "PRIORITY 1: ESCALATE to DJ â pause all further price reductions this cycle. Do NOT deepen LMD further. Flag for immediate listing audit: review photos, title, description, cancellation policy, review count, and response rate. Confirm listing is active and indexed on all channels (Airbnb, VRBO, direct). Zero-velocity two weeks running means pricing is not the problem.",
-            "PRIORITY 2: If DJ confirms listing is healthy and channels are live, test a single aggressive weekday floor experiment â temporarily lower min price to $95 (floor) on Sun-Thu only inside 14 days in PriceLabs to rule out price-point resistance, while holding base at $125 and keeping Fri/Sat unchanged. Monitor for any single booking response within 5 days before any further structural change."
+            "PRIORITY 1: ESCALATE to DJ Ã¢ÂÂ pause all further price reductions this cycle. Do NOT deepen LMD further. Flag for immediate listing audit: review photos, title, description, cancellation policy, review count, and response rate. Confirm listing is active and indexed on all channels (Airbnb, VRBO, direct). Zero-velocity two weeks running means pricing is not the problem.",
+            "PRIORITY 2: If DJ confirms listing is healthy and channels are live, test a single aggressive weekday floor experiment Ã¢ÂÂ temporarily lower min price to $95 (floor) on Sun-Thu only inside 14 days in PriceLabs to rule out price-point resistance, while holding base at $125 and keeping Fri/Sat unchanged. Monitor for any single booking response within 5 days before any further structural change."
           ],
-          "key_issue": "Zero velocity two weeks â structural listing or channel problem",
+          "key_issue": "Zero velocity two weeks Ã¢ÂÂ structural listing or channel problem",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $125 â no change until listing audit complete (RM-019, RM-035)",
+            "base": "Hold at $125 Ã¢ÂÂ no change until listing audit complete (RM-019, RM-035)",
             "min": "Temporarily test $95 floor on Sun-Thu inside 14d only if DJ confirms listing health (RM-044 floor respected)",
             "max": "Hold at $400",
-            "weekday": "Hold existing LMD curve (30d -10%, 21d -12%, 14d -15%, 7d -20%, 3d -25%, 1d -28%) Sun-Thu only â do not deepen further this cycle (RM-019)"
+            "weekday": "Hold existing LMD curve (30d -10%, 21d -12%, 14d -15%, 7d -20%, 3d -25%, 1d -28%) Sun-Thu only Ã¢ÂÂ do not deepen further this cycle (RM-019)"
           }
         },
         "Lulu at the Palms": {
@@ -343,16 +343,16 @@
           "adr": 121,
           "revpar": 24,
           "priority_actions": [
-            "PRIORITY 1: Escalate to DJ immediately â audit VRBO listing end-to-end: confirm listing is published and searchable in Palm Desert, verify calendar is syncing correctly from PriceLabs (no blocked dates leaking), check that all required photos, amenities, and house rules are complete, and confirm the listing has at least one verified review or is eligible to appear in search. Request a test search on VRBO for Palm Desert 2BR to confirm Lulu at the Palms appears in results.",
-            "PRIORITY 2: Audit Airbnb listing performance in parallel â check Airbnb search ranking for Palm Desert 2BR, review listing quality score, confirm instant book is enabled, and verify no guest flags or service issues are suppressing visibility. If Airbnb is also producing zero bookings in soft season with market at 10%, consider a $5 temporary base reduction to $150 to test price elasticity only after distribution channels are confirmed fully active."
+            "PRIORITY 1: Escalate to DJ immediately Ã¢ÂÂ audit VRBO listing end-to-end: confirm listing is published and searchable in Palm Desert, verify calendar is syncing correctly from PriceLabs (no blocked dates leaking), check that all required photos, amenities, and house rules are complete, and confirm the listing has at least one verified review or is eligible to appear in search. Request a test search on VRBO for Palm Desert 2BR to confirm Lulu at the Palms appears in results.",
+            "PRIORITY 2: Audit Airbnb listing performance in parallel Ã¢ÂÂ check Airbnb search ranking for Palm Desert 2BR, review listing quality score, confirm instant book is enabled, and verify no guest flags or service issues are suppressing visibility. If Airbnb is also producing zero bookings in soft season with market at 10%, consider a $5 temporary base reduction to $150 to test price elasticity only after distribution channels are confirmed fully active."
           ],
-          "key_issue": "Zero velocity 2 weeks â structural channel failure",
+          "key_issue": "Zero velocity 2 weeks Ã¢ÂÂ structural channel failure",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $155 â do not cut until VRBO/Airbnb channel status confirmed (RM-047, RM-035)",
-            "min": "Hold at $115 â at floor, no further reduction permitted (RM-044)",
+            "base": "Hold at $155 Ã¢ÂÂ do not cut until VRBO/Airbnb channel status confirmed (RM-047, RM-035)",
+            "min": "Hold at $115 Ã¢ÂÂ at floor, no further reduction permitted (RM-044)",
             "max": "Hold at $500",
-            "weekday": "Hold â no weekday discount this cycle; pricing is not the lever (RM-009, RM-035)"
+            "weekday": "Hold Ã¢ÂÂ no weekday discount this cycle; pricing is not the lever (RM-009, RM-035)"
           }
         }
       }
@@ -362,7 +362,7 @@
       "scores": {
         "Azure Fern Haus": {
           "result": "worked",
-          "prevAction": "PRIORITY 1: ESCALATE to DJ immediately â 0 bookings for 2 consecutive weeks with all occ windows Very Far Ahead is a structural contradiction requiring human review before any PriceLabs changes are made this cycle.",
+          "prevAction": "PRIORITY 1: ESCALATE to DJ immediately Ã¢ÂÂ 0 bookings for 2 consecutive weeks with all occ windows Very Far Ahead is a structural contradiction requiring human review before any PriceLabs changes are made this cycle.",
           "prevOcc30": 0.8,
           "newOcc30": 0.8,
           "prevGap": 0.15000000000000002,
@@ -370,7 +370,7 @@
         },
         "Thriveway Stays": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: ESCALATE TO DJ IMMEDIATELY â do not apply any new discounts or pricing changes this cycle. The -22% weekday override from last week should remain in place (do not deepen or reverse it), but pricing is not the lever to pull. DJ must audit the listing: check search ranking, photo quality, title, description, review score, minimum stay restrictions, and channel distribution within 48 hours.",
+          "prevAction": "PRIORITY 1: ESCALATE TO DJ IMMEDIATELY Ã¢ÂÂ do not apply any new discounts or pricing changes this cycle. The -22% weekday override from last week should remain in place (do not deepen or reverse it), but pricing is not the lever to pull. DJ must audit the listing: check search ranking, photo quality, title, description, review score, minimum stay restrictions, and channel distribution within 48 hours.",
           "prevOcc30": 0.43,
           "newOcc30": 0.43,
           "prevGap": -0.26999999999999996,
@@ -378,7 +378,7 @@
         },
         "Moonlight Sunrise": {
           "result": "worked",
-          "prevAction": "PRIORITY 1: Hold all pricing unchanged this cycle â fire remediation exception is active, 30d/60d windows remain unreadable, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
+          "prevAction": "PRIORITY 1: Hold all pricing unchanged this cycle Ã¢ÂÂ fire remediation exception is active, 30d/60d windows remain unreadable, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
           "prevOcc30": 1,
           "newOcc30": 1,
           "prevGap": 0.375,
@@ -386,7 +386,7 @@
         },
         "Trixies Oasis": {
           "result": "worked",
-          "prevAction": "PRIORITY 1: Hold minimum price at $125 â confirmed working from last cycle; do not adjust this cycle",
+          "prevAction": "PRIORITY 1: Hold minimum price at $125 Ã¢ÂÂ confirmed working from last cycle; do not adjust this cycle",
           "prevOcc30": 0.63,
           "newOcc30": 0.63,
           "prevGap": -0.020000000000000018,
@@ -394,7 +394,7 @@
         },
         "Desert Dog": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: Apply weekday (SunâThu) discount of â15% inside 21 days in PriceLabs â set as a day-of-week customization targeting Sunday through Thursday for arrivals within 21 days, ensuring no night prices below $125",
+          "prevAction": "PRIORITY 1: Apply weekday (SunÃ¢ÂÂThu) discount of Ã¢ÂÂ15% inside 21 days in PriceLabs Ã¢ÂÂ set as a day-of-week customization targeting Sunday through Thursday for arrivals within 21 days, ensuring no night prices below $125",
           "prevOcc30": 0.57,
           "newOcc30": 0.57,
           "prevGap": -0.08000000000000007,
@@ -402,7 +402,7 @@
         },
         "Fat City Ranch": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: ESCALATE to DJ â pause all further price reductions this cycle. Do NOT deepen LMD further. Flag for immediate listing audit: review photos, title, description, cancellation policy, review count, and response rate. Confirm listing is active and indexed on all channels (Airbnb, VRBO, direct). Zero-velocity two weeks running means pricing is not the problem.",
+          "prevAction": "PRIORITY 1: ESCALATE to DJ Ã¢ÂÂ pause all further price reductions this cycle. Do NOT deepen LMD further. Flag for immediate listing audit: review photos, title, description, cancellation policy, review count, and response rate. Confirm listing is active and indexed on all channels (Airbnb, VRBO, direct). Zero-velocity two weeks running means pricing is not the problem.",
           "prevOcc30": 0.2,
           "newOcc30": 0.2,
           "prevGap": -0.35000000000000003,
@@ -410,7 +410,7 @@
         },
         "Lulu at the Palms": {
           "result": "failed",
-          "prevAction": "PRIORITY 1: Escalate to DJ immediately â audit VRBO listing end-to-end: confirm listing is published and searchable in Palm Desert, verify calendar is syncing correctly from PriceLabs (no blocked dates leaking), check that all required photos, amenities, and house rules are complete, and confirm the listing has at least one verified review or is eligible to appear in search. Request a test search on VRBO for Palm Desert 2BR to confirm Lulu at the Palms appears in results.",
+          "prevAction": "PRIORITY 1: Escalate to DJ immediately Ã¢ÂÂ audit VRBO listing end-to-end: confirm listing is published and searchable in Palm Desert, verify calendar is syncing correctly from PriceLabs (no blocked dates leaking), check that all required photos, amenities, and house rules are complete, and confirm the listing has at least one verified review or is eligible to appear in search. Request a test search on VRBO for Palm Desert 2BR to confirm Lulu at the Palms appears in results.",
           "prevOcc30": 0.13,
           "newOcc30": 0.13,
           "prevGap": -0.295,
@@ -426,16 +426,16 @@
           "adr": 443,
           "revpar": 290,
           "priority_actions": [
-            "PRIORITY 1: ESCALATE to DJ again — zero 7-day bookings for 3 consecutive weeks with all occupancy windows Very Far Ahead remains an unresolved structural contradiction; no PriceLabs changes are authorized this cycle until DJ confirms root cause",
-            "PRIORITY 2: Hold all current PriceLabs settings unchanged — base $656, min $425, max $1,100, FOP 90+d at +35%, FOP 60–89d at +35%, LMD curve (14d: -5%, 7d: -10%, 3d: -20%, 1d: -25%) — do not adjust any variable this cycle"
+            "PRIORITY 1: ESCALATE to DJ again â zero 7-day bookings for 3 consecutive weeks with all occupancy windows Very Far Ahead remains an unresolved structural contradiction; no PriceLabs changes are authorized this cycle until DJ confirms root cause",
+            "PRIORITY 2: Hold all current PriceLabs settings unchanged â base $656, min $425, max $1,100, FOP 90+d at +35%, FOP 60â89d at +35%, LMD curve (14d: -5%, 7d: -10%, 3d: -20%, 1d: -25%) â do not adjust any variable this cycle"
           ],
-          "key_issue": "Zero 7d velocity contradicts Very Far Ahead occ — third week",
+          "key_issue": "Zero 7d velocity contradicts Very Far Ahead occ â third week",
           "confidence": "LOW",
           "settings": {
             "base": "Hold at $656 (RM-016, RM-047)",
             "min": "Hold at $425 (RM-016, RM-044)",
             "max": "Hold at $1,100 (RM-047)",
-            "weekday": "No change — hold current LMD curve: 14d -5%, 7d -10%, 3d -20%, 1d -25% (RM-016, RM-019)"
+            "weekday": "No change â hold current LMD curve: 14d -5%, 7d -10%, 3d -20%, 1d -25% (RM-016, RM-019)"
           }
         },
         "Thriveway Stays": {
@@ -446,16 +446,16 @@
           "adr": 516,
           "revpar": 413,
           "priority_actions": [
-            "PRIORITY 1: ESCALATE TO DJ — IMMEDIATE ACTION REQUIRED. The listing audit ordered Jul 14 must be completed and findings reported back. Specifically DJ must confirm: (a) PriceLabs minimum stay restrictions are not blocking all near-term inventory (reduce weekday minimum to 1 night inside 14 days if not already done), (b) the listing is active and visible on all active channels (Airbnb, VRBO, direct), (c) search ranking position on Airbnb for Oakhurst 3BR has been checked and is not suppressed, (d) the -22% weekday override is correctly applied and showing to guests in search results. Report status to AIRA before next cycle — no pricing changes will be made until structural issue is identified.",
-            "PRIORITY 2: Hold all current pricing exactly as-is — base $280, min $229, -22% weekday override Sun–Thu in place, Fri/Sat premiums untouched. Do not deepen discounts, do not widen any override, do not change LMD curve. If DJ's audit confirms the listing IS visible and IS ranking and bookings are still zero after 48 hours, then and only then consider enabling Instant Book if not already active, and submit a test booking inquiry to verify the listing is transactable end-to-end."
+            "PRIORITY 1: ESCALATE TO DJ â IMMEDIATE ACTION REQUIRED. The listing audit ordered Jul 14 must be completed and findings reported back. Specifically DJ must confirm: (a) PriceLabs minimum stay restrictions are not blocking all near-term inventory (reduce weekday minimum to 1 night inside 14 days if not already done), (b) the listing is active and visible on all active channels (Airbnb, VRBO, direct), (c) search ranking position on Airbnb for Oakhurst 3BR has been checked and is not suppressed, (d) the -22% weekday override is correctly applied and showing to guests in search results. Report status to AIRA before next cycle â no pricing changes will be made until structural issue is identified.",
+            "PRIORITY 2: Hold all current pricing exactly as-is â base $280, min $229, -22% weekday override SunâThu in place, Fri/Sat premiums untouched. Do not deepen discounts, do not widen any override, do not change LMD curve. If DJ's audit confirms the listing IS visible and IS ranking and bookings are still zero after 48 hours, then and only then consider enabling Instant Book if not already active, and submit a test booking inquiry to verify the listing is transactable end-to-end."
           ],
-          "key_issue": "Listing invisible — zero bookings despite aggressive discounting",
+          "key_issue": "Listing invisible â zero bookings despite aggressive discounting",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $280 — pricing is not the lever this cycle (RM-035, RM-047)",
-            "min": "Hold at $229 — floor must not be breached (RM-044)",
+            "base": "Hold at $280 â pricing is not the lever this cycle (RM-035, RM-047)",
+            "min": "Hold at $229 â floor must not be breached (RM-044)",
             "max": "Hold at $850",
-            "weekday": "Hold existing -22% Sun–Thu override — do not deepen or reverse (RM-019)"
+            "weekday": "Hold existing -22% SunâThu override â do not deepen or reverse (RM-019)"
           }
         },
         "Moonlight Sunrise": {
@@ -466,8 +466,8 @@
           "adr": 0,
           "revpar": 0,
           "priority_actions": [
-            "PRIORITY 1: Hold all pricing unchanged this cycle — fire remediation exception is active, 30d/60d windows remain unreadable, last cycle's hold scored WORKED, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
-            "PRIORITY 2: Monitor 90d+ occupancy pace next cycle — if 7-day velocity rises to 5+ bookings AND fire block is lifted or 90d window is confirmed readable, evaluate FOP 90d+ raise of +10% on open nights only."
+            "PRIORITY 1: Hold all pricing unchanged this cycle â fire remediation exception is active, 30d/60d windows remain unreadable, last cycle's hold scored WORKED, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
+            "PRIORITY 2: Monitor 90d+ occupancy pace next cycle â if 7-day velocity rises to 5+ bookings AND fire block is lifted or 90d window is confirmed readable, evaluate FOP 90d+ raise of +10% on open nights only."
           ],
           "key_issue": "Fire block active; low velocity freezes all price moves",
           "confidence": "HIGH",
@@ -486,8 +486,8 @@
           "adr": 175,
           "revpar": 110,
           "priority_actions": [
-            "PRIORITY 1: Hold minimum price at $125 — confirmed working; do not adjust this cycle",
-            "PRIORITY 2: Apply weekday discount of -8% Sun–Thu inside 21 days to convert remaining weekday gaps; raise Fri/Sat +5% on any open weekend nights within 30 days"
+            "PRIORITY 1: Hold minimum price at $125 â confirmed working; do not adjust this cycle",
+            "PRIORITY 2: Apply weekday discount of -8% SunâThu inside 21 days to convert remaining weekday gaps; raise Fri/Sat +5% on any open weekend nights within 30 days"
           ],
           "key_issue": "Weekday gaps persist; weekends fully booked",
           "confidence": "HIGH",
@@ -495,7 +495,7 @@
             "base": "Hold at $167 (RM-016)",
             "min": "Hold at $125 (RM-044, RM-016)",
             "max": "Hold at $550",
-            "weekday": "-8% Sun–Thu inside 21d (RM-021, RM-003)"
+            "weekday": "-8% SunâThu inside 21d (RM-021, RM-003)"
           }
         },
         "Desert Dog": {
@@ -506,16 +506,16 @@
           "adr": 156,
           "revpar": 94,
           "priority_actions": [
-            "PRIORITY 1: Deepen LMD curve inside 14 days in PriceLabs — set 14d discount to -18%, 7d to -22%, 3d to -25%, 1d to -28% on weekday nights (Sun–Thu) only, with absolute floor lock at $125; do NOT deepen the 21d tier (hold at -15% per last cycle, do not reverse or stack further at that tier)",
-            "PRIORITY 2: Flag listing for non-price audit this cycle — review primary photo, title, dog-friendly amenity tags, and Airbnb/Vrbo weekday visibility; the -15% weekday discount produced zero occupancy movement, signaling a conversion or discovery barrier that pricing alone cannot solve"
+            "PRIORITY 1: Deepen LMD curve inside 14 days in PriceLabs â set 14d discount to -18%, 7d to -22%, 3d to -25%, 1d to -28% on weekday nights (SunâThu) only, with absolute floor lock at $125; do NOT deepen the 21d tier (hold at -15% per last cycle, do not reverse or stack further at that tier)",
+            "PRIORITY 2: Flag listing for non-price audit this cycle â review primary photo, title, dog-friendly amenity tags, and Airbnb/Vrbo weekday visibility; the -15% weekday discount produced zero occupancy movement, signaling a conversion or discovery barrier that pricing alone cannot solve"
           ],
           "key_issue": "Weekday discount failed; non-price barrier likely",
           "confidence": "MEDIUM",
           "settings": {
-            "base": "Hold at $155 — weekday problem does not warrant base cut; velocity is healthy",
-            "min": "Hold at $125 — floor is protected; do not lower",
+            "base": "Hold at $155 â weekday problem does not warrant base cut; velocity is healthy",
+            "min": "Hold at $125 â floor is protected; do not lower",
             "max": "Hold at $450",
-            "weekday": "Deepen LMD Sun–Thu: 14d → -18%, 7d → -22%, 3d → -25%, 1d → -28%; hold 21d tier at -15% (do not stack or reverse)"
+            "weekday": "Deepen LMD SunâThu: 14d â -18%, 7d â -22%, 3d â -25%, 1d â -28%; hold 21d tier at -15% (do not stack or reverse)"
           }
         },
         "Fat City Ranch": {
@@ -526,16 +526,16 @@
           "adr": 117,
           "revpar": 63,
           "priority_actions": [
-            "PRIORITY 1: ESCALATE to DJ — do NOT make any further price changes this cycle. Confirm listing is actively indexed and visible on Airbnb and VRBO by searching the market manually. Check Airbnb listing quality score, response rate, and any active flags or suppression notices in the host dashboard. If listing audit was completed last cycle, report specific findings — what was changed, what is still outstanding.",
-            "PRIORITY 2: If DJ confirms listing is live, indexed, and audit-clean with no platform issues found, then in PriceLabs set Sun–Thu LMD to: 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% — applied to weekdays only, floor holds at $95 on all dates, do not touch Fri/Sat or base price"
+            "PRIORITY 1: ESCALATE to DJ â do NOT make any further price changes this cycle. Confirm listing is actively indexed and visible on Airbnb and VRBO by searching the market manually. Check Airbnb listing quality score, response rate, and any active flags or suppression notices in the host dashboard. If listing audit was completed last cycle, report specific findings â what was changed, what is still outstanding.",
+            "PRIORITY 2: If DJ confirms listing is live, indexed, and audit-clean with no platform issues found, then in PriceLabs set SunâThu LMD to: 14d: -15%, 7d: -20%, 3d: -25%, 1d: -28% â applied to weekdays only, floor holds at $95 on all dates, do not touch Fri/Sat or base price"
           ],
-          "key_issue": "Zero velocity 2+ weeks — structural listing or channel failure",
+          "key_issue": "Zero velocity 2+ weeks â structural listing or channel failure",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $135 — no base change until escalation resolved",
-            "min": "Hold at $95 — floor is the minimum; do not lower further",
+            "base": "Hold at $135 â no base change until escalation resolved",
+            "min": "Hold at $95 â floor is the minimum; do not lower further",
             "max": "Hold at $400",
-            "weekday": "Hold current LMD curve (7d: -8%, 3d: -15%, 1d: -20%) pending DJ escalation confirmation; deepen to 7d: -20%, 3d: -25%, 1d: -28% on Sun–Thu only IF DJ confirms listing is healthy and indexed"
+            "weekday": "Hold current LMD curve (7d: -8%, 3d: -15%, 1d: -20%) pending DJ escalation confirmation; deepen to 7d: -20%, 3d: -25%, 1d: -28% on SunâThu only IF DJ confirms listing is healthy and indexed"
           }
         },
         "Lulu at the Palms": {
@@ -546,16 +546,220 @@
           "adr": 121,
           "revpar": 24,
           "priority_actions": [
-            "PRIORITY 1: DJ to perform a live VRBO search RIGHT NOW — open VRBO.com, search Palm Desert CA, 2 guests, this weekend — confirm Lulu at the Palms appears in results. If it does NOT appear, the listing is not indexed and must be reported to VRBO support immediately with a case number returned to ProHosts before next cycle.",
-            "PRIORITY 2: Check PriceLabs calendar sync to VRBO — confirm zero blocked dates are leaking into the next 30 days on the VRBO calendar. If any dates appear blocked that should be open, fix the sync and force a manual push from PriceLabs to VRBO today."
+            "PRIORITY 1: DJ to perform a live VRBO search RIGHT NOW â open VRBO.com, search Palm Desert CA, 2 guests, this weekend â confirm Lulu at the Palms appears in results. If it does NOT appear, the listing is not indexed and must be reported to VRBO support immediately with a case number returned to ProHosts before next cycle.",
+            "PRIORITY 2: Check PriceLabs calendar sync to VRBO â confirm zero blocked dates are leaking into the next 30 days on the VRBO calendar. If any dates appear blocked that should be open, fix the sync and force a manual push from PriceLabs to VRBO today."
           ],
-          "key_issue": "VRBO channel failure — listing not generating bookings",
+          "key_issue": "VRBO channel failure â listing not generating bookings",
           "confidence": "LOW",
           "settings": {
-            "base": "Hold at $155 — no change until channel confirmed (RM-047)",
-            "min": "Hold at $115 — at floor, do not lower further (RM-044)",
-            "max": "Hold at $500 — no change",
-            "weekday": "No weekday discount — distribution fix required first (RM-035, RM-047)"
+            "base": "Hold at $155 â no change until channel confirmed (RM-047)",
+            "min": "Hold at $115 â at floor, do not lower further (RM-044)",
+            "max": "Hold at $500 â no change",
+            "weekday": "No weekday discount â distribution fix required first (RM-035, RM-047)"
+          }
+        }
+      }
+    },
+    {
+      "date": "Jul 14, 2026",
+      "scores": {
+        "Azure Fern Haus": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: ESCALATE to DJ again â zero 7-day bookings for 3 consecutive weeks with all occupancy windows Very Far Ahead remains an unresolved structural contradiction; no PriceLabs changes are authorized this cycle until DJ confirms root cause",
+          "prevOcc30": 0.8,
+          "newOcc30": 0.8,
+          "prevGap": 0.15000000000000002,
+          "newGap": 0.15000000000000002
+        },
+        "Thriveway Stays": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: ESCALATE TO DJ â IMMEDIATE ACTION REQUIRED. The listing audit ordered Jul 14 must be completed and findings reported back. Specifically DJ must confirm: (a) PriceLabs minimum stay restrictions are not blocking all near-term inventory (reduce weekday minimum to 1 night inside 14 days if not already done), (b) the listing is active and visible on all active channels (Airbnb, VRBO, direct), (c) search ranking position on Airbnb for Oakhurst 3BR has been checked and is not suppressed, (d) the -22% weekday override is correctly applied and showing to guests in search results. Report status to AIRA before next cycle â no pricing changes will be made until structural issue is identified.",
+          "prevOcc30": 0.43,
+          "newOcc30": 0.43,
+          "prevGap": -0.26999999999999996,
+          "newGap": -0.26999999999999996
+        },
+        "Moonlight Sunrise": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Hold all pricing unchanged this cycle â fire remediation exception is active, 30d/60d windows remain unreadable, last cycle's hold scored WORKED, and 7-day velocity of 2 bookings blocks any pricing increases across all windows including 90d+.",
+          "prevOcc30": 1,
+          "newOcc30": 1,
+          "prevGap": 0.375,
+          "newGap": 0.375
+        },
+        "Trixies Oasis": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Hold minimum price at $125 â confirmed working; do not adjust this cycle",
+          "prevOcc30": 0.63,
+          "newOcc30": 0.63,
+          "prevGap": -0.020000000000000018,
+          "newGap": -0.020000000000000018
+        },
+        "Desert Dog": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Deepen LMD curve inside 14 days in PriceLabs â set 14d discount to -18%, 7d to -22%, 3d to -25%, 1d to -28% on weekday nights (SunâThu) only, with absolute floor lock at $125; do NOT deepen the 21d tier (hold at -15% per last cycle, do not reverse or stack further at that tier)",
+          "prevOcc30": 0.57,
+          "newOcc30": 0.57,
+          "prevGap": -0.08000000000000007,
+          "newGap": -0.08000000000000007
+        },
+        "Fat City Ranch": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: ESCALATE to DJ â do NOT make any further price changes this cycle. Confirm listing is actively indexed and visible on Airbnb and VRBO by searching the market manually. Check Airbnb listing quality score, response rate, and any active flags or suppression notices in the host dashboard. If listing audit was completed last cycle, report specific findings â what was changed, what is still outstanding.",
+          "prevOcc30": 0.2,
+          "newOcc30": 0.2,
+          "prevGap": -0.35000000000000003,
+          "newGap": -0.35000000000000003
+        },
+        "Lulu at the Palms": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: DJ to perform a live VRBO search RIGHT NOW â open VRBO.com, search Palm Desert CA, 2 guests, this weekend â confirm Lulu at the Palms appears in results. If it does NOT appear, the listing is not indexed and must be reported to VRBO support immediately with a case number returned to ProHosts before next cycle.",
+          "prevOcc30": 0.13,
+          "newOcc30": 0.13,
+          "prevGap": -0.295,
+          "newGap": -0.295
+        }
+      },
+      "properties": {
+        "Azure Fern Haus": {
+          "occ30": 0.8,
+          "occ60": 0.67,
+          "occ90": 0.7,
+          "occ30_status": "Very Far Ahead",
+          "adr": 443,
+          "revpar": 290,
+          "priority_actions": [
+            "PRIORITY 1: ESCALATE to DJ — fourth consecutive week of zero 7-day bookings with all occupancy windows Very Far Ahead remains an unresolved structural contradiction; DJ must provide root-cause determination before any PriceLabs changes are authorized this cycle. Flag annual revenue trajectory: YTD $39,713 against $120k–$160k target is critically behind pace.",
+            "PRIORITY 2: Hold all current PriceLabs settings unchanged — base $656, min $425, max $1,100, FOP 90d+35% / 60–89d +35%, LMD curve 14d –5% / 7d –10% / 3d –20% / 1d –25% — no increases and no reductions until DJ resolves root cause and RM-016 hold-after-positive-response is cleared with confirmed velocity."
+          ],
+          "key_issue": "4 weeks zero velocity contradicts all-window Very Far Ahead occupancy",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $656 (RM-016, RM-047)",
+            "min": "Hold at $425 (RM-016, RM-047)",
+            "max": "Hold at $1,100 (RM-047)",
+            "weekday": "No change — hold current structure (RM-016, Velocity Gate)"
+          }
+        },
+        "Thriveway Stays": {
+          "occ30": 0.43,
+          "occ60": 0.22,
+          "occ90": 0.14,
+          "occ30_status": "Very Far Behind",
+          "adr": 516,
+          "revpar": 413,
+          "priority_actions": [
+            "PRIORITY 1: DJ must confirm TODAY whether the listing audit from Jul 14 was completed — specifically: (a) Is the Airbnb listing active and appearing in Oakhurst 3BR search results? (b) Are minimum stay restrictions set to 1 night inside 14 days for weekdays? (c) Is the -22% weekday override live and visible to guests in search? If any of these are not confirmed complete, stop all pricing work and fix distribution first. Report audit results back to AIRA before next cycle.",
+            "PRIORITY 2: If the listing IS confirmed healthy and visible on all channels, immediately expand distribution — activate or re-activate VRBO and any direct booking channel if not currently live, and request an Airbnb search ranking review. Zero velocity on a confirmed-healthy listing at these prices indicates either a channel gap or a ranking suppression issue that pricing cannot solve."
+          ],
+          "key_issue": "Zero velocity 2+ weeks — structural listing failure confirmed",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $280 — do not change until listing audit is confirmed and at least 1 booking is received",
+            "min": "Hold at $229 — floor is provisional but must not be breached; do not lower",
+            "max": "Hold at $850",
+            "weekday": "Hold existing -22% Sun–Thu override in place — do not deepen, do not remove; it is irrelevant until visibility is restored"
+          }
+        },
+        "Moonlight Sunrise": {
+          "occ30": 1,
+          "occ60": 0.72,
+          "occ90": 0.61,
+          "occ30_status": "Very Far Ahead",
+          "adr": 0,
+          "revpar": 0,
+          "priority_actions": [
+            "PRIORITY 1: Hold all pricing unchanged this cycle — fire remediation exception is active, 30d/60d windows remain unreadable, last cycle hold scored WORKED, and 7-day velocity of 2 bookings blocks any pricing move in all windows including 90d+.",
+            "PRIORITY 2: Monitor 7-day velocity next cycle — if velocity reaches 0 for a second consecutive week across any window, escalate to DJ as a structural distribution issue per standing protocol."
+          ],
+          "key_issue": "Fire block active; hold all pricing, velocity too low",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $305 (RM-016, RM-010)",
+            "min": "Hold at $235 (RM-044, RM-016)",
+            "max": "Hold at $650 (RM-016)",
+            "weekday": "Hold all weekday discounts unchanged (RM-016, RM-020)"
+          }
+        },
+        "Trixies Oasis": {
+          "occ30": 0.63,
+          "occ60": 0.37,
+          "occ90": 0.29,
+          "occ30_status": "Slightly Behind",
+          "adr": 175,
+          "revpar": 110,
+          "priority_actions": [
+            "PRIORITY 1: Remove Far-Out Premium — set FOP to 0% at all lead-time tiers (currently +18% at 60-89d and 90d+); the measured booking curve shows only 11% of bookings arrive 60+ days out, meaning this premium suppresses visibility while generating almost no revenue",
+            "PRIORITY 2: Apply weekday-only discount of -8% Sun-Thu inside 21 days to close the 30d weekday gap; do NOT touch base price, minimum ($125), or Fri/Sat pricing — weekend occ is Ahead at 100% and must not be diluted"
+          ],
+          "key_issue": "Weekday gap only; FOP taxing non-existent segment",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $190 — no change this cycle",
+            "min": "Hold at $125 — confirmed working, do not adjust",
+            "max": "Hold at $450",
+            "weekday": "-8% Sun-Thu inside 21 days (new this cycle); LMD curve intact: 14d -5%, 7d -10%, 3d -15%, 1d -25%"
+          }
+        },
+        "Desert Dog": {
+          "occ30": 0.57,
+          "occ60": 0.47,
+          "occ90": 0.37,
+          "occ30_status": "Behind",
+          "adr": 156,
+          "revpar": 94,
+          "priority_actions": [
+            "PRIORITY 1: HOLD all LMD discount changes this cycle — do not deepen, do not reverse, do not add new tiers. The existing curve (14d -18%, 7d -22%, 3d -25%, 1d -28% on Sun-Thu) must remain in place with the $125 absolute floor locked. Two consecutive deepening cycles produced zero occupancy movement; further cuts will only erode ADR on the nights that do book.",
+            "PRIORITY 2: DJ REVIEW REQUIRED — audit Desert Dog's weekday listing health and distribution before next pricing cycle. Specifically: check PriceLabs search insights for weekday impressions vs click-through rate; confirm minimum night rules are not blocking 1-2 night weekday stays (Inside 5d min is 1n — verify this is live and functioning in PriceLabs); review whether the listing has weekday-specific content, photos, or appeal for mid-week travelers (remote work, couples, midweek escapes); and evaluate adding a second distribution channel if currently single-OTA."
+          ],
+          "key_issue": "Non-price barrier blocking weekday conversion; escalation required",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $155 — do not move base this cycle; non-price barrier hypothesis must be tested before any base adjustment",
+            "min": "Hold at $125 — hard floor, no breach permitted; flag to DJ that repeated floor proximity warrants verifying true variable cost",
+            "max": "Hold at $450 — no change",
+            "weekday": "Hold existing curve: 14d -18%, 7d -22%, 3d -25%, 1d -28% on Sun-Thu only — do not deepen or reverse this cycle per RM-019 and RM-047 escalation"
+          }
+        },
+        "Fat City Ranch": {
+          "occ30": 0.2,
+          "occ60": 0.17,
+          "occ90": 0.12,
+          "occ30_status": "Very Far Behind",
+          "adr": 117,
+          "revpar": 63,
+          "priority_actions": [
+            "PRIORITY 1: DJ must check Airbnb host dashboard — confirm listing impressions and views for the past 14 days. If impressions are below 50/week, this is a search suppression or indexing problem, not a pricing problem. Do not change any prices this cycle until impression data is reviewed. Report findings back to AIRA next cycle.",
+            "PRIORITY 2: Remove Far-Out Premium entirely in PriceLabs — set FOP to 0% on all far-out tiers (90d+, 60-89d, 45-59d). Zero percent of bookings arrive 60+ days out so the premium is taxing a segment that does not exist. Simultaneously confirm LMD curve is correctly shaped: 30d -10%, 21d -12%, 14d -15%, 7d -18%, 3d -22%, 1d -25% — applied to Sun-Thu only, with floor held at $95 on all dates."
+          ],
+          "key_issue": "Zero velocity 2+ weeks — structural distribution problem",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $135 — do not reduce further until impression data reviewed by DJ",
+            "min": "Hold at $95 — already at margin floor; flagging that min equals floor is a structural warning; if impressions confirm visibility is fine, this floor level may need DJ review as true variable cost is unverified",
+            "max": "Hold at $400",
+            "weekday": "Sun-Thu LMD curve: 30d -10%, 21d -12%, 14d -15%, 7d -18%, 3d -22%, 1d -25% — confirm floor holds at $95 on all dates; remove FOP (set all far-out tiers to 0%)"
+          }
+        },
+        "Lulu at the Palms": {
+          "occ30": 0.13,
+          "occ60": 0.07,
+          "occ90": 0.04,
+          "occ30_status": "Very Far Behind",
+          "adr": 121,
+          "revpar": 24,
+          "priority_actions": [
+            "PRIORITY 1 — DJ MUST RESOLVE THIS CYCLE: Log into VRBO host dashboard right now and confirm (a) listing status shows 'Published', (b) at least 1 photo is approved, (c) calendar has zero unintended blocks for July and August, (d) instant book is enabled, and (e) perform a live guest-facing search on VRBO.com for Palm Desert CA, 2 guests, this weekend — screenshot whether Lulu at the Palms appears or does not appear, and return that screenshot to ProHosts before next cycle. If it does not appear, open a VRBO support case immediately and return the case number.",
+            "PRIORITY 2 — PARALLEL CHANNEL: If VRBO cannot be confirmed indexed and generating impressions within 48 hours, activate Airbnb listing for Lulu at the Palms immediately — set base at $155, min at $130, soft-launch with flexible cancellation to acquire first reviews, and report first Airbnb booking date to ProHosts. Do not wait for VRBO to be resolved before opening a second channel."
+          ],
+          "key_issue": "VRBO not generating bookings — structural distribution failure",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $155 — do not reduce until channel is confirmed live; revisit next cycle with VRBO evidence in hand",
+            "min": "Hold at $130 — reduce from current $115 floor-adjacent setting to create a small spread buffer while staying above $116 floor",
+            "max": "Hold at $500 — no change needed",
+            "weekday": "No additional weekday discount this cycle — channel failure is the binding constraint, not weekday pricing; revisit once first VRBO booking is confirmed",
+            "fop": "Remove FOP entirely — set to 0% for all windows; property books median 14 days out and 0% of bookings arrive 60+ days out; the far-out premium is taxing a segment that does not exist"
           }
         }
       }
@@ -563,10 +767,10 @@
   ],
   "monthly": {
     "July 2026": {
-      "weeks": 3,
-      "worked": 6,
+      "weeks": 4,
+      "worked": 9,
       "partial": 0,
-      "failed": 8,
+      "failed": 12,
       "accuracy": 43
     }
   }
