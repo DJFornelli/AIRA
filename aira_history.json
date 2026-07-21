@@ -405,6 +405,64 @@
             "weekday": "No additional weekday-only discount layer this cycle — the LMD curve reset in Priority 2 handles last-minute weekday softness; stacking a separate weekday modifier risks breaching the $116 floor on near-in nights"
           }
         }
+      },
+      "confirmed": {
+        "Azure Fern Haus": {
+          "aira_recommended": "PRIORITY 1: Lower base from $656 to $610 (within target range $550–$595, set at $610 to remain conservative given strong far-out pace) — this targets the Moderately Behind 30d window which collapsed 24pts in one week with zero velocity, and aligns base to market expectation for Shoulder_Plus July without undermining far-out value.",
+          "aira_priority2": "PRIORITY 2: Deepen LMD inside 30d — set 21d: -10%, 14d: -15%, 7d: -18%, 3d: -23%, 1d: -28% — this creates a steeper near-term discount staircase to stimulate the zero-velocity 30d window while protecting full-value far-out nights; do NOT lower min below $425 this cycle.",
+          "action_taken": "Lowered the base price to $610, deepened the last-minute discount curve to 21d -10%, 14d -15%, 7d -18%, 3d -23%, and 1d -28%, reduced remaining open Fri/Sat nights within the next 30 days by 5%, and held all medium- and long-term pricing settings to protect ADR.",
+          "confirmed_at": "2026-07-21T22:49:07.380Z",
+          "occ30_at_time": 0.53,
+          "key_issue": "Zero velocity two weeks, 30d near-term severely behind"
+        },
+        "Thriveway Stays": {
+          "aira_recommended": "PRIORITY 1: Reset min from $229 to $175. Hold base at $249. This restores a valid 70% ratio ($175/$249) and re-opens PriceLabs modulation range. The $229 min was a documented collapse that flattened pricing — this is the same structural fix confirmed to work last cycle. Do not lower base further this cycle.",
+          "aira_priority2": "PRIORITY 2: Apply -5% discount on open Friday and Saturday nights inside 30 days only (targeting the 63% vs 90% weekend gap). Do not apply to already-booked nights. Do not extend beyond 30d. Remove all far-out premiums (FOP) — set FOP to 0% at all horizons (45d, 60d, 90d+), as the far-out booking segment is too small (9% of bookings) to justify the premium tax.",
+          "action_taken": "Reduced the minimum price from $229 to $210, maintained weekday discounts at 20–25%, and increased weekend discounts to 10% within 30 days to improve near-term occupancy while protecting the $280 base price.",
+          "confirmed_at": "2026-07-21T22:49:07.381Z",
+          "occ30_at_time": 0.67,
+          "key_issue": "Min-base spread collapsed to 92% — PriceLabs cannot modulate"
+        },
+        "Moonlight Sunrise": {
+          "aira_recommended": "PRIORITY 1: Raise base price from $305 to $325 to correct the invalid min/base ratio (235/325 = 72%, restoring the required 55–75% band) — this also lifts ADR on all 90d+ open nights in the Peak and Shoulder_Plus windows where the property is running 21–26 points ahead of market; do NOT change the $235 min this cycle.",
+          "aira_priority2": "PRIORITY 2: Confirm and hold Far Out Premium at +25% for the 90d+ window (do not revert to the +10% DJ applied last cycle) — the measured booking curve at 71% far-out and the 90d/120d pace both ahead of market by 20+ points fully justify this level; apply to all open nights beyond 90 days only.",
+          "action_taken": "Held pricing across all booking windows, maintained the current $235 min / $305 base / $650 max pricing and existing 10% Far Out Premium after 60 days, and continued monitoring demand until the property reopens from fire remediation.",
+          "confirmed_at": "2026-07-21T22:49:07.381Z",
+          "occ30_at_time": 0.9,
+          "key_issue": "Min/base ratio invalid; far-out premium under-captured"
+        },
+        "Trixies Oasis": {
+          "aira_recommended": "PRIORITY 1: Raise base price from $167 to $178 in PriceLabs immediately — this is the bottom of the target range adjusted for SOFT season; also raise minimum from $115 to $125 to enforce the margin floor (current min is below floor).",
+          "aira_priority2": "PRIORITY 2: Deepen the Last-Minute Discount curve — set 14d: -12%, 7d: -18%, 3d: -22%, 1d: -28% in PriceLabs to target the 54% late-booking segment and convert open near-term nights without lowering base further; also apply -5% to Fri/Sat on open nights inside 30d to address weekend gap.",
+          "action_taken": "Held pricing at $115 minimum, $167 base, and $550 maximum to allow recent listing and pricing changes to continue working before making additional adjustments.",
+          "confirmed_at": "2026-07-21T22:49:07.381Z",
+          "occ30_at_time": 0.5,
+          "key_issue": "Base price below target; property outpacing market already"
+        },
+        "Desert Dog": {
+          "aira_recommended": "PRIORITY 1: Raise base price from $155 to $175 — this restores a legal and functional min/base spread (min $140 / base $175 = 80%, still slightly above target; alternatively hold min at $140 and set base $185 to achieve 76% ratio — see settings note). The current 90% ratio collapses PriceLabs' modulation range and is the primary structural failure this cycle. Healthy velocity (11 bookings/7d) and VFA pace at 60–120d confirm the market will absorb a higher base. This directly targets the ADR gap ($149 actual vs $165–$190 target) and is expected to lift RevPAR toward the $130+ floor target.",
+          "aira_priority2": "PRIORITY 2: Reduce FOP on the 60–89d band from +15% to +8% — the measured booking curve shows only 16% of bookings arrive 60+ days out (RM-056 cap). The current +15% on 60–89d exceeds the evidence-supported cap of +8% for this share tier. Trim to +8% for 60–89d; hold 90+d FOP at +15% (90d+ pace is VFA at +16pts, confirming far-out demand justifies the premium at that range). This protects revenue on shoulder nights without overpricing the window that drives the bulk of far-out bookings.",
+          "action_taken": "Increased the base price by 5% from $155 to $163, raised the maximum price from $450 to $500, increased the Far-Out Premium from 15% to 20% beyond 60 days, and maintained the $109 minimum, current weekend strategy, and last-minute discount settings.",
+          "confirmed_at": "2026-07-21T22:49:07.381Z",
+          "occ30_at_time": 0.63,
+          "key_issue": "Min $140 / base $155 ratio 90% — illegal spread, flat pricing"
+        },
+        "Fat City Ranch": {
+          "aira_recommended": "PRIORITY 1 — ESCALATE TO DJ: Confirm no accidental calendar blocks, listing is live and unblocked on Airbnb, and no account-level platform issue exists. Two consecutive zero-booking weeks while critically behind is a structural signal, not a pricing signal. Do not take further pricing action until DJ confirms the listing is bookable.",
+          "aira_priority2": "PRIORITY 2 — REMOVE FAR-OUT PREMIUM (FOP): Set the PriceLabs Far-Out Premium to 0% across all windows (90d+, 60–89d, 45–59d). Zero percent of bookings arrive 60+ days out (n=26, median lead 10 days) — the current +5%/+3% FOP taxes a segment that does not exist and adds friction to near-window pricing without any revenue upside. This is a one-time structural correction, not a demand signal.",
+          "action_taken": "Held the $135 base price, made no pricing changes to the 60-, 90-, or 120-day booking windows, and limited discounts to 5% off open Friday and Saturday nights within the next 30 days while preserving the overall pricing structure.",
+          "confirmed_at": "2026-07-21T22:49:07.381Z",
+          "occ30_at_time": 0.23,
+          "key_issue": "Zero velocity 2 weeks running, critically behind in soft season"
+        },
+        "Lulu at the Palms": {
+          "aira_recommended": "PRIORITY 1: Remove Far-Out Premium entirely — set FOP to 0% for all windows (90+d, 60–89d, and confirm 0–60d already at 0%). This property's median lead time is 14 days and zero percent of bookings ever arrive 60+ days out; charging a far-out premium taxes a booking segment that does not exist and artificially inflates displayed price to the only guests who might book.",
+          "aira_priority2": "PRIORITY 2: Reset LMD curve to a valid, deepening shape anchored at the current base of $155 — set 30d: 0% / 21d: -5% / 14d: -10% / 7d: -15% / 3d: -20% / 1d: -25%. The prior cycle used a curve that started at -5% at 30d; since the base is now $155 and min is $115 (74% ratio), the curve must not push 30d nights below $116 — at -25% from $155 the 1d price is ~$116, which is at the floor. Do NOT deepen beyond these percentages. Verify PriceLabs is not inverting the curve.",
+          "action_taken": "Held the base price at $155 and the current minimum price, stopped further last-minute and weekend discounting, and prioritized guest quality and screening over chasing occupancy with lower rates.",
+          "confirmed_at": "2026-07-21T22:49:07.381Z",
+          "occ30_at_time": 0.07,
+          "key_issue": "Market soft; property near-zero occ; distribution gap"
+        }
       }
     }
   ],
