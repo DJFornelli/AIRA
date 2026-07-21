@@ -233,6 +233,322 @@
         200,
         433
       ]
+    },
+    "oakhurst": {
+      "source": "AirDNA 36mo",
+      "type": "BENCHMARK",
+      "confidence": "HIGH",
+      "n_listings": {
+        "with_hottub": 77,
+        "without_hottub": 113
+      },
+      "trailing12": {
+        "occ": 0.488,
+        "adr": 533,
+        "revpar": 267
+      },
+      "hottub_premium": {
+        "adr": 48,
+        "revpar": 44,
+        "confidence": "RELIABLE"
+      },
+      "monthly": {
+        "Jan": {
+          "occ_mean": 0.336,
+          "adr_mean": 483,
+          "revpar_mean": 162,
+          "revpar_index": 0.626,
+          "season": "SOFT"
+        },
+        "Feb": {
+          "occ_mean": 0.331,
+          "adr_mean": 500,
+          "revpar_mean": 164,
+          "revpar_index": 0.634,
+          "season": "SOFT"
+        },
+        "Mar": {
+          "occ_mean": 0.395,
+          "adr_mean": 481,
+          "revpar_mean": 189,
+          "revpar_index": 0.728,
+          "season": "SOFT"
+        },
+        "Apr": {
+          "occ_mean": 0.483,
+          "adr_mean": 496,
+          "revpar_mean": 240,
+          "revpar_index": 0.926,
+          "season": "SHOULDER"
+        },
+        "May": {
+          "occ_mean": 0.571,
+          "adr_mean": 542,
+          "revpar_mean": 309,
+          "revpar_index": 1.19,
+          "season": "PEAK"
+        },
+        "Jun": {
+          "occ_mean": 0.688,
+          "adr_mean": 623,
+          "revpar_mean": 427,
+          "revpar_index": 1.648,
+          "season": "PEAK"
+        },
+        "Jul": {
+          "occ_mean": 0.778,
+          "adr_mean": 575,
+          "revpar_mean": 445,
+          "revpar_index": 1.714,
+          "season": "PEAK"
+        },
+        "Aug": {
+          "occ_mean": 0.594,
+          "adr_mean": 538,
+          "revpar_mean": 318,
+          "revpar_index": 1.228,
+          "season": "PEAK"
+        },
+        "Sep": {
+          "occ_mean": 0.464,
+          "adr_mean": 492,
+          "revpar_mean": 226,
+          "revpar_index": 0.871,
+          "season": "SHOULDER"
+        },
+        "Oct": {
+          "occ_mean": 0.452,
+          "adr_mean": 458,
+          "revpar_mean": 206,
+          "revpar_index": 0.795,
+          "season": "SOFT"
+        },
+        "Nov": {
+          "occ_mean": 0.414,
+          "adr_mean": 486,
+          "revpar_mean": 201,
+          "revpar_index": 0.776,
+          "season": "SOFT"
+        },
+        "Dec": {
+          "occ_mean": 0.436,
+          "adr_mean": 515,
+          "revpar_mean": 224,
+          "revpar_index": 0.864,
+          "season": "SHOULDER"
+        }
+      }
+    },
+    "cottonwood": {
+      "source": "AirDNA 36mo",
+      "type": "BENCHMARK",
+      "confidence": "MEDIUM",
+      "n_listings": {
+        "with_hottub": 15,
+        "without_hottub": 73
+      },
+      "trailing12": {
+        "occ": 0.56,
+        "adr": 225,
+        "revpar": 128
+      },
+      "hottub_premium": {
+        "adr": 35,
+        "revpar": 27,
+        "confidence": "DIRECTIONAL"
+      },
+      "monthly": {
+        "Jan": {
+          "occ_mean": 0.485,
+          "adr_mean": 199,
+          "revpar_mean": 97,
+          "revpar_index": 0.744,
+          "season": "SOFT"
+        },
+        "Feb": {
+          "occ_mean": 0.616,
+          "adr_mean": 223,
+          "revpar_mean": 137,
+          "revpar_index": 1.059,
+          "season": "SHOULDER_PLUS"
+        },
+        "Mar": {
+          "occ_mean": 0.797,
+          "adr_mean": 260,
+          "revpar_mean": 207,
+          "revpar_index": 1.599,
+          "season": "PEAK"
+        },
+        "Apr": {
+          "occ_mean": 0.706,
+          "adr_mean": 253,
+          "revpar_mean": 179,
+          "revpar_index": 1.377,
+          "season": "PEAK"
+        },
+        "May": {
+          "occ_mean": 0.592,
+          "adr_mean": 240,
+          "revpar_mean": 142,
+          "revpar_index": 1.094,
+          "season": "SHOULDER_PLUS"
+        },
+        "Jun": {
+          "occ_mean": 0.471,
+          "adr_mean": 212,
+          "revpar_mean": 100,
+          "revpar_index": 0.768,
+          "season": "SOFT"
+        },
+        "Jul": {
+          "occ_mean": 0.452,
+          "adr_mean": 210,
+          "revpar_mean": 95,
+          "revpar_index": 0.73,
+          "season": "SOFT"
+        },
+        "Aug": {
+          "occ_mean": 0.344,
+          "adr_mean": 216,
+          "revpar_mean": 74,
+          "revpar_index": 0.568,
+          "season": "SOFT"
+        },
+        "Sep": {
+          "occ_mean": 0.48,
+          "adr_mean": 232,
+          "revpar_mean": 111,
+          "revpar_index": 0.856,
+          "season": "SHOULDER"
+        },
+        "Oct": {
+          "occ_mean": 0.609,
+          "adr_mean": 248,
+          "revpar_mean": 151,
+          "revpar_index": 1.165,
+          "season": "PEAK"
+        },
+        "Nov": {
+          "occ_mean": 0.577,
+          "adr_mean": 236,
+          "revpar_mean": 136,
+          "revpar_index": 1.05,
+          "season": "SHOULDER_PLUS"
+        },
+        "Dec": {
+          "occ_mean": 0.549,
+          "adr_mean": 234,
+          "revpar_mean": 128,
+          "revpar_index": 0.99,
+          "season": "SHOULDER"
+        }
+      }
+    },
+    "raleigh": {
+      "source": "AirDNA 36mo",
+      "type": "BENCHMARK",
+      "confidence": "LOW",
+      "n_listings": {
+        "with_hottub": 3,
+        "without_hottub": 9
+      },
+      "trailing12": {
+        "occ": 0.562,
+        "adr": 399,
+        "revpar": 222
+      },
+      "hottub_premium": {
+        "adr": 2,
+        "revpar": 7,
+        "confidence": "DIRECTIONAL"
+      },
+      "monthly": {
+        "Jan": {
+          "occ_mean": 0.33,
+          "adr_mean": 452,
+          "revpar_mean": 128,
+          "revpar_index": 0.59,
+          "season": "SOFT"
+        },
+        "Feb": {
+          "occ_mean": 0.564,
+          "adr_mean": 407,
+          "revpar_mean": 230,
+          "revpar_index": 1.061,
+          "season": "SHOULDER_PLUS"
+        },
+        "Mar": {
+          "occ_mean": 0.695,
+          "adr_mean": 330,
+          "revpar_mean": 235,
+          "revpar_index": 1.082,
+          "season": "SHOULDER_PLUS"
+        },
+        "Apr": {
+          "occ_mean": 0.445,
+          "adr_mean": 452,
+          "revpar_mean": 192,
+          "revpar_index": 0.885,
+          "season": "SHOULDER"
+        },
+        "May": {
+          "occ_mean": 0.515,
+          "adr_mean": 475,
+          "revpar_mean": 236,
+          "revpar_index": 1.085,
+          "season": "SHOULDER_PLUS"
+        },
+        "Jun": {
+          "occ_mean": 0.554,
+          "adr_mean": 459,
+          "revpar_mean": 250,
+          "revpar_index": 1.151,
+          "season": "PEAK"
+        },
+        "Jul": {
+          "occ_mean": 0.5,
+          "adr_mean": 462,
+          "revpar_mean": 235,
+          "revpar_index": 1.084,
+          "season": "SHOULDER_PLUS"
+        },
+        "Aug": {
+          "occ_mean": 0.368,
+          "adr_mean": 481,
+          "revpar_mean": 174,
+          "revpar_index": 0.801,
+          "season": "SOFT"
+        },
+        "Sep": {
+          "occ_mean": 0.495,
+          "adr_mean": 482,
+          "revpar_mean": 236,
+          "revpar_index": 1.089,
+          "season": "SHOULDER_PLUS"
+        },
+        "Oct": {
+          "occ_mean": 0.591,
+          "adr_mean": 505,
+          "revpar_mean": 292,
+          "revpar_index": 1.344,
+          "season": "PEAK"
+        },
+        "Nov": {
+          "occ_mean": 0.406,
+          "adr_mean": 411,
+          "revpar_mean": 162,
+          "revpar_index": 0.747,
+          "season": "SOFT"
+        },
+        "Dec": {
+          "occ_mean": 0.472,
+          "adr_mean": 508,
+          "revpar_mean": 235,
+          "revpar_index": 1.081,
+          "season": "SHOULDER_PLUS"
+        }
+      },
+      "warning": "n=12 total listings \u2014 DIRECTIONAL market-position signal only, NOT a precise target. Do not hardcode monthly targets from this. Use Azure own-history for pricing; use this only for above/below-market sanity check."
     }
   },
   "property_pace": {
