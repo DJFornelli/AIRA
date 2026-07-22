@@ -870,14 +870,217 @@
           }
         }
       }
+    },
+    {
+      "date": "Jul 22, 2026",
+      "scores": {
+        "Azure Fern Haus": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: ESCALATE — DJ must take manual off-platform action this cycle. Verify the listing is live and bookable on all channels, check for suppression flags or policy violations, and audit the listing for conversion issues (photos, title, description). Pricing is not the lever until distribution is confirmed working.",
+          "prevOcc30": 0.53,
+          "newOcc30": 0.53,
+          "prevGap": -0.12,
+          "newGap": -0.12
+        },
+        "Thriveway Stays": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Set minimum price to $175. The ACTUALLY DID from last cycle left the min at $210, not the $175 target. This completes the structural fix: $175/$280 = 62.5%, within the valid 55-75% band. This is not a new reduction — it is executing the already-approved action. Hold base at $280 per RM-016.",
+          "prevOcc30": 0.67,
+          "newOcc30": 0.67,
+          "prevGap": -0.029999999999999916,
+          "newGap": -0.029999999999999916
+        },
+        "Moonlight Sunrise": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Raise Far Out Premium for 90d+ (October PEAK and November SHOULDER_PLUS open nights) from +15% to +25% in PriceLabs — property is running 19-25 points ahead of market at these horizons, 71% of bookings land here, and RM-056 supports up to +35%; this is the highest-revenue move available while remediation blocks near-term inventory.",
+          "prevOcc30": 0.9,
+          "newOcc30": 0.9,
+          "prevGap": 0.275,
+          "newGap": 0.275
+        },
+        "Trixies Oasis": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Lower base price from $167 to $159 in PriceLabs immediately — this is a 5% reduction targeting the 30d behind pace in SOFT season with LOW velocity; hold minimum at $125 (ratio 125/159 = 78.6% — CAUTION: this breaches RM-026 ceiling of 75%; therefore minimum must be held at $125 and base lowered only to $167 floor OR minimum lowered to $119 to restore ratio: 119/159 = 74.8%, just inside ceiling). ACTION: Lower base to $159 AND lower minimum to $119 simultaneously to preserve spread.",
+          "prevOcc30": 0.5,
+          "newOcc30": 0.5,
+          "prevGap": -0.15000000000000002,
+          "newGap": -0.15000000000000002
+        },
+        "Desert Dog": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Raise base price from $163 to $175 — velocity is 11 bookings in 7 days (healthy), 60–120d pace is Very Far Ahead, 30d is only 2pts behind target and well within late-booking recovery range; the ADR gap ($149 vs $165–$190 target) is the primary revenue leak and a $175 base with min $140 restores a 80% ratio (legal) and gives PriceLabs meaningful modulation room; this is expected to lift ADR by $10–$15 per booked night and push RevPAR toward the $130 floor target",
+          "prevOcc30": 0.63,
+          "newOcc30": 0.63,
+          "prevGap": -0.020000000000000018,
+          "newGap": -0.020000000000000018
+        },
+        "Fat City Ranch": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1 — ESCALATE TO DJ (block all other action): Physically verify the Fat City Ranch listing is live, unblocked, and searchable on Airbnb right now. Check for calendar blocks on all open nights, any account-level flags, and confirm the nightly price displaying to guests on open weekday nights inside 14 days. Four consecutive zero-booking weeks with a near-zero market gap is a structural signal. Do not take further pricing action until this is confirmed.",
+          "prevOcc30": 0.23,
+          "newOcc30": 0.23,
+          "prevGap": -0.32000000000000006,
+          "newGap": -0.32000000000000006
+        },
+        "Lulu at the Palms": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: DISTRIBUTION AUDIT — Do not change any price settings this cycle. DJ must audit the Airbnb listing immediately: confirm all photos are current and high-quality (2BR deserves 25+ professional images), verify the title leads with the strongest hook (pool, Palm Desert location, sleeps X), check that instant book is enabled, confirm there are no open guest complaints or policy flags suppressing the listing, and verify VRBO calendar is syncing correctly with no gaps or blocks since launch.",
+          "prevOcc30": 0.07,
+          "newOcc30": 0.07,
+          "prevGap": -0.355,
+          "newGap": -0.355
+        }
+      },
+      "properties": {
+        "Azure Fern Haus": {
+          "occ30": 0.53,
+          "occ60": 0.67,
+          "occ90": 0.63,
+          "occ30_status": "Behind",
+          "adr": 469,
+          "revpar": 372,
+          "priority_actions": [
+            "PRIORITY 1: DO NOT change base, min, or any discount this cycle — three cuts have produced zero bookings; further cuts train the market and destroy ADR without fixing the real problem.",
+            "PRIORITY 2: DJ must manually confirm today that the listing is live and bookable on all platforms, PriceLabs sync is error-free, and no suppression or policy flag is active — this is the only lever that can move 30d."
+          ],
+          "key_issue": "Zero bookings three weeks — distribution failure confirmed",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $610",
+            "min": "Hold at $425",
+            "max": "Hold at $1,100",
+            "weekday": "Hold current LMD curve — no changes until distribution confirmed"
+          }
+        },
+        "Thriveway Stays": {
+          "occ30": 0.67,
+          "occ60": 0.33,
+          "occ90": 0.22,
+          "occ30_status": "Very Far Behind",
+          "adr": 470,
+          "revpar": 392,
+          "priority_actions": [
+            "PRIORITY 1: Set minimum price to $175 — this was approved two cycles ago and the ACTUALLY DID has left it at $229 both times. Min/base ratio is currently 82%, outside the valid 55–75% band. $175/$280 = 62.5%. This is not a new cut; it is executing the confirmed structural fix. RM-016 holds reductions on variables that worked last cycle, but the min was never successfully moved — it is not in a hold state.",
+            "PRIORITY 2: Remove Far-Out Premium entirely — set FOP to 0% at all windows (90d+, 60–89d, 45–59d). Only 9% of bookings arrive 60+ days out; the premium is taxing a segment that does not exist and artificially inflating far-out prices with no revenue benefit."
+          ],
+          "key_issue": "Min still at $229 — spread collapsed, PriceLabs flat",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $280",
+            "min": "Lower to $175",
+            "max": "Hold at $850",
+            "weekday": "-20–25% Sun–Thu existing structure — hold this cycle per RM-016; confirm PriceLabs is applying it with the reopened spread"
+          }
+        },
+        "Moonlight Sunrise": {
+          "occ30": 0.9,
+          "occ60": 0.6,
+          "occ90": 0.53,
+          "occ30_status": "Very Far Ahead",
+          "adr": 0,
+          "revpar": 0,
+          "priority_actions": [
+            "PRIORITY 1: Raise base from $305 to $325 in PriceLabs — restores min/base ratio to 72% ($235/$325), which is inside the required 55–75% band; this has been recommended for 3 consecutive cycles and not applied. Do NOT change the $235 min or the +25% FOP this cycle.",
+            "PRIORITY 2: Hold FOP at +25% for 90d+ (October PEAK and November SHOULDER_PLUS open nights) — last week scored WORKED, 30d occ held at 90%, no adjustment warranted; RM-056 supports up to +35% so headroom exists but velocity (4 bookings, LOW) does not yet support a second raise."
+          ],
+          "key_issue": "Invalid min/base ratio; base raise overdue",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Raise to $325",
+            "min": "Hold at $235",
+            "max": "Hold at $650",
+            "weekday": "No weekday discount — near-term blocked; 90d+ weekday nights hold at base with existing FOP applied"
+          }
+        },
+        "Trixies Oasis": {
+          "occ30": 0.5,
+          "occ60": 0.38,
+          "occ90": 0.29,
+          "occ30_status": "Behind",
+          "adr": 172,
+          "revpar": 123,
+          "priority_actions": [
+            "PRIORITY 1: Raise minimum from $115 to $125 in PriceLabs immediately — enforces the margin floor; current min is below floor and must be corrected before any other change (ratio 125/167 = 74.9%, just inside ceiling).",
+            "PRIORITY 2: Set FOP to 0% for all far-out windows (45–59d, 60–89d, 90+d) in PriceLabs — the +18% far-out premium taxes a booking segment that represents under 11% of arrivals and is actively deterring the rare early booker; removing it costs nothing and removes a friction point."
+          ],
+          "key_issue": "Three cuts, zero movement — distribution problem, not price",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $167",
+            "min": "Raise to $125",
+            "max": "Hold at $550",
+            "weekday": "Hold weekday pricing; weekend Fri/Sat -5% inside 30d on open nights only"
+          }
+        },
+        "Desert Dog": {
+          "occ30": 0.63,
+          "occ60": 0.52,
+          "occ90": 0.46,
+          "occ30_status": "Slightly Ahead",
+          "adr": 149,
+          "revpar": 104,
+          "priority_actions": [
+            "PRIORITY 1: Lower min from $140 to $131 — current min $140 / base $175 = 80% ratio, which violates the 75% ceiling and collapses PriceLabs modulation range; $131 restores a 75% ratio and allows the algorithm to price weekday soft nights lower without touching weekends or the base",
+            "PRIORITY 2: Hold base at $175 — last week's raise is confirmed WORKED (30d pace held at 63%, velocity 11 bookings/7d); one full cycle of lag is expected before ADR moves; do not interrupt the signal"
+          ],
+          "key_issue": "ADR lagging; min/base ratio too tight",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $175",
+            "min": "Lower to $131",
+            "max": "Hold at $500",
+            "weekday": "No additional weekday discount this cycle — 30d pace on track, velocity healthy; modulation range correction handles soft weekday nights algorithmically"
+          }
+        },
+        "Fat City Ranch": {
+          "occ30": 0.23,
+          "occ60": 0.2,
+          "occ90": 0.13,
+          "occ30_status": "Very Far Behind",
+          "adr": 116,
+          "revpar": 54,
+          "priority_actions": [
+            "PRIORITY 1 (Structural verification — before any pricing action): Confirm PriceLabs sync is active and error-free, then search Airbnb as a guest for a 2-night weekday stay in Homestead Valley next week and verify Fat City Ranch appears and shows a bookable price at or near $95–$120.",
+            "PRIORITY 2 (Channel expansion): If property is Airbnb-only, activate VRBO listing immediately — a new channel in a soft market adds a second demand pool at zero additional discount cost and breaks the single-platform dependency."
+          ],
+          "key_issue": "Structural block or distribution gap, not price",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $135",
+            "min": "Hold at $95",
+            "max": "Hold at $400",
+            "weekday": "Hold existing curve — Sun–Thu: 21d -10% / 14d -15% / 7d -20% / 3d -25% / 1d -28%; do not deepen until structural cause confirmed"
+          }
+        },
+        "Lulu at the Palms": {
+          "occ30": 0.07,
+          "occ60": 0.03,
+          "occ90": 0.02,
+          "occ30_status": "Very Far Behind",
+          "adr": 120,
+          "revpar": 40,
+          "priority_actions": [
+            "PRIORITY 1: CHANNEL ESCALATION — VRBO launched but has produced no bookings yet; DJ must log into VRBO host dashboard today and confirm: listing is fully published (not in draft), instant book is on, all 30d+ calendar dates are open, and rates are syncing from PriceLabs with no errors. If any of these are broken, fix before next cycle.",
+            "PRIORITY 2: Set base to $140 and min to $98 in PriceLabs — ratio $98/$140 = 70%, within guardrails — to ensure that on the rare occasion a guest does find the listing inside the soft window, the price does not repel them; this is a floor-protection move only and is not expected to drive bookings on its own."
+          ],
+          "key_issue": "Listing invisible; distribution not delivering guests",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Lower to $140",
+            "min": "Lower to $98",
+            "max": "Hold at $500",
+            "weekday": "Hold current weekday modifiers — no additional discount; distribution fix must come first"
+          }
+        }
+      }
     }
   ],
   "monthly": {
     "July 2026": {
-      "weeks": 4,
-      "worked": 9,
+      "weeks": 5,
+      "worked": 12,
       "partial": 1,
-      "failed": 11,
+      "failed": 15,
       "accuracy": 45
     }
   }
