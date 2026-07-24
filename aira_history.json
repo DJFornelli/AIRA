@@ -1276,14 +1276,217 @@
           }
         }
       }
+    },
+    {
+      "date": "Jul 24, 2026",
+      "scores": {
+        "Azure Fern Haus": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: DO NOT change base ($656), min ($425), or any discount this cycle — this is a confirmed distribution problem; further cuts destroy ADR with zero chance of fixing the real issue.",
+          "prevOcc30": 0.53,
+          "newOcc30": 0.53,
+          "prevGap": -0.12,
+          "newGap": -0.12
+        },
+        "Thriveway Stays": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Apply Sun–Thu discount of -10% inside 21 days in PriceLabs. Do NOT touch base ($280) or min ($229) this cycle — the min move scored WORKED and needs 7–10 days to settle. This is the only lever RM-016 permits.",
+          "prevOcc30": 0.67,
+          "newOcc30": 0.67,
+          "prevGap": -0.029999999999999916,
+          "newGap": -0.029999999999999916
+        },
+        "Moonlight Sunrise": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Confirm FOP is set to +25% for 90d+ nights in PriceLabs (October PEAK and November SHOULDER_PLUS open nights) — if already applied last cycle, hold; if not yet applied, set it now. Do NOT change base or min this cycle.",
+          "prevOcc30": 0.9,
+          "newOcc30": 0.9,
+          "prevGap": 0.275,
+          "newGap": 0.275
+        },
+        "Trixies Oasis": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Remove FOP entirely — set both the 60–89d and 90+d far-out premiums to 0% in PriceLabs immediately; these premiums tax a segment that generates only 11% of bookings and are actively suppressing early commitment on the nights that do book far out",
+          "prevOcc30": 0.5,
+          "newOcc30": 0.5,
+          "prevGap": -0.15000000000000002,
+          "newGap": -0.15000000000000002
+        },
+        "Desert Dog": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Raise base price from $155 to $175 — property is 29–36pts ahead of market at every window with 11 bookings in 7 days; the ADR gap ($149 vs $165–$190 target) is the only active revenue leak; min stays at $131, yielding a 74.9% ratio (legal); this is the same base target confirmed last cycle and not yet executed against current $155",
+          "prevOcc30": 0.63,
+          "newOcc30": 0.63,
+          "prevGap": -0.020000000000000018,
+          "newGap": -0.020000000000000018
+        },
+        "Fat City Ranch": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1 — DJ ACTION REQUIRED (no pricing changes until complete): Search Airbnb as a guest for a 1–2 night weekday stay in Homestead Valley this week and confirm Fat City Ranch appears with a bookable price between $95–$120. Check PriceLabs sync log for push errors on all open nights inside 30 days. Report back what price is actually showing to guests.",
+          "prevOcc30": 0.23,
+          "newOcc30": 0.23,
+          "prevGap": -0.32000000000000006,
+          "newGap": -0.32000000000000006
+        },
+        "Lulu at the Palms": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: LISTING AUDIT — Do not change any price settings this cycle. DJ must verify today: (a) Airbnb listing has no suppression flags, policy violations, or open complaints; (b) all 30d+ dates are open and unblocked on both Airbnb and VRBO; (c) VRBO instant book is active and PriceLabs is pushing rates with no sync errors. Report findings before next cycle.",
+          "prevOcc30": 0.07,
+          "newOcc30": 0.07,
+          "prevGap": -0.355,
+          "newGap": -0.355
+        }
+      },
+      "properties": {
+        "Azure Fern Haus": {
+          "occ30": 0.53,
+          "occ60": 0.67,
+          "occ90": 0.63,
+          "occ30_status": "Behind",
+          "adr": 469,
+          "revpar": 372,
+          "priority_actions": [
+            "PRIORITY 1: DO NOT change base ($656), min ($425), max ($1,100), or any discount — pricing is not the problem and further cuts will only damage ADR when distribution is restored.",
+            "PRIORITY 2: DJ must manually verify today — confirm the listing is live and bookable on all channels, check for suppression or policy flags on each platform, and audit the listing's lead photo, title, and calendar sync from PriceLabs."
+          ],
+          "key_issue": "Distribution failure: zero bookings five cycles running",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $656",
+            "min": "Hold at $425",
+            "max": "Hold at $1,100",
+            "weekday": "No change — hold all weekday discounts at current settings until distribution is confirmed."
+          }
+        },
+        "Thriveway Stays": {
+          "occ30": 0.67,
+          "occ60": 0.33,
+          "occ90": 0.22,
+          "occ30_status": "Very Far Behind",
+          "adr": 470,
+          "revpar": 392,
+          "priority_actions": [
+            "PRIORITY 1: Set minimum price to $175 in PriceLabs immediately — this restores the base-min ratio to 62.5% ($175/$280), within the valid 55–75% band. This action has been approved and confirmed three consecutive cycles and has never been successfully executed. Do not change base or any discount this cycle.",
+            "PRIORITY 2: Remove Far-Out Premium (FOP) entirely — set FOP to 0% at all tiers (90d+, 60–89d, 45–59d). Fewer than 15% of bookings arrive 60d+ out; the premium is taxing a segment that does not book here and is not generating revenue."
+          ],
+          "key_issue": "Min stuck at $229; spread collapsed, weekdays can't clear",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $280",
+            "min": "Lower to $175",
+            "max": "Hold at $850",
+            "weekday": "-10% Sun–Thu inside 21d (hold current; no change this cycle)"
+          }
+        },
+        "Moonlight Sunrise": {
+          "occ30": 0.9,
+          "occ60": 0.6,
+          "occ90": 0.53,
+          "occ30_status": "Very Far Ahead",
+          "adr": 0,
+          "revpar": 0,
+          "priority_actions": [
+            "PRIORITY 1: Raise base from $305 to $325 in PriceLabs — fixes the 77% min/base ratio (currently invalid; must be ≤75%), restores the modulation spread to 72% ($235/$325), and applies to all unblocked far-out nights. This is the fourth consecutive cycle this has been recommended; do not carry it forward again.",
+            "PRIORITY 2: Hold FOP at +25% for 90d+ (October PEAK and November SHOULDER_PLUS open nights) — last cycle confirmed as WORKED; no change needed this cycle."
+          ],
+          "key_issue": "Base still $305; min/base ratio invalid at 77%",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Raise to $325",
+            "min": "Hold at $235",
+            "max": "Hold at $650",
+            "weekday": "No weekday discount — near windows unreadable; far-out windows on track"
+          }
+        },
+        "Trixies Oasis": {
+          "occ30": 0.5,
+          "occ60": 0.38,
+          "occ90": 0.29,
+          "occ30_status": "Behind",
+          "adr": 172,
+          "revpar": 123,
+          "priority_actions": [
+            "PRIORITY 1: Hold all PriceLabs price settings unchanged this cycle — no further cuts; five cuts have produced no movement and deeper discounting will only train the market and erode ADR without recovering revenue.",
+            "PRIORITY 2: Conduct a full distribution audit — confirm the listing is live and indexed on Airbnb, VRBO, and any other active channels; check for suppression flags, low-response penalties, or calendar sync errors; review title and lead photo for click-through quality."
+          ],
+          "key_issue": "Distribution/listing failure, not a pricing problem",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $167",
+            "min": "Hold at $125",
+            "max": "Hold at $550",
+            "weekday": "Hold weekday pricing; weekend Fri/Sat -5% on open nights inside 30d only"
+          }
+        },
+        "Desert Dog": {
+          "occ30": 0.63,
+          "occ60": 0.52,
+          "occ90": 0.46,
+          "occ30_status": "Slightly Ahead",
+          "adr": 149,
+          "revpar": 104,
+          "priority_actions": [
+            "PRIORITY 1: Hold base at $175 and min at $131 — last cycle scored WORKED, 30d occ held at 63% with 11 bookings in 7 days; no change this cycle, let the $175 base flow through into ADR over the next 2–3 booking windows",
+            "PRIORITY 2: Reduce FOP from +15% to +8% on both 60–89d and 90+d windows — only 16% of bookings arrive 60+ days out; the current +15% is above the calibrated cap and is likely suppressing far-out conversion without meaningful revenue benefit"
+          ],
+          "key_issue": "ADR lagging while occ pace is strong",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $175",
+            "min": "Hold at $131",
+            "max": "Hold at $450",
+            "weekday": "No change to weekday discounts this cycle — LMD curve 7d -10% / 3d -20% / 1d -30% remains valid; FOP 60–89d and 90+d both lower to +8%"
+          }
+        },
+        "Fat City Ranch": {
+          "occ30": 0.23,
+          "occ60": 0.2,
+          "occ90": 0.13,
+          "occ30_status": "Very Far Behind",
+          "adr": 116,
+          "revpar": 54,
+          "priority_actions": [
+            "PRIORITY 1 — DJ MUST RESOLVE BEFORE ANY PRICING ACTION: Open an incognito browser, log out of all Airbnb accounts, search Airbnb as a guest for a 1-night weekday stay in Homestead Valley this week, and confirm Fat City Ranch appears with a bookable price; if it does NOT appear, the listing is suppressed or paused and that is the only problem to solve right now — screenshot either outcome and bring it back.",
+            "PRIORITY 2 — If listing IS visible and showing a price: Open PriceLabs sync log and confirm the last successful price push to Airbnb was within the last 24 hours on at least 3 open weekday nights inside 14 days; if sync is stale or erroring, force a manual sync and monitor for a booking within 48 hours before taking any further action."
+          ],
+          "key_issue": "Zero bookings 4+ weeks; distribution block unresolved",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $135 — price is not the diagnosed problem; moving it is noise until distribution is confirmed live",
+            "min": "Hold at $95",
+            "max": "Hold at $400",
+            "weekday": "Hold all weekday discounts at current levels — no further cuts until channel availability is confirmed"
+          }
+        },
+        "Lulu at the Palms": {
+          "occ30": 0.07,
+          "occ60": 0.03,
+          "occ90": 0.02,
+          "occ30_status": "Very Far Behind",
+          "adr": 120,
+          "revpar": 40,
+          "priority_actions": [
+            "PRIORITY 1: CHANNEL CONFIRMATION WITH EVIDENCE — DJ must return a yes/no answer on each of these today, not a plan to check: (a) VRBO listing status = Published (screenshot or confirm); (b) Airbnb has no suppression/policy flags (confirm in resolution center); (c) PriceLabs sync log shows rates pushing to both channels with no errors in last 7 days. If any is broken, fix it immediately and report back.",
+            "PRIORITY 2: LISTING CONVERSION ACTION — Lower base to $140 and min to $105 for the next 14 days only as a demand-test signal; if 0 bookings result in 7 days despite confirmed live channels, the problem is listing quality (photos/title/reviews), not price — at that point escalate to a full listing rewrite and photography review before any further price moves."
+          ],
+          "key_issue": "Confirmed distribution failure; listing not converting buyers",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Lower to $140 (14-day demand test only; revisit if bookings respond)",
+            "min": "Lower to $105 (maintains 75% ratio against $140 base; do not go below $105)",
+            "max": "Hold at $500",
+            "weekday": "-5% Sun-Thu inside 30d"
+          }
+        }
+      }
     }
   ],
   "monthly": {
     "July 2026": {
-      "weeks": 6,
-      "worked": 15,
+      "weeks": 7,
+      "worked": 18,
       "partial": 1,
-      "failed": 19,
+      "failed": 23,
       "accuracy": 44
     }
   }
