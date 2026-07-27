@@ -12,16 +12,16 @@
           "adr": 533,
           "revpar": 441,
           "priority_actions": [
-            "PRIORITY 1: STOP all further price reductions — base holds at $656, min holds at $425. Further cuts will deepen revenue loss without recovering bookings if the problem is visibility/conversion.",
-            "PRIORITY 2: Escalate to DJ for listing audit — confirm the listing is live, indexed, and free of suppression flags on all channels before any next pricing action."
+            "PRIORITY 1: STOP all further price reductions — hold base at $656, min at $425; the booking silence is not responding to price and additional cuts will permanently suppress ADR on any bookings that do arrive.",
+            "PRIORITY 2: Immediately audit listing distribution — confirm the property is live, unsuppressed, and correctly synced on all channels before the next pricing decision; this is a visibility or conversion problem requiring a non-price fix."
           ],
-          "key_issue": "14+ bookingless days while near-term behind — escalate",
+          "key_issue": "Zero bookings 15+ days despite repeated cuts",
           "confidence": "LOW",
           "settings": {
             "base": "Hold at $656",
             "min": "Hold at $425",
             "max": "Hold at $1,100",
-            "weekday": "Hold existing LMD curve — do not deepen; Fri/Sat -5% inside 30d on open nights only"
+            "weekday": "Hold existing LMD curve — no new weekday discounts this cycle"
           }
         },
         "Thriveway Stays": {
@@ -32,16 +32,16 @@
           "adr": 474,
           "revpar": 393,
           "priority_actions": [
-            "PRIORITY 1: Lower base from $280 to $249 — this reopens the weekday modulation spread and reduces the ADR anchor that is blocking weekday conversion; do NOT lower min (min stays $210, ratio becomes 84% — see settings note below for required min adjustment).",
-            "PRIORITY 2: Remove FOP entirely — set all far-out premiums (45–59d, 60–89d, 90+d) to 0%; only 9% of bookings arrive 60+ days out and the current +15% is taxing a segment that does not exist while adding friction to the tiny share that does book far out."
+            "PRIORITY 1: Lower Fri/Sat premium to -5% on all OPEN weekend nights inside 30d (current +8-12% is repelling bookings; weekend occ 50% vs 90% target in peak season is critical revenue leakage at these ADR levels).",
+            "PRIORITY 2: Set Far-Out Premium (FOP) to 0% across all bands (90d+, 60-89d, 45-59d) — only 9% of bookings arrive 60+ days out; the premium is actively blocking the small far-out segment that does exist."
           ],
-          "key_issue": "Weekday demand failure + ADR too high killing conversion",
-          "confidence": "LOW",
+          "key_issue": "Weekend nights wide open; FOP taxing phantom far-out demand",
+          "confidence": "HIGH",
           "settings": {
-            "base": "Lower to $249",
-            "min": "Lower to $186 — required to maintain 75% ratio with new base of $249 (75% × $249 = $186.75, round to $186); current $210 min would be 84% of $249 which violates RM-026 spread floor",
+            "base": "Hold at $280",
+            "min": "Hold at $210",
             "max": "Hold at $850",
-            "weekday": "-25 to -30% Sun–Thu inside 21d; -15% Sun–Thu 21–45d"
+            "weekday": "-8% Sun-Thu 21-60d (existing August discount); existing up-to-30% weekday discount inside 21d holds — no change this cycle"
           }
         },
         "Moonlight Sunrise": {
@@ -52,16 +52,16 @@
           "adr": 0,
           "revpar": 0,
           "priority_actions": [
-            "PRIORITY 1: Raise FOP 90d+ from +15% to +25% on all open October nights — property is 57% vs market 33% at 90d, Oct is PEAK season, and 71% of bookings land 60d+ out; hold rate, do not discount into confirmed strong demand.",
-            "PRIORITY 2: Lower base to $280 to bring min/base ratio to 84% — wait, this would worsen the ratio. Instead raise base to $325 to bring min $235 / base $325 = 72%, restoring a valid spread and positioning correctly for the PEAK ramp without touching min."
+            "PRIORITY 1: Confirm fire remediation unblock date immediately — August nights must open before the October peak booking window closes; every day of unnecessary blocking at 71% far-out booking share is direct revenue loss.",
+            "PRIORITY 2: Fix the min/base ratio — min $235 is 77% of base $305, compressing PriceLabs' modulation range; lower min to $225 (74% of $305) to restore the spread and stay above the $235 provisional floor only if base is raised to $315+, otherwise hold min at $235 and raise base to $315 to bring ratio to 74.6%."
           ],
-          "key_issue": "Fire block ends; protect Oct PEAK rate now",
-          "confidence": "HIGH",
+          "key_issue": "Fire block masks near windows; protect October peak rate",
+          "confidence": "LOW",
           "settings": {
-            "base": "Raise to $325",
+            "base": "Raise to $315 (resolves min/base ratio violation; brings min $235 to 74.6% of base)",
             "min": "Hold at $235",
             "max": "Hold at $650",
-            "weekday": "Hold — weekday pricing irrelevant while block is active; reassess at remediation clearance"
+            "weekday": "No weekday discount — 90d and 120d windows are Very Far Ahead; hold all discounts until unblock confirmed and velocity observed"
           }
         },
         "Trixies Oasis": {
@@ -72,16 +72,16 @@
           "adr": 163,
           "revpar": 129,
           "priority_actions": [
-            "PRIORITY 1: Raise base from $167 to $180 and raise min from $115 to $125 — velocity is 10 bookings in 7d, all windows on-track or ahead, two prior cuts have done their job and it's time to recover rate. Ratio check: $125/$180 = 69% — valid.",
-            "PRIORITY 2: Remove FOP entirely (set to 0% at all lead-time bands) — only 11% of bookings arrive 60+ days out; the +18% premium at 60–89d and 90+d is taxing a segment that barely exists and adds no revenue."
+            "PRIORITY 1: Raise base from $167 to $185 — property is 30pts above market occupancy on 30d window with 10 bookings in 7 days; base was cut twice into demand that didn't need stimulating, ADR is $17 below target floor.",
+            "PRIORITY 2: Raise Fri/Sat premium to +15% on all open weekend nights inside 30d — weekend occupancy is at 100% vs 90% target (+10pts Very Far Ahead), open nights should capture the full premium before they fill."
           ],
-          "key_issue": "Base undercut twice; demand strong, price not recovering",
+          "key_issue": "Underpriced despite strong demand above market",
           "confidence": "HIGH",
           "settings": {
-            "base": "Raise to $180",
-            "min": "Raise to $125",
+            "base": "Raise to $185",
+            "min": "Hold at $115 (69% of $185 = 62% — within 55–75% band; no change needed)",
             "max": "Hold at $550",
-            "weekday": "Remove the 5% weekday discount applied Jun 15–Jun 29 for Jul/Aug; base recovery makes it redundant. Hold standard LMD curve (14d -5%, 7d -10%, 3d -15%, 1d -25%)."
+            "weekday": "Hold existing LMD: 14d -5%, 7d -10%, 3d -15%, 1d -25%; no additional weekday discount — 30d occ is 30pts above market"
           }
         },
         "Desert Dog": {
@@ -92,16 +92,16 @@
           "adr": 144,
           "revpar": 106,
           "priority_actions": [
-            "PRIORITY 1: Raise base from $163 to $170. Property is ahead on every window with healthy velocity — current base is leaving $6–$26/night on the table against ADR target of $165–$190.",
-            "PRIORITY 2: Lower Far-Out Premium from +15% to +8% on both 60–89d and 90+d bands. Only 16% of bookings arrive 60d+ out; +15% is over-cap and risks suppressing the dates where pace is already Very Far Ahead."
+            "PRIORITY 1: Raise minimum from $109 to $140 — the current $109 floor is generating sub-floor bookings that kill ADR; property is 35pts ahead of market on 30d occ so demand supports this lift immediately.",
+            "PRIORITY 2: Raise base from $163 to $170 — all four forward windows are ahead of market, velocity is healthy at 5/7d, and base has been held below target range while ADR underperforms; this closes the gap without risking pace."
           ],
-          "key_issue": "Strong demand present, ADR badly underpriced",
+          "key_issue": "Minimum too low; cheap nights dragging ADR down",
           "confidence": "HIGH",
           "settings": {
             "base": "Raise to $170",
-            "min": "Hold at $109",
+            "min": "Raise to $140",
             "max": "Hold at $500",
-            "weekday": "Hold current weekday structure; no Sun–Thu discount — all windows ahead of market, weekday problem is not active this cycle"
+            "weekday": "No additional weekday discount — occ is ahead of market on all windows; ADR fix comes from lifting the floor, not cutting weekdays"
           }
         },
         "Fat City Ranch": {
@@ -112,16 +112,16 @@
           "adr": 117,
           "revpar": 58,
           "priority_actions": [
-            "PRIORITY 1: Add a 21-30d weekday discount of -10% Sun-Thu in PriceLabs custom date overrides — do NOT touch base, min, or Fri/Sat pricing.",
-            "PRIORITY 2: Confirm LMD curve is correctly ordered: 30d -5% / 21d -10% / 14d -12% / 7d -18% / 3d -22% / 1d -25% — correct any inversion, especially the 7d -8% which is too shallow vs 3d -15%."
+            "PRIORITY 1: Add a Sun–Thu discount of -12% inside 21 days in PriceLabs (day-of-week customization), floor-protected — do not let any night drop below $95",
+            "PRIORITY 2: Remove Far-Out Premium entirely — set FOP to 0% for all windows (60d+, 90d+) since 0% of bookings arrive 60+ days out; the premium is taxing a segment that does not exist"
           ],
-          "key_issue": "Weekday drag in soft season, weekends full",
+          "key_issue": "Weekday drag in soft season; weekends already filling",
           "confidence": "MEDIUM",
           "settings": {
             "base": "Hold at $135",
             "min": "Hold at $95",
             "max": "Hold at $400",
-            "weekday": "-10% Sun-Thu 21-30d out (RM-022 via custom date discount in PriceLabs; do not apply to Fri/Sat)"
+            "weekday": "-12% Sun–Thu inside 21d, floor $95 (PriceLabs day-of-week rule)"
           }
         },
         "Lulu at the Palms": {
@@ -132,16 +132,16 @@
           "adr": 120,
           "revpar": 40,
           "priority_actions": [
-            "PRIORITY 1: Fix the illegal min/base ratio — lower min from $130 to $116 (floor) to restore a legal 30% spread below the $165 base. Current 79% ratio is above the 75% ceiling and has collapsed PriceLabs' ability to modulate.",
-            "PRIORITY 2: Set FOP to 0% across all far-out bands (currently +8% at 60-89d and 90+d) — 0% of bookings arrive 60+ days out, so the premium is taxing a segment that does not exist and may be suppressing search ranking on Airbnb."
+            "PRIORITY 1: Fix the min/base ratio breach — current min $130 / base $165 = 79%, above the 75% ceiling. Lower min to $120 (73% of $165) to restore spread and allow PriceLabs to modulate. Do NOT lower base further; it is already near the floor.",
+            "PRIORITY 2: Remove the Far-Out Premium entirely — set FOP to 0% for all windows (90+d, 60-89d). Zero percent of bookings arrive 60+ days out; the premium is taxing a segment that does not exist and creating artificial price drag in the windows that do convert."
           ],
-          "key_issue": "Distribution failure + illegal min/base ratio compressing spread",
+          "key_issue": "Distribution failure — price floor reached, channels unconfirmed",
           "confidence": "LOW",
           "settings": {
             "base": "Hold at $165",
-            "min": "Lower to $116",
+            "min": "Lower to $120",
             "max": "Hold at $500",
-            "weekday": "-5% Fri/Sat inside 30d only; hold all other weekday discounts this cycle pending channel confirmation"
+            "weekday": "No additional weekday discount — market gap is near-zero (3pts); weekday cuts will not solve a distribution problem and risk further ADR erosion below floor proximity"
           }
         }
       }
