@@ -1885,15 +1885,169 @@
           }
         }
       }
+    },
+    {
+      "date": "Jul 27, 2026",
+      "scores": {
+        "Azure Fern Haus": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Do NOT change base ($656), min ($425), max ($1,100), or any discount — pricing has been ruled out as the blocker; a cut now only damages ADR when distribution is restored.",
+          "prevOcc30": 0.53,
+          "newOcc30": 0.53,
+          "prevGap": -0.12,
+          "newGap": -0.12
+        },
+        "Thriveway Stays": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Confirm the minimum price change to $175 is live in PriceLabs — verify the setting reads $175, not $229. This is the only action required this cycle; do not touch base, discounts, or any other variable.",
+          "prevOcc30": 0.67,
+          "newOcc30": 0.53,
+          "prevGap": -0.029999999999999916,
+          "newGap": -0.16999999999999993
+        },
+        "Moonlight Sunrise": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Raise base from $305 to $325 in PriceLabs — this is the fifth consecutive cycle this is unresolved; it is now urgent. Fixes the invalid 77% min/base ratio to 72% ($235/$325), restores modulation spread to 28%, and lifts all unblocked far-out open nights. Do not carry this forward again.",
+          "prevOcc30": 0.9,
+          "newOcc30": 1,
+          "prevGap": 0.275,
+          "newGap": 0.375
+        },
+        "Trixies Oasis": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Escalate to DJ for manual listing audit — confirm the listing is live, unsuppressed, and converting on every active channel before any further pricing changes are made.",
+          "prevOcc30": 0.5,
+          "newOcc30": 0.6,
+          "prevGap": -0.15000000000000002,
+          "newGap": -0.050000000000000044
+        },
+        "Desert Dog": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Hold base at $175 and min at $131 — RM-016 applies, last cycle WORKED, 30d occ held at 63% with 11 bookings in 7 days; do not touch these this cycle, let the $175 base continue flowing into ADR over the next booking window",
+          "prevOcc30": 0.63,
+          "newOcc30": 0.63,
+          "prevGap": -0.020000000000000018,
+          "newGap": -0.020000000000000018
+        },
+        "Fat City Ranch": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Before any pricing change — search Airbnb incognito (logged out) for a 1-night weekday stay in Homestead Valley this week, confirm Fat City Ranch appears with a bookable price between $95–$120, and screenshot the result. If it does NOT appear, the listing is suppressed or paused and that is the only problem to solve right now.",
+          "prevOcc30": 0.23,
+          "newOcc30": 0.3,
+          "prevGap": -0.32000000000000006,
+          "newGap": -0.25000000000000006
+        },
+        "Lulu at the Palms": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Do not change any price setting this cycle — provide DJ with hard evidence (not a plan to check) on three specific items: (a) Airbnb listing publicly visible via guest-facing URL with no suppression or policy flags in resolution center — YES/NO with screenshot; (b) VRBO status = Published, Instant Book = ON, all calendar dates Jul–Oct open — YES/NO with screenshot; (c) PriceLabs sync log shows rates pushed to both channels with zero errors in the last 7 days — YES/NO with screenshot. If any is NO, fix it immediately before the next cycle.",
+          "prevOcc30": 0.07,
+          "newOcc30": 0.07,
+          "prevGap": -0.355,
+          "newGap": -0.355
+        }
+      },
+      "properties": {
+        "Azure Fern Haus": {
+          "occ30": 0.53,
+          "occ60": 0.62,
+          "occ90": 0.63,
+          "occ30_status": "Behind",
+          "adr": 533,
+          "revpar": 441,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        },
+        "Thriveway Stays": {
+          "occ30": 0.53,
+          "occ60": 0.27,
+          "occ90": 0.21,
+          "occ30_status": "Very Far Behind",
+          "adr": 474,
+          "revpar": 393,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        },
+        "Moonlight Sunrise": {
+          "occ30": 1,
+          "occ60": 0.67,
+          "occ90": 0.57,
+          "occ30_status": "Very Far Ahead",
+          "adr": 0,
+          "revpar": 0,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        },
+        "Trixies Oasis": {
+          "occ30": 0.6,
+          "occ60": 0.48,
+          "occ90": 0.36,
+          "occ30_status": "On Track",
+          "adr": 163,
+          "revpar": 129,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        },
+        "Desert Dog": {
+          "occ30": 0.63,
+          "occ60": 0.48,
+          "occ90": 0.46,
+          "occ30_status": "Slightly Ahead",
+          "adr": 144,
+          "revpar": 106,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        },
+        "Fat City Ranch": {
+          "occ30": 0.3,
+          "occ60": 0.2,
+          "occ90": 0.13,
+          "occ30_status": "Very Far Behind",
+          "adr": 117,
+          "revpar": 58,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        },
+        "Lulu at the Palms": {
+          "occ30": 0.07,
+          "occ60": 0.03,
+          "occ90": 0.06,
+          "occ30_status": "Very Far Behind",
+          "adr": 120,
+          "revpar": 40,
+          "priority_actions": [
+            "Analysis failed — try again"
+          ],
+          "key_issue": "Error",
+          "confidence": "LOW"
+        }
+      }
     }
   ],
   "monthly": {
     "July 2026": {
-      "weeks": 9,
-      "worked": 24,
+      "weeks": 10,
+      "worked": 29,
       "partial": 1,
-      "failed": 31,
-      "accuracy": 44
+      "failed": 33,
+      "accuracy": 47
     }
   }
 }
