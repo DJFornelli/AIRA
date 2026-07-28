@@ -145,15 +145,218 @@
           }
         }
       }
+    },
+    {
+      "date": "Jul 28, 2026",
+      "scores": {
+        "Azure Fern Haus": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Hold base at $656 and min at $425 — do not cut further this cycle. Additional discounting has already failed twice and will train the market to wait without generating bookings.",
+          "prevOcc30": 0.5,
+          "newOcc30": 0.5,
+          "prevGap": -0.15000000000000002,
+          "newGap": -0.15000000000000002
+        },
+        "Thriveway Stays": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Lower base from $280 to $259 in PriceLabs — this reopens the base-to-min spread (min stays at $210 = 81% ratio violation; therefore lower min to $175 simultaneously to maintain 55–68% ratio and restore modulation range). New ratio: $175 / $259 = 67.6% — valid.",
+          "prevOcc30": 0.6,
+          "newOcc30": 0.6,
+          "prevGap": -0.09999999999999998,
+          "newGap": -0.09999999999999998
+        },
+        "Moonlight Sunrise": {
+          "result": "worked",
+          "prevAction": "PRIORITY 1: Hold all pricing settings unchanged this cycle — 30d/60d are blocked and unreadable, 90d/120d are Very Far Ahead, and zero 7-day velocity prohibits any increase.",
+          "prevOcc30": 1,
+          "newOcc30": 1,
+          "prevGap": 0.375,
+          "newGap": 0.375
+        },
+        "Trixies Oasis": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Apply Sun–Thu discount of -10% inside 21 days to move the open weekday nights driving the 30d shortfall — do NOT touch base, min, or weekend pricing.",
+          "prevOcc30": 0.57,
+          "newOcc30": 0.57,
+          "prevGap": -0.08000000000000007,
+          "newGap": -0.08000000000000007
+        },
+        "Desert Dog": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Add Sun-Thu weekday discount of -10% inside 21 days in PriceLabs to target the chronic weekday fill problem without moving base, min, or weekend rates.",
+          "prevOcc30": 0.6,
+          "newOcc30": 0.6,
+          "prevGap": -0.050000000000000044,
+          "newGap": -0.050000000000000044
+        },
+        "Fat City Ranch": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Lower base from $135 to $125 (within target range $125–$145); this brings effective weekday pricing inside 30d to approximately $106–$112 after LMD, above the $95 floor, to convert soft-season demand without floor pressure.",
+          "prevOcc30": 0.23,
+          "newOcc30": 0.23,
+          "prevGap": -0.32000000000000006,
+          "newGap": -0.32000000000000006
+        },
+        "Lulu at the Palms": {
+          "result": "failed",
+          "prevAction": "PRIORITY 1: Hold base at $165 and lower min to $116 to restore a valid base-min spread (min must be ≤75% of base; $116/$165 = 70%) — do NOT cut base further until distribution is confirmed functional.",
+          "prevOcc30": 0.1,
+          "newOcc30": 0.1,
+          "prevGap": -0.32499999999999996,
+          "newGap": -0.32499999999999996
+        }
+      },
+      "properties": {
+        "Azure Fern Haus": {
+          "occ30": 0.5,
+          "occ60": 0.6,
+          "occ90": 0.63,
+          "occ30_status": "Behind",
+          "adr": 541,
+          "revpar": 429,
+          "priority_actions": [
+            "PRIORITY 1: Lower base to $609 (from $656, -7%) and hold min at $425 — this is a one-cycle structural move to test whether algorithm re-indexing generates any booking signal before Aug soft season; do not cut further until a booking occurs or distribution is confirmed healthy.",
+            "PRIORITY 2: Audit listing distribution this cycle — verify the listing is live, unsuppressed, and syncing correctly on all channels; holding price without this investigation is not acceptable given two weeks of zero bookings."
+          ],
+          "key_issue": "25-day booking silence; not a price problem",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Lower to $609",
+            "min": "Hold at $425",
+            "max": "Hold at $1,100",
+            "weekday": "-8% Sun–Thu inside 21d"
+          }
+        },
+        "Thriveway Stays": {
+          "occ30": 0.6,
+          "occ60": 0.3,
+          "occ90": 0.23,
+          "occ30_status": "Very Far Behind",
+          "adr": 478,
+          "revpar": 379,
+          "priority_actions": [
+            "PRIORITY 1: Fix the base-min ratio — current min $210 / base $259 = 81%, which collapses PriceLabs modulation. Lower min to $175 (67.6% of $259, valid). Floor is $229 PROVISIONAL but min operates as a PriceLabs floor, not a nightly guarantee; however, confirm with DJ that $175 min is operationally acceptable given the $229 provisional margin floor before activating — if DJ confirms floor must hold at $229, raise base instead to $305 so that $210 min = 68.9%, which is valid and keeps both values above $229.",
+            "PRIORITY 2: Remove Far-Out Premium entirely — set FOP to 0% at all tiers (90d+, 60–89d, 45–59d). Only 9% of bookings arrive 60d+ out; the premium is taxing a segment that does not exist and is suppressing the small number of early bookers without revenue benefit."
+          ],
+          "key_issue": "Spread collapsed; FOP taxing phantom demand",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $259",
+            "min": "Lower to $175 (pending DJ floor confirmation — if $229 floor is hard, raise base to $305 and hold min at $210 instead)  ⚠ BREACHES $229 FLOOR",
+            "max": "Hold at $850",
+            "weekday": "-5% Sun–Thu inside 30d"
+          }
+        },
+        "Moonlight Sunrise": {
+          "occ30": 1,
+          "occ60": 0.67,
+          "occ90": 0.56,
+          "occ30_status": "Very Far Ahead",
+          "adr": null,
+          "revpar": null,
+          "priority_actions": [
+            "PRIORITY 1: Hold all pricing settings unchanged this cycle — 30d/60d are blocked and unreadable, 90d/120d are Very Far Ahead into Oct peak, and zero 7-day velocity prohibits any increase. Last cycle hold scored WORKED; do not disturb.",
+            "PRIORITY 2: Confirm remediation end date — once block lifts, 30d/60d become readable and the Oct peak ramp pricing review must run immediately."
+          ],
+          "key_issue": "Remediation block; hold rate for Oct peak ramp",
+          "confidence": "HIGH",
+          "settings": {
+            "base": "Hold at $328",
+            "min": "Hold at $235",
+            "max": "Hold at $650",
+            "weekday": "No weekday discount change this cycle — near windows unreadable, far windows ahead of pace"
+          }
+        },
+        "Trixies Oasis": {
+          "occ30": 0.57,
+          "occ60": 0.47,
+          "occ90": 0.34,
+          "occ30_status": "On Track",
+          "adr": 161,
+          "revpar": 128,
+          "priority_actions": [
+            "PRIORITY 1: Remove FOP entirely — set both the 60–89d and 90+d far-out premium to 0% in PriceLabs. The measured booking curve shows under 11% of bookings arrive 60+ days out; the premium is taxing a segment that does not exist and creating a pricing anomaly with no revenue benefit.",
+            "PRIORITY 2: Deepen the last-7d LMD step for Sun–Thu only — change the 7d weekday discount from –10% to –18% and the 3d step to –22%, leaving the 14d step at –5% and touching nothing else. The flat –10% at 21d failed to move bookings; steeper late-release discounts target the 54% of bookings that arrive inside 14 days."
+          ],
+          "key_issue": "Weekday discount failed; FOP still on despite near-zero far-out bookers",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $167",
+            "min": "Hold at $115  ⚠ BREACHES $125 FLOOR",
+            "max": "Hold at $550",
+            "weekday": "Sun–Thu LMD: –5% at 14d (unchanged) | –18% at 7d (deepened from –10%) | –22% at 3d (deepened from –15%) | –25% at 1d (unchanged)"
+          }
+        },
+        "Desert Dog": {
+          "occ30": 0.6,
+          "occ60": 0.47,
+          "occ90": 0.46,
+          "occ30_status": "On Track",
+          "adr": 143,
+          "revpar": 105,
+          "priority_actions": [
+            "PRIORITY 1: Remove the Sun-Thu -10% weekday discount inside 21 days — it ran one full cycle with zero occ movement and July market occ is 28% (property already at 60%); the demand simply isn't there mid-week in SOFT season regardless of price. Do not replace it with a deeper cut this cycle. Hold weekday pricing at base and let the LMD curve do the work inside 7 days.",
+            "PRIORITY 2: Reduce FOP on the 90+d window from +15% to +8% in PriceLabs. The 90d window is Very Far Ahead (+19pts) meaning those nights are already selling — the +15% premium is not the reason; it's ahead despite the premium. Cap at +8% to stay competitive without leaving the window open to over-booking at depressed far-out rates. Keep 60–89d FOP at +15% (that window is only +7pts ahead and can absorb the premium)."
+          ],
+          "key_issue": "Weekday discount failed; ADR gap is the real loss",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $163",
+            "min": "Hold at $109  ⚠ BREACHES $125 FLOOR",
+            "max": "Hold at $500",
+            "weekday": "Remove Sun-Thu -10% inside 21d; no replacement discount this cycle"
+          }
+        },
+        "Fat City Ranch": {
+          "occ30": 0.23,
+          "occ60": 0.17,
+          "occ90": 0.11,
+          "occ30_status": "Very Far Behind",
+          "adr": 116,
+          "revpar": 54,
+          "priority_actions": [
+            "PRIORITY 1: Min is currently $95 against a $125 base = 76% ratio, which violates the 55–75% band. Lower min to $90 is below floor — floor wins. Instead raise base back to $135 to restore ratio to 70% ($95/$135). This undoes last cycle's failed cut and reopens the modulation spread.",
+            "PRIORITY 2: Remove Far-Out Premium entirely — set FOP to 0% for all windows (90d+, 60–89d, 45–59d) — zero percent of bookings arrive 60+ days out so the premium is taxing a segment that does not exist."
+          ],
+          "key_issue": "Base cut failed; min/base ratio now invalid",
+          "confidence": "MEDIUM",
+          "settings": {
+            "base": "Raise to $135",
+            "min": "Hold at $95",
+            "max": "Hold at $400",
+            "weekday": "No additional weekday discount this cycle — last cut produced zero movement; hold and observe one more cycle before acting again."
+          }
+        },
+        "Lulu at the Palms": {
+          "occ30": 0.1,
+          "occ60": 0.05,
+          "occ90": 0.07,
+          "occ30_status": "Very Far Behind",
+          "adr": 120,
+          "revpar": 40,
+          "priority_actions": [
+            "PRIORITY 1: Fix the min/base ratio — current min $130 / base $165 = 79%, which exceeds the 75% hard cap. Lower min to $116 (70% of $165) to restore a valid spread and allow PriceLabs to modulate. Do NOT lower base further — pricing is not the lever this cycle.",
+            "PRIORITY 2: Remove Far-Out Premium entirely — set FOP to 0% for all windows (90d+, 60-89d). Zero percent of bookings arrive 60+ days out; the premium is taxing a segment that does not exist and may suppress search ranking on far-out dates for no revenue gain."
+          ],
+          "key_issue": "Distribution not confirmed; listing invisible, not overpriced",
+          "confidence": "LOW",
+          "settings": {
+            "base": "Hold at $165",
+            "min": "Lower to $116",
+            "max": "Hold at $500",
+            "weekday": "Hold current weekday structure — market is equally soft; weekday discounts cannot outrun a distribution failure"
+          }
+        }
+      }
     }
   ],
   "monthly": {
     "July 2026": {
-      "weeks": 1,
-      "worked": 0,
+      "weeks": 2,
+      "worked": 1,
       "partial": 0,
-      "failed": 0,
-      "accuracy": 0
+      "failed": 6,
+      "accuracy": 14
     }
   }
 }
